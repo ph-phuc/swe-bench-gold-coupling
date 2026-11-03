@@ -1,0 +1,211 @@
+{
+ "handread_near_total.jsonl": {
+  "tasks": {
+   "coupled": 28,
+   "in_scope": 5,
+   "contested": 2
+  },
+  "abs_wbp": {
+   "coupled": 1860,
+   "in_scope": 213,
+   "contested": 115
+  },
+  "unique_abs_wbp": {
+   "coupled": 1534,
+   "in_scope": 209,
+   "contested": 111
+  },
+  "abs_wbp_total": 2188,
+  "contested": [
+   [
+    "django__django-16560",
+    "in_scope"
+   ],
+   [
+    "scikit-learn__scikit-learn-12682",
+    "in_scope"
+   ]
+  ]
+ },
+ "handread_sample15.jsonl": {
+  "tasks": {
+   "in_scope": 9,
+   "coupled": 5,
+   "contested": 1
+  },
+  "abs_wbp": {
+   "in_scope": 159,
+   "coupled": 119,
+   "contested": 22
+  },
+  "unique_abs_wbp": {
+   "in_scope": 129,
+   "coupled": 113,
+   "contested": 21
+  },
+  "abs_wbp_total": 300,
+  "contested": [
+   [
+    "psf__requests-2931",
+    "unclear"
+   ]
+  ]
+ },
+ "handread_sample35.jsonl": {
+  "tasks": {
+   "in_scope": 18,
+   "coupled": 11,
+   "contested": 6
+  },
+  "abs_wbp": {
+   "in_scope": 235,
+   "coupled": 174,
+   "contested": 178
+  },
+  "unique_abs_wbp": {
+   "in_scope": 198,
+   "coupled": 171,
+   "contested": 136
+  },
+  "abs_wbp_total": 587,
+  "contested": [
+   [
+    "django__django-15375",
+    "in_scope"
+   ],
+   [
+    "django__django-15467",
+    "in_scope"
+   ],
+   [
+    "django__django-15930",
+    "in_scope"
+   ],
+   [
+    "django__django-16819",
+    "in_scope"
+   ],
+   [
+    "sphinx-doc__sphinx-10466",
+    "in_scope"
+   ],
+   [
+    "sympy__sympy-15345",
+    "in_scope"
+   ]
+  ]
+ },
+ "handread_rest.jsonl": {
+  "tasks": {
+   "in_scope": 141,
+   "coupled": 64,
+   "contested": 14,
+   "env": 1
+  },
+  "abs_wbp": {
+   "in_scope": 1646,
+   "coupled": 1968,
+   "contested": 467,
+   "env": 1
+  },
+  "unique_abs_wbp": {
+   "in_scope": 1548,
+   "coupled": 1838,
+   "contested": 436,
+   "env": 1
+  },
+  "abs_wbp_total": 4082,
+  "contested": [
+   [
+    "django__django-11603",
+    "in_scope"
+   ],
+   [
+    "django__django-12741",
+    "in_scope"
+   ],
+   [
+    "django__django-12858",
+    "in_scope"
+   ],
+   [
+    "django__django-13012",
+    "in_scope"
+   ],
+   [
+    "django__django-13028",
+    "in_scope"
+   ],
+   [
+    "django__django-16100",
+    "in_scope"
+   ],
+   [
+    "matplotlib__matplotlib-22719",
+    "in_scope"
+   ],
+   [
+    "matplotlib__matplotlib-24970",
+    "in_scope"
+   ],
+   [
+    "matplotlib__matplotlib-26342",
+    "unclear"
+   ],
+   [
+    "pydata__xarray-3305",
+    "in_scope"
+   ],
+   [
+    "pydata__xarray-4687",
+    "in_scope"
+   ],
+   [
+    "scikit-learn__scikit-learn-12585",
+    "in_scope"
+   ],
+   [
+    "scikit-learn__scikit-learn-13124",
+    "in_scope"
+   ],
+   [
+    "scikit-learn__scikit-learn-25931",
+    "in_scope"
+   ]
+  ]
+ },
+ "refuter": {
+  "verdicts": 131,
+  "upheld": 108
+ },
+ "census": {
+  "tasks_with_wbp": 305,
+  "read": 305,
+  "unread": [],
+  "tasks": {
+   "coupled": 108,
+   "in_scope": 173,
+   "contested": 23,
+   "env": 1
+  },
+  "abs_wbp": {
+   "coupled": 4121,
+   "in_scope": 2253,
+   "contested": 782,
+   "env": 1
+  },
+  "unique_abs_wbp": {
+   "coupled": 3656,
+   "in_scope": 2084,
+   "contested": 704,
+   "env": 1
+  },
+  "abs_wbp_total": 7157,
+  "abs_wbp_share": {
+   "coupled": 0.5758,
+   "in_scope": 0.3148,
+   "contested": 0.1093,
+   "env": 0.0001
+  }
+ }
+}

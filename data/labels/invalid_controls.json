@@ -1,0 +1,304 @@
+[
+{
+"iid": "astropy__astropy-7606",
+"suite": "original",
+"ctl": "__gold__",
+"tests": 242,
+"bad": [],
+"n_bad": 0,
+"errs": [],
+"timeout": false
+},
+{
+"iid": "django__django-10097",
+"suite": "original",
+"ctl": "__gold__",
+"tests": 12679,
+"bad": [
+"test_dumpdata_with_excludes (fixtures.tests.FixtureLoadingTests)",
+"test_loading_and_dumping (fixtures.tests.FixtureLoadingTests)",
+"test_loading_with_exclude_app (fixtures.tests.FixtureLoadingTests)",
+"test_loading_with_exclude_model (fixtures.tests.FixtureLoadingTests)"
+],
+"n_bad": 1112,
+"errs": [
+"AttributeError raised by QuerySet.filter() isn't hidden. ... ok",
+"AttributeError raised by QuerySet.get() isn't hidden. ... ok",
+"test_force_text_DjangoUnicodeDecodeError (utils_tests.test_encoding.TestEncodingUtils) ... ok"
+],
+"timeout": false
+},
+{
+"iid": "django__django-7530",
+"suite": "original",
+"ctl": "__noop__",
+"tests": 64,
+"bad": [
+"test_makemigrations_consistency_checks_respect_routers (migrations.test_commands.MakeMigrationsTests)",
+"test_makemigrations_consistency_checks_respect_routers"
+],
+"n_bad": 2,
+"errs": [
+"KeyError: 'modelwithcustombase'",
+"LookupError: App 'migrations2' doesn't have a 'ModelWithCustomBase' model."
+],
+"timeout": false
+},
+{
+"iid": "matplotlib__matplotlib-20859",
+"suite": "original",
+"ctl": "__gold__",
+"tests": 91,
+"bad": [
+"lib/matplotlib/tests/test_legend.py::test_warn_big_data_best_loc"
+],
+"n_bad": 1,
+"errs": [
+"E           Failed: DID NOT WARN. No warnings of type (<class 'UserWarning'>,) were emitted.",
+"E            Emitted warnings: []."
+],
+"timeout": false
+},
+{
+"iid": "scikit-learn__scikit-learn-14710",
+"suite": "original",
+"ctl": "__gold__",
+"tests": 0,
+"bad": [],
+"n_bad": 0,
+"errs": [],
+"timeout": false
+},
+{
+"iid": "sphinx-doc__sphinx-8475",
+"suite": "original",
+"ctl": "__gold__",
+"tests": 18,
+"bad": [
+"tests/test_build_linkcheck.py::test_defaults",
+"tests/test_build_linkcheck.py::test_anchors_ignored"
+],
+"n_bad": 2,
+"errs": [],
+"timeout": false
+},
+{
+"iid": "django__django-11141",
+"suite": "abs",
+"ctl": "__gold__",
+"tests": 11,
+"bad": [
+"README"
+],
+"n_bad": 1,
+"errs": [
+"ImportError: Failed to import test module: README",
+"ModuleNotFoundError: No module named 'migrations.test_migrations_empty_namespace.README'"
+],
+"timeout": false
+},
+{
+"iid": "django__django-14631",
+"suite": "abs",
+"ctl": "__noop__",
+"tests": 10,
+"bad": [],
+"n_bad": 0,
+"errs": [],
+"timeout": false
+},
+{
+"iid": "django__django-15128",
+"suite": "abs",
+"ctl": "__noop__",
+"tests": 5,
+"bad": [],
+"n_bad": 0,
+"errs": [],
+"timeout": false
+},
+{
+"iid": "django__django-15695",
+"suite": "abs",
+"ctl": "__noop__",
+"tests": 127,
+"bad": [],
+"n_bad": 0,
+"errs": [],
+"timeout": false
+},
+{
+"iid": "psf__requests-1724",
+"suite": "abs",
+"ctl": "__gold__",
+"tests": 13,
+"bad": [
+"test_unicode_methods.py::test_request_object_with_unicode_method_prepare_send_multipart_files"
+],
+"n_bad": 1,
+"errs": [
+"E           UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 85: ordinal not in range(128)"
+],
+"timeout": false
+},
+{
+"iid": "pytest-dev__pytest-10051",
+"suite": "abs",
+"ctl": "__gold__",
+"tests": 6,
+"bad": [
+"test_caplog_clear_extended:test_caplog_clear_extended.py:60"
+],
+"n_bad": 1,
+"errs": [],
+"timeout": false
+},
+{
+"iid": "pytest-dev__pytest-10081",
+"suite": "abs",
+"ctl": "__gold__",
+"tests": 13,
+"bad": [
+"test_pdb_calls_tearDown_for_failing_test.py::MyTestCase::test_fail"
+],
+"n_bad": 1,
+"errs": [
+"E       RuntimeError: boom",
+"E       RuntimeError: boom"
+],
+"timeout": false
+},
+{
+"iid": "pytest-dev__pytest-7490",
+"suite": "abs",
+"ctl": "__gold__",
+"tests": 14,
+"bad": [
+"test_dynamic_xfail_set_during_runtest_passed_strict_fails.py::test_this",
+"test_dynamic_xfail_with_runxfail_option_does_not_mark_xfail.py::test_this",
+"test_cached_xfail_strict_preserved_when_dynamic_inserted_first.py::test_body"
+],
+"n_bad": 3,
+"errs": [
+"E       assert 0"
+],
+"timeout": false
+},
+{
+"iid": "pytest-dev__pytest-7571",
+"suite": "abs",
+"ctl": "__gold__",
+"tests": 7,
+"bad": [
+"test_handler_level_restored_after_failure.py::test_fail_changes_handler"
+],
+"n_bad": 1,
+"errs": [
+"E       RuntimeError: boom"
+],
+"timeout": false
+},
+{
+"iid": "pytest-dev__pytest-8399",
+"suite": "abs",
+"ctl": "__gold__",
+"tests": 95,
+"bad": [
+"test_simple_unittest.py::MyTestCase::test_failing",
+"test_setup.py::MyTestCase::test_both",
+"test_setUpModule_failing_no_teardown.py::test_hello",
+"test_method_and_teardown_failing_reporting.py::TC::test_method"
+],
+"n_bad": 25,
+"errs": [
+"E       AssertionError: 'foo' != 'bar'",
+"E       - foo",
+"E       + bar"
+],
+"timeout": false
+},
+{
+"iid": "sphinx-doc__sphinx-7985",
+"suite": "abs",
+"ctl": "__gold__",
+"tests": 1,
+"bad": [
+"not"
+],
+"n_bad": 1,
+"errs": [],
+"timeout": false
+},
+{
+"iid": "sphinx-doc__sphinx-8269",
+"suite": "abs",
+"ctl": "__gold__",
+"tests": 11,
+"bad": [
+"tests/test_build_linkcheck.py::test_defaults",
+"tests/test_build_linkcheck.py::test_anchors_ignored"
+],
+"n_bad": 2,
+"errs": [],
+"timeout": false
+},
+{
+"iid": "django__django-13401",
+"suite": "utboost",
+"ctl": "__gold__",
+"tests": 34,
+"bad": [],
+"n_bad": 0,
+"errs": [],
+"timeout": false
+},
+{
+"iid": "django__django-14787",
+"suite": "utboost",
+"ctl": "__gold__",
+"tests": 22,
+"bad": [],
+"n_bad": 0,
+"errs": [],
+"timeout": false
+},
+{
+"iid": "django__django-16116",
+"suite": "utboost",
+"ctl": "__gold__",
+"tests": 139,
+"bad": [],
+"n_bad": 0,
+"errs": [],
+"timeout": false
+},
+{
+"iid": "django__django-16595",
+"suite": "utboost",
+"ctl": "__gold__",
+"tests": 39,
+"bad": [],
+"n_bad": 0,
+"errs": [],
+"timeout": false
+},
+{
+"iid": "sympy__sympy-17655",
+"suite": "utboost",
+"ctl": "__gold__",
+"tests": 13,
+"bad": [
+"sympy/geometry/tests/test_point.py:test_point",
+"sympy/geometry/tests/test_point.py:test_point3D",
+"test_point",
+"test_point3D"
+],
+"n_bad": 4,
+"errs": [
+"TypeError:",
+"sympy.geometry.exceptions.GeometryError: Don't know how to add 2.0*Point2D(1, 1) and a Point object",
+"TypeError:"
+],
+"timeout": false
+}
+]

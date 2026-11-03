@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+# outputs of code/fetch_patches.py (third-party patches: never commit)
+data/raw/
+data/passing_patches/
+data/passing_index.jsonl
+data/index_report.json
+out/

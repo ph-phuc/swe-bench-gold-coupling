@@ -1,0 +1,38 @@
+name: Wrong label
+description: Report a verdict or label you think is wrong
+title: "Wrong label: <instance_id>"
+labels: ["wrong-label"]
+body:
+  - type: input
+    id: instance_id
+    attributes:
+      label: instance_id
+      placeholder: django__django-13410
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: File and field
+      placeholder: data/census/handread_rest.jsonl, category
+    validations:
+      required: true
+  - type: input
+    id: current
+    attributes:
+      label: Current label
+      placeholder: gold_choice
+  - type: input
+    id: proposed
+    attributes:
+      label: The label you think is right
+      placeholder: in_scope
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: The part of the issue or hints, and the hardened test, that you base this on. Short quotes are enough.
+    validations:
+      required: true

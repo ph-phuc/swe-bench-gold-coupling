@@ -1,0 +1,21 @@
+Third-party material in this release
+
+This release redistributes no third-party file. It contains short excerpts and identifiers from the works below,
+quoted for analysis, each under its own terms:
+
+- SWE-bench Verified task identifiers and short quotes of GitHub issue text (the `issue_quote` field, a sentence or two). SWE-bench: https://github.com/SWE-bench/SWE-bench (MIT). Dataset:
+  https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified (no licence stated on the card). Issue text
+  belongs to its authors on GitHub.
+- SWE-ABS hardened test names and one-sentence descriptions of what a test checks. SWE-ABS dataset:
+  https://huggingface.co/datasets/OpenAgentLab/SWE-Bench_Verified_ABS (Apache-2.0); code:
+  https://github.com/OpenAgentEval/SWE-ABS (MIT); paper arXiv:2603.00520 (CC BY 4.0).
+- UTBoost labels, derived by re-running its tests. UTBoost: https://github.com/CUHK-Shenzhen-SE/UTBoost (MIT);
+  paper arXiv:2506.09289 (CC BY 4.0).
+- SWE-bench leaderboard system names, and sha256 hashes of their patches, from
+  https://github.com/SWE-bench/experiments (no licence file). No patch text is included; one-sentence descriptions
+  of what agent patches did are our own words.
+- Upstream projects whose tests and code the excerpts name: django, astropy, scikit-learn, flask, seaborn
+  (BSD-3-Clause), sympy (BSD), sphinx (BSD-2-Clause), matplotlib (matplotlib licence), pytest (MIT), xarray and
+  requests (Apache-2.0), pylint (GPL-2.0).
+- Gemma 4 model outputs in data/auditor_benchmark/predictions/ were generated with google/gemma-4-* under the Gemma
+  terms of use.

@@ -1,0 +1,177 @@
+{
+  "n_tasks": 10,
+  "n_annotators": 5,
+  "per_annotator": {
+    "a1": {
+      "agree_with_model": 8,
+      "agree_ci": [
+        0.49,
+        0.943
+      ],
+      "coupled_confirmed": 6,
+      "of_coupled": 8,
+      "coupled_ci": [
+        0.409,
+        0.929
+      ],
+      "controls_caught": 2,
+      "kappa_vs_model": 0.545
+    },
+    "a2": {
+      "agree_with_model": 7,
+      "agree_ci": [
+        0.397,
+        0.892
+      ],
+      "coupled_confirmed": 5,
+      "of_coupled": 8,
+      "coupled_ci": [
+        0.306,
+        0.863
+      ],
+      "controls_caught": 2,
+      "kappa_vs_model": 0.4
+    },
+    "a3": {
+      "agree_with_model": 7,
+      "agree_ci": [
+        0.397,
+        0.892
+      ],
+      "coupled_confirmed": 5,
+      "of_coupled": 8,
+      "coupled_ci": [
+        0.306,
+        0.863
+      ],
+      "controls_caught": 2,
+      "kappa_vs_model": 0.4
+    },
+    "a4": {
+      "agree_with_model": 4,
+      "agree_ci": [
+        0.168,
+        0.687
+      ],
+      "coupled_confirmed": 2,
+      "of_coupled": 8,
+      "coupled_ci": [
+        0.071,
+        0.591
+      ],
+      "controls_caught": 2,
+      "kappa_vs_model": 0.118
+    },
+    "a5": {
+      "agree_with_model": 9,
+      "agree_ci": [
+        0.596,
+        0.982
+      ],
+      "coupled_confirmed": 7,
+      "of_coupled": 8,
+      "coupled_ci": [
+        0.529,
+        0.978
+      ],
+      "controls_caught": 2,
+      "kappa_vs_model": 0.737
+    }
+  },
+  "fleiss_kappa_humans": 0.36,
+  "per_task": [
+    {
+      "task": "django__django-13410",
+      "model": "C",
+      "C": 1,
+      "G": 4,
+      "U": 0,
+      "majority": "G",
+      "majority_agrees_model": false
+    },
+    {
+      "task": "django__django-13112",
+      "model": "C",
+      "C": 3,
+      "G": 2,
+      "U": 0,
+      "majority": "C",
+      "majority_agrees_model": true
+    },
+    {
+      "task": "django__django-16527",
+      "model": "C",
+      "C": 2,
+      "G": 3,
+      "U": 0,
+      "majority": "G",
+      "majority_agrees_model": false
+    },
+    {
+      "task": "django__django-11292",
+      "model": "C",
+      "C": 2,
+      "G": 3,
+      "U": 0,
+      "majority": "G",
+      "majority_agrees_model": false
+    },
+    {
+      "task": "django__django-13741",
+      "model": "C",
+      "C": 5,
+      "G": 0,
+      "U": 0,
+      "majority": "C",
+      "majority_agrees_model": true
+    },
+    {
+      "task": "django__django-11276",
+      "model": "C",
+      "C": 3,
+      "G": 2,
+      "U": 0,
+      "majority": "C",
+      "majority_agrees_model": true
+    },
+    {
+      "task": "sympy__sympy-11618",
+      "model": "C",
+      "C": 5,
+      "G": 0,
+      "U": 0,
+      "majority": "C",
+      "majority_agrees_model": true
+    },
+    {
+      "task": "django__django-12155",
+      "model": "G",
+      "C": 0,
+      "G": 5,
+      "U": 0,
+      "majority": "G",
+      "majority_agrees_model": true
+    },
+    {
+      "task": "scikit-learn__scikit-learn-25973",
+      "model": "C",
+      "C": 4,
+      "G": 1,
+      "U": 0,
+      "majority": "C",
+      "majority_agrees_model": true
+    },
+    {
+      "task": "sphinx-doc__sphinx-7440",
+      "model": "G",
+      "C": 0,
+      "G": 5,
+      "U": 0,
+      "majority": "G",
+      "majority_agrees_model": true
+    }
+  ],
+  "majority_agrees_model": 7,
+  "majority_coupled_confirmed": 5,
+  "mean_pairwise_cohen_humans": 0.386
+}

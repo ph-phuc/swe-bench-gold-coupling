@@ -1,0 +1,343 @@
+{
+  "title": "SWE-bench gold-coupling census",
+  "subtitle": "Issue-grounded verdicts on every SWE-ABS rejection on SWE-bench Verified",
+  "description": "Labels for 39,133 resolved SWE-bench Verified leaderboard entries (151 systems) on the original tests, SWE-ABS and UTBoost, and an issue-grounded verdict on each of the 305 tasks where SWE-ABS rejects an entry that passes the original tests. SWE-ABS rejects 19.5% of judged entries; 108 tasks, holding 57.6% of the rejected entries, have a most-failed hardened test that both a model reader and a model refuter call coupled to the gold patch. Setting them aside lowers the pooled rejection rate to 8.7-10.8% (a per-task range). Includes corrected per-system rates with bootstrap intervals, a blind five-annotator spot check, a small test-auditor benchmark with Gemma 4 outputs, the reader prompts, and reproduce.py, which recomputes 150 numbers of the writeup on a CPU in seconds.\n\nStart with README.md (quickstart, glossary, number-by-number provenance) and DATASHEET.md (method, uses, limits). The verdicts are model judgements per task; read the limits before reuse.\n\nLicences: data CC BY 4.0, code MIT (LICENSE), third-party excerpts under their own terms (NOTICE). No patch, issue or test text is redistributed beyond short quotes.",
+  "id": "phucphan1406/swe-bench-gold-coupling-census",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0"
+    }
+  ],
+  "resources": [
+    {
+      "path": "data/labels/entries.csv",
+      "description": "One row per resolved leaderboard entry (39,133) with re-run labels on three test suites.",
+      "schema": {
+        "fields": [
+          {
+            "name": "system",
+            "description": "Leaderboard submission name (SWE-bench/experiments).",
+            "type": "string"
+          },
+          {
+            "name": "instance_id",
+            "description": "SWE-bench Verified task id.",
+            "type": "string"
+          },
+          {
+            "name": "sha",
+            "description": "sha256 of the patch text; join key for code/fetch_patches.py. No patch text is included.",
+            "type": "string"
+          },
+          {
+            "name": "label_official",
+            "description": "Our re-run on the original SWE-bench Verified tests: 1 pass, 0 fail, empty no valid verdict.",
+            "type": "integer"
+          },
+          {
+            "name": "label_hardened",
+            "description": "Our re-run on SWE-ABS (its own rule: every test in its log passes): 1 pass, 0 fail, empty no valid verdict.",
+            "type": "integer"
+          },
+          {
+            "name": "label_utboost",
+            "description": "Our re-run on UTBoost: 1 pass, 0 fail, empty no valid verdict.",
+            "type": "integer"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/task_verdicts.csv",
+      "description": "One row per task with a SWE-ABS rejection (305): both readers' verdicts, the class and counts.",
+      "schema": {
+        "fields": [
+          {
+            "name": "instance_id",
+            "description": "SWE-bench Verified task id.",
+            "type": "string"
+          },
+          {
+            "name": "read_set",
+            "description": "Reading round: near_total, sample15, sample35 (26 Oct 2026) or rest (29 Oct 2026).",
+            "type": "string"
+          },
+          {
+            "name": "class",
+            "description": "Combined verdict: coupled (both readers), contested (refuter disagrees), in_scope (genuine rejection) or env.",
+            "type": "string"
+          },
+          {
+            "name": "kind",
+            "description": "Coupled tasks only: 1 the test pins a gold artefact, 2 the test checks a gold improvement over the issue's own proposed fix.",
+            "type": "integer"
+          },
+          {
+            "name": "first_category",
+            "description": "First reader: interface, gold_choice, in_scope or env.",
+            "type": "string"
+          },
+          {
+            "name": "confidence",
+            "description": "First reader's confidence: high, medium or low.",
+            "type": "string"
+          },
+          {
+            "name": "top_test",
+            "description": "The most-failed SWE-ABS test, with how many wbp runs fail it.",
+            "type": "string"
+          },
+          {
+            "name": "issue_quote",
+            "description": "Short quote from the issue or hints the verdict rests on.",
+            "type": "string"
+          },
+          {
+            "name": "test_requires",
+            "description": "What the hardened test requires, in the reader's words.",
+            "type": "string"
+          },
+          {
+            "name": "agents_do",
+            "description": "What the rejected agent patches do, in the reader's words.",
+            "type": "string"
+          },
+          {
+            "name": "why",
+            "description": "The first reader's reason.",
+            "type": "string"
+          },
+          {
+            "name": "in_scope_kind",
+            "description": "in_scope tasks of later rounds: miss (patch misses what the issue asks) or regression.",
+            "type": "string"
+          },
+          {
+            "name": "refuter_verdict",
+            "description": "Refuter's verdict on a coupled first verdict (empty when not refuted).",
+            "type": "string"
+          },
+          {
+            "name": "refuter_reason",
+            "description": "The refuter's reason.",
+            "type": "string"
+          },
+          {
+            "name": "abs_wbp",
+            "description": "Wrong-but-passing entries on this task.",
+            "type": "integer"
+          },
+          {
+            "name": "abs_judged",
+            "description": "Judged entries on this task.",
+            "type": "integer"
+          },
+          {
+            "name": "unique_abs_wbp",
+            "description": "Unique wrong-but-passing patches on this task.",
+            "type": "integer"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/system_rates/per_system_corrected.csv",
+      "description": "Per-system rejection rates (151 systems), raw and with coupled tasks set aside, with 95% task-bootstrap intervals and rank changes.",
+      "schema": {
+        "fields": [
+          {
+            "name": "system",
+            "description": "Leaderboard submission name.",
+            "type": "string"
+          },
+          {
+            "name": "tasks",
+            "description": "Tasks the system has entries on.",
+            "type": "integer"
+          },
+          {
+            "name": "ranked",
+            "description": "True when the system has at least 100 judged entries and is ranked (139 systems).",
+            "type": "boolean"
+          },
+          {
+            "name": "raw_wbp",
+            "description": "Wrong-but-passing entries over every task.",
+            "type": "integer"
+          },
+          {
+            "name": "raw_judged",
+            "description": "Judged entries over every task.",
+            "type": "integer"
+          },
+          {
+            "name": "raw_rate",
+            "description": "wbp / judged over every task.",
+            "type": "number"
+          },
+          {
+            "name": "raw_lo",
+            "description": "Lower end of the 95% task-bootstrap interval of raw_rate.",
+            "type": "number"
+          },
+          {
+            "name": "raw_hi",
+            "description": "Upper end of the 95% task-bootstrap interval of raw_rate.",
+            "type": "number"
+          },
+          {
+            "name": "in_scope_wbp",
+            "description": "Wrong-but-passing entries over in_scope tasks plus tasks with no wbp (the corrected rate).",
+            "type": "integer"
+          },
+          {
+            "name": "in_scope_judged",
+            "description": "Judged entries over in_scope tasks plus tasks with no wbp (the corrected rate).",
+            "type": "integer"
+          },
+          {
+            "name": "in_scope_rate",
+            "description": "wbp / judged over in_scope tasks plus tasks with no wbp (the corrected rate).",
+            "type": "number"
+          },
+          {
+            "name": "in_scope_lo",
+            "description": "Lower end of the 95% task-bootstrap interval of in_scope_rate.",
+            "type": "number"
+          },
+          {
+            "name": "in_scope_hi",
+            "description": "Upper end of the 95% task-bootstrap interval of in_scope_rate.",
+            "type": "number"
+          },
+          {
+            "name": "excl_coupled_wbp",
+            "description": "Wrong-but-passing entries over every task except coupled ones (the lenient corrected rate).",
+            "type": "integer"
+          },
+          {
+            "name": "excl_coupled_judged",
+            "description": "Judged entries over every task except coupled ones (the lenient corrected rate).",
+            "type": "integer"
+          },
+          {
+            "name": "excl_coupled_rate",
+            "description": "wbp / judged over every task except coupled ones (the lenient corrected rate).",
+            "type": "number"
+          },
+          {
+            "name": "excl_coupled_lo",
+            "description": "Lower end of the 95% task-bootstrap interval of excl_coupled_rate.",
+            "type": "number"
+          },
+          {
+            "name": "excl_coupled_hi",
+            "description": "Upper end of the 95% task-bootstrap interval of excl_coupled_rate.",
+            "type": "number"
+          },
+          {
+            "name": "coupled_wbp",
+            "description": "Wrong-but-passing entries over coupled tasks only.",
+            "type": "integer"
+          },
+          {
+            "name": "coupled_judged",
+            "description": "Judged entries over coupled tasks only.",
+            "type": "integer"
+          },
+          {
+            "name": "coupled_rate",
+            "description": "wbp / judged over coupled tasks only.",
+            "type": "number"
+          },
+          {
+            "name": "coupled_lo",
+            "description": "Lower end of the 95% task-bootstrap interval of coupled_rate.",
+            "type": "number"
+          },
+          {
+            "name": "coupled_hi",
+            "description": "Upper end of the 95% task-bootstrap interval of coupled_rate.",
+            "type": "number"
+          },
+          {
+            "name": "contested_wbp",
+            "description": "Wrong-but-passing entries over contested tasks only.",
+            "type": "integer"
+          },
+          {
+            "name": "contested_judged",
+            "description": "Judged entries over contested tasks only.",
+            "type": "integer"
+          },
+          {
+            "name": "contested_rate",
+            "description": "wbp / judged over contested tasks only.",
+            "type": "number"
+          },
+          {
+            "name": "contested_lo",
+            "description": "Lower end of the 95% task-bootstrap interval of contested_rate.",
+            "type": "number"
+          },
+          {
+            "name": "contested_hi",
+            "description": "Upper end of the 95% task-bootstrap interval of contested_rate.",
+            "type": "number"
+          },
+          {
+            "name": "coupled_share_of_wbp",
+            "description": "Share of the system's wbp entries that sit on coupled tasks.",
+            "type": "number"
+          },
+          {
+            "name": "rank_raw",
+            "description": "Rank by raw rate among ranked systems (1 = highest rate; ties share the mean rank).",
+            "type": "number"
+          },
+          {
+            "name": "rank_in_scope",
+            "description": "Rank by in-scope rate among ranked systems (1 = highest rate; ties share the mean rank).",
+            "type": "number"
+          },
+          {
+            "name": "rank_change",
+            "description": "rank_raw minus rank_in_scope (> 0: the system moves toward rank 1 when coupled tasks are set aside).",
+            "type": "number"
+          },
+          {
+            "name": "rank_change_lo",
+            "description": "Lower end of the 95% bootstrap interval of rank_change.",
+            "type": "number"
+          },
+          {
+            "name": "rank_change_hi",
+            "description": "Upper end of the 95% bootstrap interval of rank_change.",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "path": "README.md",
+      "description": "Overview, quickstart, glossary and where each number comes from."
+    },
+    {
+      "path": "DATASHEET.md",
+      "description": "Datasheet: motivation, composition, collection, uses, limits, maintenance."
+    },
+    {
+      "path": "reproduce.py",
+      "description": "Recomputes 150 numbers of the writeup and checks each; ends with ALL 150 CHECKS PASS."
+    }
+  ],
+  "keywords": [
+    "computer science",
+    "programming",
+    "artificial intelligence",
+    "software"
+  ],
+  "expectedUpdateFrequency": "never",
+  "userSpecifiedSources": "SWE-bench Verified (https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified), SWE-ABS (https://github.com/OpenAgentEval/SWE-ABS), UTBoost (https://github.com/CUHK-Shenzhen-SE/UTBoost), leaderboard predictions from https://github.com/SWE-bench/experiments; see NOTICE.",
+  "image": "figures/fig1_rates.png"
+}

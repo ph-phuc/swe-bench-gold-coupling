@@ -1,0 +1,860 @@
+{
+ "archives": 470,
+ "archives_unreadable": 0,
+ "coverage_by_repo": {
+  "astropy": {
+   "archives": 21,
+   "resolved_runs": 1003,
+   "listed_ids_found": 13308,
+   "unflagged_resolved_runs_with_failing_summary": 37,
+   "listed_ids_not_found": 139743
+  },
+  "django": {
+   "archives": 216,
+   "resolved_runs": 15024,
+   "listed_ids_found": 1193877,
+   "listed_ids_not_found": 2875,
+   "unflagged_resolved_runs_with_failing_summary": 111
+  },
+  "matplotlib": {
+   "archives": 32,
+   "resolved_runs": 1768,
+   "listed_ids_found": 831101,
+   "unflagged_resolved_runs_with_failing_summary": 604
+  },
+  "mwaskom": {
+   "archives": 2,
+   "resolved_runs": 49,
+   "listed_ids_found": 5936,
+   "unflagged_resolved_runs_with_failing_summary": 20
+  },
+  "pallets": {
+   "archives": 1,
+   "resolved_runs": 115,
+   "listed_ids_found": 6900
+  },
+  "psf": {
+   "archives": 8,
+   "resolved_runs": 464,
+   "listed_ids_found": 45250,
+   "unflagged_resolved_runs_with_failing_summary": 393,
+   "listed_ids_not_found": 27
+  },
+  "pydata": {
+   "archives": 20,
+   "resolved_runs": 1603,
+   "listed_ids_found": 948876,
+   "unflagged_resolved_runs_with_failing_summary": 225
+  },
+  "pylint-dev": {
+   "archives": 7,
+   "resolved_runs": 359,
+   "listed_ids_found": 24646,
+   "listed_ids_not_found": 164,
+   "unflagged_resolved_runs_with_failing_summary": 162
+  },
+  "pytest-dev": {
+   "archives": 19,
+   "resolved_runs": 1283,
+   "listed_ids_found": 78788,
+   "unflagged_resolved_runs_with_failing_summary": 1146,
+   "listed_ids_not_found": 179
+  },
+  "scikit-learn": {
+   "archives": 32,
+   "resolved_runs": 2702,
+   "listed_ids_found": 112795,
+   "unflagged_resolved_runs_with_failing_summary": 228,
+   "listed_ids_not_found": 58476
+  },
+  "sphinx-doc": {
+   "archives": 41,
+   "resolved_runs": 1760,
+   "listed_ids_not_found": 28132,
+   "listed_ids_found": 7013,
+   "unflagged_resolved_runs_with_failing_summary": 73
+  },
+  "sympy": {
+   "archives": 71,
+   "resolved_runs": 4654,
+   "listed_ids_not_found": 189819,
+   "unflagged_resolved_runs_with_failing_summary": 930
+  }
+ },
+ "tasks_with_misses": 2,
+ "runs_resolved_but_listed_test_failed": 15,
+ "tasks_with_colliding_ids": 81,
+ "colliding_ids": {
+  "django__django-11163": [
+   "Regression for #19733"
+  ],
+  "django__django-11276": [
+   "A message can be provided in addition to a request",
+   "A simple exception report can be generated",
+   "An exception report can be generated even for a disallowed host.",
+   "An exception report can be generated for just a request",
+   "An exception report can be generated without request",
+   "Regression for #19733"
+  ],
+  "django__django-11433": [
+   "Regression for #19733"
+  ],
+  "django__django-11451": [
+   "A superuser has all permissions. Refs #14795.",
+   "Hasher is run once regardless of whether the user exists. Refs #20760.",
+   "Regressiontest for #12462"
+  ],
+  "django__django-11532": [
+   "Test html_message argument to mail_admins",
+   "Test html_message argument to mail_managers",
+   "Test html_message argument to send_mail"
+  ],
+  "django__django-11734": [
+   "hint: inverting your ordering might do what you need"
+  ],
+  "django__django-11740": [
+   "Swappable models get their CreateModel first.",
+   "Tests autodetection of new fields.",
+   "Tests index/unique_together detection."
+  ],
+  "django__django-12209": [
+   "partial(func, *args, **keywords) - new function with partial application"
+  ],
+  "django__django-12406": [
+   "Regression for #19733"
+  ],
+  "django__django-12754": [
+   "Swappable models get their CreateModel first.",
+   "Tests autodetection of new fields.",
+   "Tests index/unique_together detection."
+  ],
+  "django__django-13028": [
+   "hint: inverting your ordering might do what you need"
+  ],
+  "django__django-13089": [
+   "If None is cached, get() returns it instead of the default.",
+   "Nonexistent cache keys return as None/default.",
+   "set_many() returns an empty list when all keys are inserted."
+  ],
+  "django__django-13109": [
+   "Regression for #19733"
+  ],
+  "django__django-13195": [
+   "Falsey values (Such as an empty string) are rejected.",
+   "Session repr should be the session key.",
+   "Strings of length 8 and up are accepted and stored.",
+   "Strings shorter than 8 characters are rejected."
+  ],
+  "django__django-13279": [
+   "Falsey values (Such as an empty string) are rejected.",
+   "Session repr should be the session key.",
+   "Strings of length 8 and up are accepted and stored.",
+   "Strings shorter than 8 characters are rejected."
+  ],
+  "django__django-13297": [
+   "Default is a temporary redirect"
+  ],
+  "django__django-13315": [
+   "Regression for #19733"
+  ],
+  "django__django-13343": [
+   "The storage backend should preserve case of filenames."
+  ],
+  "django__django-13344": [
+   "If None is cached, get() returns it instead of the default.",
+   "Nonexistent cache keys return as None/default.",
+   "set_many() returns an empty list when all keys are inserted."
+  ],
+  "django__django-13417": [
+   "hint: inverting your ordering might do what you need"
+  ],
+  "django__django-13658": [
+   "User AppCommands can execute when a single app name is provided",
+   "User BaseCommands can execute when no labels are provided",
+   "alternate: django-admin builtin commands fail if settings file (from argument) doesn't exist",
+   "alternate: django-admin builtin commands fail if settings file (from environment) doesn't exist",
+   "alternate: django-admin builtin commands fail with an error when no settings provided",
+   "alternate: django-admin builtin commands succeed if settings are provided as argument",
+   "alternate: django-admin builtin commands succeed if settings are provided in the environment",
+   "alternate: django-admin can execute user commands if settings are provided as argument",
+   "alternate: django-admin can execute user commands if settings are provided in environment",
+   "alternate: django-admin can't execute user commands unless settings are provided"
+  ],
+  "django__django-13809": [
+   "User AppCommands can execute when a single app name is provided",
+   "User BaseCommands can execute when no labels are provided",
+   "alternate: django-admin builtin commands fail if settings file (from argument) doesn't exist",
+   "alternate: django-admin builtin commands fail if settings file (from environment) doesn't exist",
+   "alternate: django-admin builtin commands fail with an error when no settings provided",
+   "alternate: django-admin builtin commands succeed if settings are provided as argument",
+   "alternate: django-admin builtin commands succeed if settings are provided in the environment",
+   "alternate: django-admin can execute user commands if settings are provided as argument",
+   "alternate: django-admin can execute user commands if settings are provided in environment",
+   "alternate: django-admin can't execute user commands unless settings are provided"
+  ],
+  "django__django-14017": [
+   "Special characters (e.g. %, _ and \\) stored in database are"
+  ],
+  "django__django-14140": [
+   "#21430 -- Verifies a warning is raised for querysets that are",
+   "Special characters (e.g. %, _ and \\) stored in database are"
+  ],
+  "django__django-14170": [
+   "Extract year uses a BETWEEN filter to compare the year to allow indexes"
+  ],
+  "django__django-14238": [
+   "Backend specific ranges are enforced at the model validation level",
+   "Backend specific ranges can be saved without corruption.",
+   "If there are stricter validators than the ones from the database",
+   "Values within the documented safe range pass validation, and can be"
+  ],
+  "django__django-14351": [
+   "Regression test for #12822: DatabaseError: aggregates not allowed in"
+  ],
+  "django__django-14404": [
+   "Issue #20522",
+   "Regression test for 20182",
+   "The 'View on site' button is not displayed if view_on_site is False",
+   "The right link is displayed if view_on_site is a callable"
+  ],
+  "django__django-14434": [
+   "#24307 - Should skip an alter statement on databases with",
+   "Changing a field type shouldn't affect the not null status.",
+   "Should be able to rename an IntegerField(primary_key=True) to",
+   "Tests removing and adding unique_together constraints that include",
+   "Tests simple altering of fields"
+  ],
+  "django__django-14534": [
+   "BaseForm._html_output() should merge all the hidden input fields and"
+  ],
+  "django__django-14608": [
+   "Issue #20522",
+   "Regression test for 20182",
+   "The 'View on site' button is not displayed if view_on_site is False",
+   "The right link is displayed if view_on_site is a callable"
+  ],
+  "django__django-14631": [
+   "BaseForm._html_output() should merge all the hidden input fields and"
+  ],
+  "django__django-14855": [
+   "Issue #20522",
+   "Regression test for 20182",
+   "The 'View on site' button is not displayed if view_on_site is False",
+   "The right link is displayed if view_on_site is a callable"
+  ],
+  "django__django-14999": [
+   "If AlterField doesn't reload state appropriately, the second AlterField",
+   "Tests the AddField operation on TextField.",
+   "Tests the AddField operation.",
+   "The managers on a model are set."
+  ],
+  "django__django-15022": [
+   "Regression test for #13902: When using a ManyToMany in list_filter,",
+   "The primary key is used in the ordering of the changelist's results to"
+  ],
+  "django__django-15037": [
+   "Test introspection of various Django field types"
+  ],
+  "django__django-15104": [
+   "#23322 - The dependency resolver knows to explicitly resolve",
+   "#23609 - Tests autodetection of nullable to non-nullable alterations.",
+   "Swappable models get their CreateModel first.",
+   "Tests autodetection of new fields.",
+   "Tests index/unique_together detection."
+  ],
+  "django__django-15128": [
+   "A ValueError is raised when the incorrect object type is passed to a",
+   "Cloning a queryset does not get out of hand. While complete",
+   "This should exclude Orders which have some items with status 1",
+   "Using exclude(condition) and exclude(Q(condition)) should",
+   "hint: inverting your ordering might do what you need"
+  ],
+  "django__django-15161": [
+   "Special characters (e.g. %, _ and \\) stored in database are"
+  ],
+  "django__django-15268": [
+   "#23322 - The dependency resolver knows to explicitly resolve",
+   "#23609 - Tests autodetection of nullable to non-nullable alterations.",
+   "Swappable models get their CreateModel first.",
+   "Tests autodetection of new fields.",
+   "Tests index/unique_together detection."
+  ],
+  "django__django-15277": [
+   "Special characters (e.g. %, _ and \\) stored in database are"
+  ],
+  "django__django-15278": [
+   "#24307 - Should skip an alter statement on databases with",
+   "Changing a field type shouldn't affect the not null status.",
+   "Should be able to rename an IntegerField(primary_key=True) to",
+   "Tests removing and adding unique_together constraints that include",
+   "Tests simple altering of fields"
+  ],
+  "django__django-15380": [
+   "#23322 - The dependency resolver knows to explicitly resolve",
+   "#23609 - Tests autodetection of nullable to non-nullable alterations.",
+   "Swappable models get their CreateModel first.",
+   "Tests autodetection of new fields.",
+   "Tests index/unique_together detection."
+  ],
+  "django__django-15382": [
+   "Special characters (e.g. %, _ and \\) stored in database are"
+  ],
+  "django__django-15525": [
+   "Circular M2M relations with explicit through models should be serializable",
+   "Test for ticket #4371 -- Loading a fixture file with invalid data"
+  ],
+  "django__django-15561": [
+   "#24307 - Should skip an alter statement on databases with",
+   "Changing a field type shouldn't affect the not null status.",
+   "Should be able to rename an IntegerField(primary_key=True) to",
+   "Tests removing and adding unique_together constraints that include",
+   "Tests simple altering of fields"
+  ],
+  "django__django-15569": [
+   "#24307 - Should skip an alter statement on databases with",
+   "Changing a field type shouldn't affect the not null status.",
+   "Should be able to rename an IntegerField(primary_key=True) to",
+   "Tests removing and adding unique_together constraints that include",
+   "Tests simple altering of fields"
+  ],
+  "django__django-15695": [
+   "If AlterField doesn't reload state appropriately, the second AlterField",
+   "Tests the AddField operation on TextField.",
+   "Tests the AddField operation.",
+   "The managers on a model are set."
+  ],
+  "django__django-15732": [
+   "If AlterField doesn't reload state appropriately, the second AlterField",
+   "Tests the AddField operation on TextField.",
+   "Tests the AddField operation.",
+   "The managers on a model are set."
+  ],
+  "django__django-15916": [
+   "Regression for #19733"
+  ],
+  "django__django-15973": [
+   "#23322 - The dependency resolver knows to explicitly resolve",
+   "#23609 - Tests autodetection of nullable to non-nullable alterations.",
+   "Swappable models get their CreateModel first.",
+   "Tests autodetection of new fields.",
+   "Tests unique_together detection."
+  ],
+  "django__django-15987": [
+   "Circular M2M relations with explicit through models should be serializable",
+   "Test for ticket #4371 -- Loading a fixture file with invalid data",
+   "settings.FIXTURE_DIRS cannot contain a default fixtures directory"
+  ],
+  "django__django-16082": [
+   "Special characters (e.g. %, _ and \\) stored in database are"
+  ],
+  "django__django-16100": [
+   "Regression test for #13902: When using a ManyToMany in list_filter,",
+   "The primary key is used in the ordering of the changelist's results to"
+  ],
+  "django__django-16116": [
+   "Non-interactive makemigrations fails when a default is missing on a"
+  ],
+  "django__django-16145": [
+   "The startproject management command is able to use a different project",
+   "User AppCommands can execute when a single app name is provided",
+   "User BaseCommands can execute when no labels are provided",
+   "alternate: django-admin builtin commands fail if settings file (from",
+   "alternate: django-admin builtin commands fail with an error when no",
+   "alternate: django-admin builtin commands succeed if settings are",
+   "alternate: django-admin can execute user commands if settings are",
+   "alternate: manage.py builtin commands fail if settings file (from",
+   "alternate: manage.py can execute user commands if settings are provided",
+   "default: django-admin builtin commands fail if settings file (from",
+   "default: django-admin builtin commands succeed if settings are provided",
+   "default: django-admin can execute user commands if settings are",
+   "default: manage.py can execute user commands when settings are provided",
+   "directory: django-admin builtin commands fail if settings file (from",
+   "directory: django-admin builtin commands succeed if settings are",
+   "fulldefault: django-admin builtin commands fail if settings file (from",
+   "fulldefault: django-admin can execute user commands if settings are",
+   "fulldefault: manage.py builtin commands succeed if settings are",
+   "fulldefault: manage.py can execute user commands when settings are",
+   "minimal: django-admin builtin commands fail if settings file (from",
+   "minimal: django-admin can't execute user commands, even if settings are",
+   "minimal: manage.py builtin commands fail if settings file (from",
+   "minimal: manage.py can't execute user commands, even if settings are",
+   "multiple: manage.py builtin commands fail if settings file (from",
+   "multiple: manage.py can execute user commands if settings are provided",
+   "no settings: django-admin builtin commands fail if settings file (from",
+   "no settings: manage.py builtin commands fail if settings file (from"
+  ],
+  "django__django-16255": [
+   "A simple sitemap index can be rendered with a custom template",
+   "The Last-Modified header is omitted when lastmod isn't found in all",
+   "The Last-Modified header is set to the most recent sitemap lastmod."
+  ],
+  "django__django-16256": [
+   "Should be able to use get_or_create from the generic related manager",
+   "Should be able to use update_or_create from the generic related manager"
+  ],
+  "django__django-16315": [
+   "Test inserting a large batch with objects having primary key set"
+  ],
+  "django__django-16429": [
+   "Both timesince and timeuntil should work on date objects (#17937).",
+   "If the two differing units aren't adjacent, only the first unit is",
+   "Microseconds and seconds are ignored.",
+   "Test multiple units.",
+   "Test other units.",
+   "Timesince should work with both date objects (#9672)",
+   "When the second date occurs before the first, we should always",
+   "When using two different timezones.",
+   "equal datetimes."
+  ],
+  "django__django-16493": [
+   "A new path is created on save when a broken symlink is supplied.",
+   "Calling delete with an empty name should not try to remove the base",
+   "File storage extracts the filename from the content object if no",
+   "File storage prevents directory traversal (files can only be accessed if",
+   "File storage returns a Datetime object for the last accessed time of",
+   "File storage returns a datetime for the creation time of a file.",
+   "File storage returns a datetime for the last modified time of a file.",
+   "File storage returns a tuple containing directories and files.",
+   "File storage returns a url even when its base_url is unset or modified.",
+   "File storage returns a url to access a given file from the web.",
+   "File storage returns the full path of a file",
+   "File storage should be robust against directory creation race conditions.",
+   "File storage should be robust against file removal race conditions.",
+   "Makes sure an exception is raised if the location is empty",
+   "Properties using settings values as defaults should be updated on",
+   "Saving a pathname should create intermediate directories as necessary.",
+   "Standard file access options are available, and work as expected.",
+   "Test behavior when file.chunks() is raising an error",
+   "The storage backend should preserve case of filenames."
+  ],
+  "django__django-16569": [
+   "A FormSet can be prefilled with existing data by providing a list of",
+   "A FormSet constructor takes the same arguments as Form. Create a",
+   "A custom renderer passed to a formset_factory() is passed to all forms",
+   "A form that's displayed as blank may be submitted as blank.",
+   "A formset has a hard limit on the number of forms instantiated.",
+   "A formset's ManagementForm is validated once per FormSet.is_valid()",
+   "A formsets without any forms evaluates as True.",
+   "A partially completed form is invalid.",
+   "A valid formset should have 0 total errors.",
+   "Can get ordered_forms from a valid formset even if a deleted form",
+   "Can increase the built-in forms limit via a higher max_num.",
+   "Custom kwargs set on the formset instance are passed to the",
+   "Deleting prefilled data is an error. Removing data from form fields",
+   "Form kwargs can be passed dynamically in a formset.",
+   "FormSet.has_changed() is True if any data is passed to its forms, even",
+   "FormSets have a clean() hook for doing extra validation that isn't tied",
+   "FormSets with ordering + deletion.",
+   "Formset instances are iterable.",
+   "Formset works with SplitDateTimeField(initial=datetime.datetime.now).",
+   "Formset's forms use the formset's error_class.",
+   "Formsets call is_valid() on each form.",
+   "If a form is filled with something and can_delete is also checked, that",
+   "If at least one field is filled out on a blank form, it will be",
+   "If max_num is 0 then no form is rendered at all, regardless of extra,",
+   "If non_form_errors() is called without calling is_valid() first,",
+   "If validate_max is set and max_num is less than TOTAL_FORMS in the",
+   "If validate_min is set and min_num is more than TOTAL_FORMS in the",
+   "Just one form may be completed.",
+   "Limiting the maximum number of forms with max_num.",
+   "More initial forms than max_num results in all initial forms being",
+   "More than 1 empty form can also be displayed using formset_factory's",
+   "More than 1 empty form can be displayed using formset_factory's",
+   "More than 1 empty form can be displayed using min_num.",
+   "One form from initial and extra=3 with max_num=2 results in the one",
+   "Ordering fields are allowed to be left blank. If they are left blank,",
+   "Ordering works with blank fieldsets.",
+   "The extra argument works when the formset is pre-filled with initial",
+   "The management form class has field names matching the constants.",
+   "The management form has the correct prefix.",
+   "deleted_forms works on a valid formset even if a deleted form would",
+   "formset_factory's can_delete argument adds a boolean \"delete\" field to",
+   "formset_factory's can_order argument adds an integer field to each",
+   "max_num has no effect when extra is less than max_num.",
+   "min_num validation doesn't consider unchanged forms with initial data"
+  ],
+  "django__django-16612": [
+   "Issue #20522",
+   "Regression test for 20182",
+   "The 'View on site' button is not displayed if view_on_site is False",
+   "The right link is displayed if view_on_site is a callable"
+  ],
+  "django__django-16801": [
+   "Assigning ImageField to None clears dimensions.",
+   "Dimensions are updated correctly in various situations.",
+   "Tests assigning an image field through the model's constructor.",
+   "Tests assigning an image in Manager.create().",
+   "Tests assignment using the field's save method and deletion using",
+   "Tests behavior when image is not passed in constructor.",
+   "The default value for an ImageField is an instance of"
+  ],
+  "django__django-16938": [
+   "Basic serialization works.",
+   "Custom fields serialize and deserialize intact",
+   "Deserialized content can be saved with force_insert as a parameter.",
+   "Ensure no superfluous queries are made when serializing ForeignKeys",
+   "Float values serialize and deserialize intact",
+   "If you use your own primary key field (such as a OneToOneField), it",
+   "Invalid many-to-many keys should throw a helpful error message.",
+   "Mapping such as fields should be deterministically ordered. (#24558)",
+   "Not iterable many-to-many field value throws a helpful error message.",
+   "Objects ids can be referenced before they are",
+   "Output can be restricted to a subset of fields",
+   "Serialized content can be deserialized.",
+   "Serialized data with no primary key results",
+   "Serialized strings without PKs can be turned into models",
+   "The ability to create new objects by modifying serialized content.",
+   "Unicode makes the roundtrip intact",
+   "Year values before 1000AD are properly formatted"
+  ],
+  "django__django-16950": [
+   "#24958 - Variant of test_inlineformset_factory_nulls_default_pks for"
+  ],
+  "matplotlib__matplotlib-22719": [
+   "lib/matplotlib/tests/test_category.py::TestPlotBytes::test_plot_bytes[bytes",
+   "lib/matplotlib/tests/test_category.py::TestPlotBytes::test_plot_bytes[string",
+   "lib/matplotlib/tests/test_category.py::TestPlotNumlike::test_plot_numlike[bytes",
+   "lib/matplotlib/tests/test_category.py::TestPlotNumlike::test_plot_numlike[string",
+   "lib/matplotlib/tests/test_category.py::TestPlotTypes::test_mixed_type_exception[number",
+   "lib/matplotlib/tests/test_category.py::TestPlotTypes::test_mixed_type_exception[string",
+   "lib/matplotlib/tests/test_category.py::TestPlotTypes::test_mixed_type_update_exception[number",
+   "lib/matplotlib/tests/test_category.py::TestPlotTypes::test_mixed_type_update_exception[string"
+  ],
+  "matplotlib__matplotlib-23299": [
+   "lib/matplotlib/tests/test_rcparams.py::test_legend_colors[different",
+   "lib/matplotlib/tests/test_rcparams.py::test_legend_colors[inherited",
+   "lib/matplotlib/tests/test_rcparams.py::test_legend_colors[same",
+   "lib/matplotlib/tests/test_rcparams.py::test_validator_invalid[validate_color-(0,",
+   "lib/matplotlib/tests/test_rcparams.py::test_validator_invalid[validate_cycler-cycler('c',",
+   "lib/matplotlib/tests/test_rcparams.py::test_validator_valid[validate_color-(0,",
+   "lib/matplotlib/tests/test_rcparams.py::test_validator_valid[validate_strlist-aardvark,"
+  ],
+  "matplotlib__matplotlib-24570": [
+   "lib/matplotlib/tests/test_offsetbox.py::test_picking[axes"
+  ],
+  "matplotlib__matplotlib-25122": [
+   "lib/matplotlib/tests/test_mlab.py::TestStride::test_stride_windows_invalid_params[n",
+   "lib/matplotlib/tests/test_mlab.py::TestStride::test_stride_windows_invalid_params[noverlap"
+  ],
+  "psf__requests-6028": [
+   "tests/test_utils.py::TestContentEncodingDetection::test_pragmas[<meta",
+   "tests/test_utils.py::test__parse_content_type_header[application/json",
+   "tests/test_utils.py::test__parse_content_type_header[multipart/form-data;",
+   "tests/test_utils.py::test_parse_header_links[<http:/.../front.jpeg>;"
+  ],
+  "pydata__xarray-3993": [
+   "xarray/tests/test_units.py::TestDataset::test_squeeze[float64-first",
+   "xarray/tests/test_units.py::TestDataset::test_squeeze[float64-last",
+   "xarray/tests/test_units.py::TestDataset::test_squeeze[float64-middle",
+   "xarray/tests/test_units.py::TestDataset::test_squeeze[float64-nothing",
+   "xarray/tests/test_units.py::TestDataset::test_squeeze[int64-first",
+   "xarray/tests/test_units.py::TestDataset::test_squeeze[int64-last",
+   "xarray/tests/test_units.py::TestDataset::test_squeeze[int64-middle",
+   "xarray/tests/test_units.py::TestDataset::test_squeeze[int64-nothing"
+  ],
+  "pydata__xarray-4687": [
+   "xarray/tests/test_units.py::TestDataset::test_squeeze[float64-first",
+   "xarray/tests/test_units.py::TestDataset::test_squeeze[float64-last",
+   "xarray/tests/test_units.py::TestDataset::test_squeeze[float64-middle",
+   "xarray/tests/test_units.py::TestDataset::test_squeeze[float64-nothing",
+   "xarray/tests/test_units.py::TestDataset::test_squeeze[int64-first",
+   "xarray/tests/test_units.py::TestDataset::test_squeeze[int64-last",
+   "xarray/tests/test_units.py::TestDataset::test_squeeze[int64-middle",
+   "xarray/tests/test_units.py::TestDataset::test_squeeze[int64-nothing"
+  ],
+  "pylint-dev__pylint-8898": [
+   "tests/config/test_config.py::test_csv_regex_comma_in_quantifier[foo,"
+  ],
+  "pytest-dev__pytest-10356": [
+   "testing/test_mark.py::TestKeywordSelection::test_select_extra_keywords[xxx",
+   "testing/test_mark.py::test_keyword_option_custom[not",
+   "testing/test_mark.py::test_keyword_option_wrong_arguments[foo",
+   "testing/test_mark.py::test_mark_option[xyz",
+   "testing/test_mark.py::test_marker_expr_eval_failure_handling[NOT"
+  ],
+  "pytest-dev__pytest-6197": [
+   "testing/test_skipping.py::TestXFail::test_xfail_raises[(AttributeError,"
+  ],
+  "pytest-dev__pytest-7324": [
+   "testing/test_mark_expression.py::test_basic[false",
+   "testing/test_mark_expression.py::test_basic[not",
+   "testing/test_mark_expression.py::test_basic[true",
+   "testing/test_mark_expression.py::test_syntax_errors[ident",
+   "testing/test_mark_expression.py::test_syntax_oddeties[",
+   "testing/test_mark_expression.py::test_syntax_oddeties[not"
+  ],
+  "pytest-dev__pytest-7432": [
+   "testing/test_skipping.py::TestXFail::test_xfail_raises[(AttributeError,"
+  ],
+  "pytest-dev__pytest-7490": [
+   "testing/test_skipping.py::TestXFail::test_xfail_raises[(AttributeError,"
+  ],
+  "scikit-learn__scikit-learn-15100": [
+   "sklearn/feature_extraction/tests/test_text.py::test_callable_analyzer_error[file-AttributeError-'str'",
+   "sklearn/feature_extraction/tests/test_text.py::test_unused_parameters_warn[None-<lambda>-None-ngram_range1-None-char-'tokenizer'-'analyzer'-!=",
+   "sklearn/feature_extraction/tests/test_text.py::test_unused_parameters_warn[None-<lambda>-None-ngram_range2-\\\\w+-word-'token_pattern'-'tokenizer'-is",
+   "sklearn/feature_extraction/tests/test_text.py::test_unused_parameters_warn[None-None-<lambda>-ngram_range3-\\\\w+-<lambda>-'preprocessor'-'analyzer'-is",
+   "sklearn/feature_extraction/tests/test_text.py::test_unused_parameters_warn[None-None-None-ngram_range4-None-<lambda>-'ngram_range'-'analyzer'-is",
+   "sklearn/feature_extraction/tests/test_text.py::test_unused_parameters_warn[None-None-None-ngram_range5-\\\\w+-char-'token_pattern'-'analyzer'-!=",
+   "sklearn/feature_extraction/tests/test_text.py::test_unused_parameters_warn[stop_words0-None-None-ngram_range0-None-char-'stop_words'-'analyzer'-!="
+  ],
+  "sphinx-doc__sphinx-7462": [
+   "tests/test_pycode_ast.py::test_unparse[-",
+   "tests/test_pycode_ast.py::test_unparse[a"
+  ]
+ },
+ "by_task": {
+  "django__django-16801": [
+   {
+    "run": "p_12b456c6ec87292c",
+    "failed_listed": [
+     [
+      "Assigning ImageField to None clears dimensions.",
+      "PASS_TO_PASS",
+      [
+       "ok",
+       "ok",
+       "FAIL",
+       "ok",
+       "ok"
+      ]
+     ],
+     [
+      "Tests assigning an image field through the model's constructor.",
+      "PASS_TO_PASS",
+      [
+       "ok",
+       "ok",
+       "FAIL",
+       "ok",
+       "ok"
+      ]
+     ]
+    ]
+   },
+   {
+    "run": "p_30888403fab5c53e",
+    "failed_listed": [
+     [
+      "Assigning ImageField to None clears dimensions.",
+      "PASS_TO_PASS",
+      [
+       "ok",
+       "FAIL",
+       "ok",
+       "ok"
+      ]
+     ],
+     [
+      "Tests assigning an image field through the model's constructor.",
+      "PASS_TO_PASS",
+      [
+       "ok",
+       "ok",
+       "FAIL",
+       "ok",
+       "ok"
+      ]
+     ]
+    ]
+   }
+  ],
+  "django__django-16950": [
+   {
+    "run": "p_21e9ce4190be9513",
+    "failed_listed": [
+     [
+      "#24958 - Variant of test_inlineformset_factory_nulls_default_pks for",
+      "PASS_TO_PASS",
+      [
+       "FAIL",
+       "ok",
+       "ok",
+       "ok"
+      ]
+     ]
+    ]
+   },
+   {
+    "run": "p_51840f8f6dde28c3",
+    "failed_listed": [
+     [
+      "#24958 - Variant of test_inlineformset_factory_nulls_default_pks for",
+      "PASS_TO_PASS",
+      [
+       "FAIL",
+       "ok",
+       "ok",
+       "ok"
+      ]
+     ]
+    ]
+   },
+   {
+    "run": "p_58702873dd0b7b15",
+    "failed_listed": [
+     [
+      "#24958 - Variant of test_inlineformset_factory_nulls_default_pks for",
+      "PASS_TO_PASS",
+      [
+       "FAIL",
+       "ok",
+       "ok",
+       "ok"
+      ]
+     ]
+    ]
+   },
+   {
+    "run": "p_5d14eab833cd07f1",
+    "failed_listed": [
+     [
+      "#24958 - Variant of test_inlineformset_factory_nulls_default_pks for",
+      "PASS_TO_PASS",
+      [
+       "FAIL",
+       "ok",
+       "ok",
+       "ok"
+      ]
+     ]
+    ]
+   },
+   {
+    "run": "p_62e75acf27cf41e7",
+    "failed_listed": [
+     [
+      "#24958 - Variant of test_inlineformset_factory_nulls_default_pks for",
+      "PASS_TO_PASS",
+      [
+       "FAIL",
+       "ok",
+       "ok",
+       "ok"
+      ]
+     ]
+    ]
+   },
+   {
+    "run": "p_9a2b54df6e935d7c",
+    "failed_listed": [
+     [
+      "#24958 - Variant of test_inlineformset_factory_nulls_default_pks for",
+      "PASS_TO_PASS",
+      [
+       "FAIL",
+       "ok",
+       "ok",
+       "ok"
+      ]
+     ]
+    ]
+   },
+   {
+    "run": "p_9e545dacfe0e924d",
+    "failed_listed": [
+     [
+      "#24958 - Variant of test_inlineformset_factory_nulls_default_pks for",
+      "PASS_TO_PASS",
+      [
+       "FAIL",
+       "ok",
+       "ok",
+       "ok"
+      ]
+     ]
+    ]
+   },
+   {
+    "run": "p_a4faf1a90c330c39",
+    "failed_listed": [
+     [
+      "#24958 - Variant of test_inlineformset_factory_nulls_default_pks for",
+      "PASS_TO_PASS",
+      [
+       "FAIL",
+       "ok",
+       "ok",
+       "ok"
+      ]
+     ]
+    ]
+   },
+   {
+    "run": "p_ae31dcc0828046d8",
+    "failed_listed": [
+     [
+      "#24958 - Variant of test_inlineformset_factory_nulls_default_pks for",
+      "PASS_TO_PASS",
+      [
+       "FAIL",
+       "ok",
+       "ok",
+       "ok"
+      ]
+     ]
+    ]
+   },
+   {
+    "run": "p_c4e73f020f87592e",
+    "failed_listed": [
+     [
+      "#24958 - Variant of test_inlineformset_factory_nulls_default_pks for",
+      "PASS_TO_PASS",
+      [
+       "FAIL",
+       "ok",
+       "ok",
+       "ok"
+      ]
+     ]
+    ]
+   },
+   {
+    "run": "p_d28d5a7a60235c53",
+    "failed_listed": [
+     [
+      "#24958 - Variant of test_inlineformset_factory_nulls_default_pks for",
+      "PASS_TO_PASS",
+      [
+       "FAIL",
+       "ok",
+       "ok",
+       "ok"
+      ]
+     ]
+    ]
+   },
+   {
+    "run": "p_f22fe3456725c3d7",
+    "failed_listed": [
+     [
+      "#24958 - Variant of test_inlineformset_factory_nulls_default_pks for",
+      "PASS_TO_PASS",
+      [
+       "FAIL",
+       "ok",
+       "ok",
+       "ok"
+      ]
+     ]
+    ]
+   },
+   {
+    "run": "p_f692c15149eb19dd",
+    "failed_listed": [
+     [
+      "#24958 - Variant of test_inlineformset_factory_nulls_default_pks for",
+      "PASS_TO_PASS",
+      [
+       "FAIL",
+       "ok",
+       "ok",
+       "ok"
+      ]
+     ]
+    ]
+   }
+  ]
+ }
+}

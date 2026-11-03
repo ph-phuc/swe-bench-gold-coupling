@@ -1,0 +1,29 @@
+{
+ "note": "Primary arms of card A1 (E4B and 12B, fp16, both T4s, greedy). max_memory keeps ~4 GiB free on GPU 0; prompts measured 2,270-9,672 tokens (Gemma 4 tokenizer, 28/10).",
+ "models": [
+  {
+   "name": "e4b",
+   "spec": "hf:google/gemma-4-E4B-it",
+   "quant": "none",
+   "max_memory": {
+    "0": "9GiB",
+    "1": "12GiB"
+   },
+   "revision": "ee0ef6023621cff504d758262d4e04895a5af4a2"
+  },
+  {
+   "name": "g12b",
+   "spec": "hf:google/gemma-4-12B-it",
+   "quant": "none",
+   "max_memory": {
+    "0": "10.5GiB",
+    "1": "13.5GiB"
+   },
+   "revision": "707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7"
+  }
+ ],
+ "max_new_tokens": 600,
+ "max_prompt_tokens": 10240,
+ "prefill_chunk": 512,
+ "packets_dataset": "w1-audit-packets"
+}

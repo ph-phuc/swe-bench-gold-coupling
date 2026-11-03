@@ -1,0 +1,115 @@
+{
+ "draws": 2000,
+ "seed": 0,
+ "min_judged": 100,
+ "systems": 151,
+ "ranked_systems": 139,
+ "tasks": 470,
+ "tasks_by_class": {
+  "contested": 23,
+  "coupled": 108,
+  "env": 1,
+  "in_scope": 173,
+  "no_wbp": 165
+ },
+ "wbp_by_group": {
+  "raw": 7157,
+  "in_scope": 2253,
+  "excl_coupled": 3036,
+  "coupled": 4121,
+  "contested": 782
+ },
+ "judged_by_group": {
+  "raw": 36620,
+  "in_scope": 25831,
+  "excl_coupled": 28176,
+  "coupled": 8444,
+  "contested": 2223
+ },
+ "pooled_rate": {
+  "raw": 0.1954,
+  "in_scope": 0.0872,
+  "excl_coupled": 0.1078,
+  "coupled": 0.488,
+  "contested": 0.3518
+ },
+ "ranked": {
+  "median_rate_raw": 0.2006,
+  "iqr_raw": [
+   0.1737,
+   0.2269
+  ],
+  "median_rate_in_scope": 0.0909,
+  "iqr_in_scope": [
+   0.0606,
+   0.1173
+  ],
+  "spearman_raw_vs_in_scope": 0.9162,
+  "corrected_below_raw_ci": 137,
+  "rank_moves_ge_10": 69,
+  "rank_moves_ge_20": 30,
+  "rank_change_ci_excludes_0": 4,
+  "top5_rank_moves": [
+   {
+    "system": "20250629_deepswerl_r2eagent_tts",
+    "rank_raw": 45.0,
+    "rank_in_scope": 93.0,
+    "rank_change_ci": [
+     -78.0,
+     -8.0
+    ],
+    "raw_rate": 0.2183,
+    "in_scope_rate": 0.0714,
+    "coupled_share_of_wbp": 0.6774
+   },
+   {
+    "system": "20250629_deepswerl_r2eagent",
+    "rank_raw": 22.0,
+    "rank_in_scope": 64.0,
+    "rank_change_ci": [
+     -75.0,
+     5.0
+    ],
+    "raw_rate": 0.239,
+    "in_scope_rate": 0.0946,
+    "coupled_share_of_wbp": 0.5714
+   },
+   {
+    "system": "20251211_mini-v1.17.2_gpt-5.2-2025-12-11",
+    "rank_raw": 92.0,
+    "rank_in_scope": 132.0,
+    "rank_change_ci": [
+     -83.0,
+     -10.0
+    ],
+    "raw_rate": 0.1857,
+    "in_scope_rate": 0.0383,
+    "coupled_share_of_wbp": 0.7544
+   },
+   {
+    "system": "20250306_SWE-Fixer_Qwen2.5-7b-retriever_Qwen2.5-72b-editor",
+    "rank_raw": 6.0,
+    "rank_in_scope": 43.0,
+    "rank_change_ci": [
+     -81.0,
+     -1.0
+    ],
+    "raw_rate": 0.2675,
+    "in_scope_rate": 0.1101,
+    "coupled_share_of_wbp": 0.619
+   },
+   {
+    "system": "20240820_epam-ai-run-gpt-4o",
+    "rank_raw": 91.0,
+    "rank_in_scope": 55.0,
+    "rank_change_ci": [
+     -27.0,
+     76.02499999999986
+    ],
+    "raw_rate": 0.1864,
+    "in_scope_rate": 0.1023,
+    "coupled_share_of_wbp": 0.5455
+   }
+  ]
+ }
+}

@@ -1,0 +1,128 @@
+{
+ "draws": 2000,
+ "seed": 0,
+ "min_judged": 100,
+ "systems": 151,
+ "ranked_systems": 139,
+ "tasks": 470,
+ "tasks_by_class": {
+  "contested": 23,
+  "coupled": 105,
+  "env": 1,
+  "in_scope": 173,
+  "kind2": 3,
+  "no_wbp": 165
+ },
+ "wbp_by_group": {
+  "raw": 7157,
+  "in_scope": 2598,
+  "excl_coupled": 3381,
+  "coupled": 3776,
+  "contested": 782,
+  "kind2": 345
+ },
+ "judged_by_group": {
+  "raw": 36620,
+  "in_scope": 26243,
+  "excl_coupled": 28588,
+  "coupled": 8032,
+  "contested": 2223,
+  "kind2": 412
+ },
+ "pooled_rate": {
+  "raw": 0.1954,
+  "in_scope": 0.099,
+  "excl_coupled": 0.1183,
+  "coupled": 0.4701,
+  "contested": 0.3518,
+  "kind2": 0.8374
+ },
+ "ranked": {
+  "median_rate_raw": 0.2006,
+  "iqr_raw": [
+   0.1737,
+   0.2269
+  ],
+  "median_rate_in_scope": 0.103,
+  "iqr_in_scope": [
+   0.0719,
+   0.1318
+  ],
+  "spearman_raw_vs_in_scope": 0.911,
+  "corrected_below_raw_ci": 132,
+  "rank_moves_ge_10": 71,
+  "rank_moves_ge_20": 33,
+  "rank_change_ci_excludes_0": 4,
+  "top5_rank_moves": [
+   {
+    "system": "20240820_epam-ai-run-gpt-4o",
+    "rank_raw": 91.0,
+    "rank_in_scope": 35.0,
+    "rank_change_ci": [
+     -4.0,
+     88.02499999999986
+    ],
+    "raw_rate": 0.1864,
+    "in_scope_rate": 0.1319,
+    "coupled_share_of_wbp": 0.4091
+   },
+   {
+    "system": "20250629_deepswerl_r2eagent_tts",
+    "rank_raw": 45.0,
+    "rank_in_scope": 94.0,
+    "rank_change_ci": [
+     -79.025,
+     -12.0
+    ],
+    "raw_rate": 0.2183,
+    "in_scope_rate": 0.0804,
+    "coupled_share_of_wbp": 0.6452
+   },
+   {
+    "system": "20251211_mini-v1.17.2_gpt-5.2-2025-12-11",
+    "rank_raw": 92.0,
+    "rank_in_scope": 133.0,
+    "rank_change_ci": [
+     -82.0,
+     -11.0
+    ],
+    "raw_rate": 0.1857,
+    "in_scope_rate": 0.0474,
+    "coupled_share_of_wbp": 0.7193
+   },
+   {
+    "system": "20241028_agentless-1.5_gpt4o",
+    "rank_raw": 61.0,
+    "rank_in_scope": 21.0,
+    "rank_change_ci": [
+     -3.0,
+     70.0
+    ],
+    "raw_rate": 0.2074,
+    "in_scope_rate": 0.1418,
+    "coupled_share_of_wbp": 0.3846
+   },
+   {
+    "system": "20250629_deepswerl_r2eagent",
+    "rank_raw": 22.0,
+    "rank_in_scope": 62.0,
+    "rank_change_ci": [
+     -72.0,
+     4.0
+    ],
+    "raw_rate": 0.239,
+    "in_scope_rate": 0.1067,
+    "coupled_share_of_wbp": 0.5306
+   }
+  ]
+ },
+ "kind2_genuine": {
+  "tasks": [
+   "astropy__astropy-7336",
+   "django__django-13410",
+   "django__django-16527"
+  ],
+  "source": "split_tally.json task_ids.kind2",
+  "note": "coupled = kind 1 only here, so coupled_share_of_wbp is the kind-1 share"
+ }
+}

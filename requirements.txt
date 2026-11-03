@@ -1,0 +1,4 @@
+numpy>=2.0    # tested with 2.5.2; bootstrap bounds are byte-equal for that version
+pytest>=8
+matplotlib>=3.8  # optional: only figures/fig1_rates.py
+pandas>=2.0      # optional: only the README quickstart

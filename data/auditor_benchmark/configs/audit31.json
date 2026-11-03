@@ -1,0 +1,19 @@
+{
+ "note": "Exploratory arm of card A1: 31B in nf4 (not smoke-tested on T4; a 58 GiB download). Reported apart from the primary.",
+ "models": [
+  {
+   "name": "g31b_nf4",
+   "spec": "hf:google/gemma-4-31B-it",
+   "quant": "nf4",
+   "max_memory": {
+    "0": "11GiB",
+    "1": "13GiB"
+   },
+   "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475"
+  }
+ ],
+ "max_new_tokens": 600,
+ "max_prompt_tokens": 10240,
+ "prefill_chunk": 512,
+ "packets_dataset": "w1-audit-packets"
+}

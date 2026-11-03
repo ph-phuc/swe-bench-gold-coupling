@@ -1,0 +1,676 @@
+{
+ "tasks": 76,
+ "coupled": 44,
+ "in_scope": 32,
+ "auroc_count": 0.539,
+ "auroc_by_set": {
+  "handread_near_total.jsonl": 0.529,
+  "handread_sample15.jsonl": 0.5,
+  "handread_sample35.jsonl": 0.51
+ },
+ "at_least_k": {
+  "1": {
+   "flagged": 13,
+   "precision": 0.692,
+   "recall": 0.205
+  },
+  "2": {
+   "flagged": 3,
+   "precision": 0.667,
+   "recall": 0.045
+  },
+  "3": {
+   "flagged": 0,
+   "precision": null,
+   "recall": 0.0
+  }
+ },
+ "interface_tasks_n": [
+  1,
+  1,
+  0,
+  2,
+  1,
+  0,
+  1
+ ],
+ "rows": [
+  {
+   "instance_id": "astropy__astropy-14096",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 1,
+   "names": [
+    "__getattribute__"
+   ]
+  },
+  {
+   "instance_id": "astropy__astropy-7166",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "astropy__astropy-8707",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 1,
+   "names": [
+    "encode"
+   ]
+  },
+  {
+   "instance_id": "astropy__astropy-8872",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-10973",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 1,
+   "names": [
+    "subprocess_env"
+   ]
+  },
+  {
+   "instance_id": "django__django-11138",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "interface",
+   "n": 1,
+   "names": [
+    "_convert_tznames_to_sql"
+   ]
+  },
+  {
+   "instance_id": "django__django-11206",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-11276",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-11292",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-11885",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "interface",
+   "n": 1,
+   "names": [
+    "related_fields"
+   ]
+  },
+  {
+   "instance_id": "django__django-13410",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-13741",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-14311",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-14771",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-15554",
+   "set": "handread_near_total.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-16527",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-17084",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-14623",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-25775",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "interface",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "pydata__xarray-3095",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "interface",
+   "n": 2,
+   "names": [
+    "NumpyIndexingAdapter",
+    "ndarray"
+   ]
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-10449",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-10673",
+   "set": "handread_near_total.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-8035",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-8551",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-8593",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-8621",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "sympy__sympy-11618",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "sympy__sympy-12489",
+   "set": "handread_near_total.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "sympy__sympy-13798",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "sympy__sympy-13877",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "interface",
+   "n": 1,
+   "names": [
+    "tolerance"
+   ]
+  },
+  {
+   "instance_id": "sympy__sympy-13878",
+   "set": "handread_near_total.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "sympy__sympy-13974",
+   "set": "handread_near_total.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "sympy__sympy-15599",
+   "set": "handread_near_total.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 1,
+   "names": [
+    "Integer"
+   ]
+  },
+  {
+   "instance_id": "django__django-11728",
+   "set": "handread_sample15.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-13112",
+   "set": "handread_sample15.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-13964",
+   "set": "handread_sample15.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-15851",
+   "set": "handread_sample15.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-17087",
+   "set": "handread_sample15.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-25332",
+   "set": "handread_sample15.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "pytest-dev__pytest-7205",
+   "set": "handread_sample15.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-14141",
+   "set": "handread_sample15.jsonl",
+   "coupled": 1,
+   "first_category": "interface",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-7440",
+   "set": "handread_sample15.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-8595",
+   "set": "handread_sample15.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "sympy__sympy-17139",
+   "set": "handread_sample15.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "sympy__sympy-18763",
+   "set": "handread_sample15.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "sympy__sympy-22714",
+   "set": "handread_sample15.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "sympy__sympy-23534",
+   "set": "handread_sample15.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "astropy__astropy-13579",
+   "set": "handread_sample35.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "astropy__astropy-7671",
+   "set": "handread_sample35.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-11490",
+   "set": "handread_sample35.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-11964",
+   "set": "handread_sample35.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-12039",
+   "set": "handread_sample35.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-12155",
+   "set": "handread_sample35.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-12304",
+   "set": "handread_sample35.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-13346",
+   "set": "handread_sample35.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-13512",
+   "set": "handread_sample35.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-13807",
+   "set": "handread_sample35.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-13933",
+   "set": "handread_sample35.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-16136",
+   "set": "handread_sample35.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-16333",
+   "set": "handread_sample35.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-16595",
+   "set": "handread_sample35.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "django__django-16938",
+   "set": "handread_sample35.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "psf__requests-1142",
+   "set": "handread_sample35.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 1,
+   "names": [
+    "method"
+   ]
+  },
+  {
+   "instance_id": "pydata__xarray-2905",
+   "set": "handread_sample35.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "pydata__xarray-4094",
+   "set": "handread_sample35.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "pylint-dev__pylint-6386",
+   "set": "handread_sample35.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "pytest-dev__pytest-7432",
+   "set": "handread_sample35.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-13135",
+   "set": "handread_sample35.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 1,
+   "names": [
+    "sort"
+   ]
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-25973",
+   "set": "handread_sample35.jsonl",
+   "coupled": 1,
+   "first_category": "interface",
+   "n": 1,
+   "names": [
+    "classifier"
+   ]
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-26323",
+   "set": "handread_sample35.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-8120",
+   "set": "handread_sample35.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-9230",
+   "set": "handread_sample35.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-9658",
+   "set": "handread_sample35.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  },
+  {
+   "instance_id": "sympy__sympy-12419",
+   "set": "handread_sample35.jsonl",
+   "coupled": 1,
+   "first_category": "gold_choice",
+   "n": 2,
+   "names": [
+    "special",
+    "tensor_functions"
+   ]
+  },
+  {
+   "instance_id": "sympy__sympy-24213",
+   "set": "handread_sample35.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 2,
+   "names": [
+    "equivalent_dims",
+    "get_dimension_system"
+   ]
+  },
+  {
+   "instance_id": "sympy__sympy-24443",
+   "set": "handread_sample35.jsonl",
+   "coupled": 0,
+   "first_category": "in_scope",
+   "n": 0,
+   "names": []
+  }
+ ]
+}
