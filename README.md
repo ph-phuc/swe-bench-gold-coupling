@@ -5,6 +5,8 @@ Repository: https://github.com/ph-phuc/swe-bench-gold-coupling · Kaggle dataset
 ![code: MIT](https://img.shields.io/badge/code-MIT-blue)
 ![data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-green)
 [![Kaggle: Gemma 4 Developer Agent Paper Track](https://img.shields.io/badge/Kaggle-Gemma%204%20Developer%20Agent%20Paper%20Track-20BEFF)](https://www.kaggle.com/competitions/gemma-4-developer-agent-paper)
+[![Kaggle dataset](https://img.shields.io/badge/Kaggle-dataset-20BEFF)](https://www.kaggle.com/datasets/phucphan1406/swe-bench-gold-coupling-census)
+[![Kaggle notebook: reproduce](https://img.shields.io/badge/Kaggle-notebook%3A%20reproduce-20BEFF)](https://www.kaggle.com/code/phucphan1406/swe-bench-gold-coupling-reproduce)
 ![version 1.0.0](https://img.shields.io/badge/version-1.0.0-lightgrey)
 
 Data, code and prompts behind the writeup *"Gold-Coupled Tests: Auditing Reference Overfitting in SWE-bench Hardening"* (an issue-grounded census of SWE-ABS rejections on SWE-bench Verified, with Gemma 4 auditor baselines). Every headline number of the writeup is recomputed
