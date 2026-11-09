@@ -167,6 +167,12 @@
   "coupling_rule_tasks": {"draft": 76, "where": "3: AUROC 0.54 on 76 tasks", "file": "data/carried/coupling_rule.json", "key": "tasks"},
   "coupling_rule_auroc": {"draft": 0.54, "dec": 2, "where": "3: AUROC 0.54", "file": "data/carried/coupling_rule.json", "key": "auroc_count"},
   "parser_miss_runs": {"draft": 15, "where": "9: 15 runs", "file": "data/carried/parser_misses_2026-10-29.json", "key": "runs_resolved_but_listed_test_failed"},
-  "parser_miss_tasks": {"draft": 2, "where": "9: in 2 Django tasks", "file": "data/carried/parser_misses_2026-10-29.json", "key": "tasks_with_misses"}
+  "parser_miss_tasks": {"draft": 2, "where": "9: in 2 Django tasks", "file": "data/carried/parser_misses_2026-10-29.json", "key": "tasks_with_misses"},
+  "b1_tie_pass_pct": {"draft": 68.5, "dec": 1, "where": "4: 68.5% with tests failing on the same entries set aside", "file": "data/carried/b1_tally.json", "key": "primary_rerun.top.share_pass_tie_entries", "scale": 100},
+  "b1_named_pass_pct": {"draft": 53.3, "dec": 1, "where": "4: 53.3% with only the named test removed", "file": "data/carried/b1_tally.json", "key": "primary_rerun.top.share_pass_entries", "scale": 100},
+  "b1_valid_runs": {"draft": 1676, "where": "4: matching the re-run on all 1,676 runs", "file": "data/carried/b1_tally.json", "key": "primary_rerun.all.runs_valid"},
+  "a4_covered_tasks": {"draft": 68, "where": "7: valid on 68 of 205 tasks", "file": "data/carried/a4_eval.json", "key": "covered"},
+  "a4_heldout_tasks": {"draft": 205, "where": "7: 68 of 205 tasks", "file": "data/carried/a4_eval.json", "key": "decided_heldout"},
+  "a4_kappa": {"draft": 0.04, "dec": 2, "where": "7: kappa 0.04", "file": "data/carried/a4_eval.json", "key": "kappa"}
  }
 }

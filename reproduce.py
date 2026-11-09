@@ -281,7 +281,12 @@ def carried(spec: dict) -> dict:
     for k, v in spec.items():
         if k.startswith("_"):
             continue
-        out[k] = json.loads((ROOT / v["file"]).read_text(encoding="utf-8"))[v["key"]]
+        val = json.loads((ROOT / v["file"]).read_text(encoding="utf-8"))
+        for part in v["key"].split("."):
+            val = val[int(part)] if part.isdigit() else val[part]
+        if v.get("scale"):
+            val = val * v["scale"]
+        out[k] = val
     return out
 
 

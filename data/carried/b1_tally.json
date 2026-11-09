@@ -1,0 +1,7076 @@
+{
+ "card": "docs/b1-card.md",
+ "complete": true,
+ "status": "complete",
+ "planned_tasks": 30,
+ "rerun_tasks": 30,
+ "not_run": [],
+ "regrade_errors": {},
+ "primary_rerun": {
+  "all": {
+   "tasks": 30,
+   "valid_tasks": 28,
+   "invalid": [
+    [
+     "django__django-11276",
+     110,
+     [
+      "no-op passes"
+     ]
+    ],
+    [
+     "sympy__sympy-13877",
+     41,
+     [
+      "gold test count is not census gold minus the removed test, or no census gold log"
+     ]
+    ]
+   ],
+   "entries_all": 2055,
+   "entries_valid": 1904,
+   "runs_valid": 1676,
+   "verdict_entries": 1904,
+   "verdict_runs": 1676,
+   "unknown_entries": 0,
+   "missing_entries": 0,
+   "no_verdict_flag": false,
+   "pass_entries": 1012,
+   "pass_runs": 876,
+   "share_pass_entries": 0.5315,
+   "share_pass_runs": 0.5227,
+   "share_pass_entries_bounds": [
+    0.5315,
+    0.5315
+   ],
+   "pass_tie_entries": 1301,
+   "pass_tie_runs": 1128,
+   "share_pass_tie_entries": 0.6833,
+   "share_pass_tie_runs": 0.673,
+   "share_pass_tie_entries_bounds": [
+    0.6833,
+    0.6833
+   ],
+   "pass_twin_entries": 1454,
+   "pass_twin_runs": 1271,
+   "share_pass_twin_entries": 0.7637,
+   "share_pass_twin_runs": 0.7584,
+   "share_pass_twin_entries_bounds": [
+    0.7637,
+    0.7637
+   ],
+   "share_fail_other_entries": 0.4685,
+   "share_fail_beyond_ties_entries": 0.3167
+  },
+  "top": {
+   "tasks": 20,
+   "valid_tasks": 19,
+   "invalid": [
+    [
+     "django__django-11276",
+     110,
+     [
+      "no-op passes"
+     ]
+    ]
+   ],
+   "entries_all": 1762,
+   "entries_valid": 1652,
+   "runs_valid": 1435,
+   "verdict_entries": 1652,
+   "verdict_runs": 1435,
+   "unknown_entries": 0,
+   "missing_entries": 0,
+   "no_verdict_flag": false,
+   "pass_entries": 881,
+   "pass_runs": 750,
+   "share_pass_entries": 0.5333,
+   "share_pass_runs": 0.5226,
+   "share_pass_entries_bounds": [
+    0.5333,
+    0.5333
+   ],
+   "pass_tie_entries": 1132,
+   "pass_tie_runs": 969,
+   "share_pass_tie_entries": 0.6852,
+   "share_pass_tie_runs": 0.6753,
+   "share_pass_tie_entries_bounds": [
+    0.6852,
+    0.6852
+   ],
+   "pass_twin_entries": 1280,
+   "pass_twin_runs": 1107,
+   "share_pass_twin_entries": 0.7748,
+   "share_pass_twin_runs": 0.7714,
+   "share_pass_twin_entries_bounds": [
+    0.7748,
+    0.7748
+   ],
+   "share_fail_other_entries": 0.4667,
+   "share_fail_beyond_ties_entries": 0.3148
+  },
+  "random": {
+   "tasks": 10,
+   "valid_tasks": 9,
+   "invalid": [
+    [
+     "sympy__sympy-13877",
+     41,
+     [
+      "gold test count is not census gold minus the removed test, or no census gold log"
+     ]
+    ]
+   ],
+   "entries_all": 293,
+   "entries_valid": 252,
+   "runs_valid": 241,
+   "verdict_entries": 252,
+   "verdict_runs": 241,
+   "unknown_entries": 0,
+   "missing_entries": 0,
+   "no_verdict_flag": false,
+   "pass_entries": 131,
+   "pass_runs": 126,
+   "share_pass_entries": 0.5198,
+   "share_pass_runs": 0.5228,
+   "share_pass_entries_bounds": [
+    0.5198,
+    0.5198
+   ],
+   "pass_tie_entries": 169,
+   "pass_tie_runs": 159,
+   "share_pass_tie_entries": 0.6706,
+   "share_pass_tie_runs": 0.6598,
+   "share_pass_tie_entries_bounds": [
+    0.6706,
+    0.6706
+   ],
+   "pass_twin_entries": 174,
+   "pass_twin_runs": 164,
+   "share_pass_twin_entries": 0.6905,
+   "share_pass_twin_runs": 0.6805,
+   "share_pass_twin_entries_bounds": [
+    0.6905,
+    0.6905
+   ],
+   "share_fail_other_entries": 0.4802,
+   "share_fail_beyond_ties_entries": 0.3294
+  }
+ },
+ "rtop_without_tie_tasks": {
+  "tasks_left_out": [
+   "astropy__astropy-14096",
+   "django__django-11292",
+   "django__django-11555",
+   "django__django-13343",
+   "django__django-13569",
+   "scikit-learn__scikit-learn-10844"
+  ],
+  "top": {
+   "tasks": 16,
+   "valid_tasks": 15,
+   "invalid": [
+    [
+     "django__django-11276",
+     110,
+     [
+      "no-op passes"
+     ]
+    ]
+   ],
+   "entries_all": 1409,
+   "entries_valid": 1299,
+   "runs_valid": 1118,
+   "verdict_entries": 1299,
+   "verdict_runs": 1118,
+   "unknown_entries": 0,
+   "missing_entries": 0,
+   "no_verdict_flag": false,
+   "pass_entries": 881,
+   "pass_runs": 750,
+   "share_pass_entries": 0.6782,
+   "share_pass_runs": 0.6708,
+   "share_pass_entries_bounds": [
+    0.6782,
+    0.6782
+   ],
+   "pass_tie_entries": 881,
+   "pass_tie_runs": 750,
+   "share_pass_tie_entries": 0.6782,
+   "share_pass_tie_runs": 0.6708,
+   "share_pass_tie_entries_bounds": [
+    0.6782,
+    0.6782
+   ],
+   "pass_twin_entries": 927,
+   "pass_twin_runs": 790,
+   "share_pass_twin_entries": 0.7136,
+   "share_pass_twin_runs": 0.7066,
+   "share_pass_twin_entries_bounds": [
+    0.7136,
+    0.7136
+   ],
+   "share_fail_other_entries": 0.3218,
+   "share_fail_beyond_ties_entries": 0.3218
+  },
+  "random": {
+   "tasks": 8,
+   "valid_tasks": 7,
+   "invalid": [
+    [
+     "sympy__sympy-13877",
+     41,
+     [
+      "gold test count is not census gold minus the removed test, or no census gold log"
+     ]
+    ]
+   ],
+   "entries_all": 232,
+   "entries_valid": 191,
+   "runs_valid": 185,
+   "verdict_entries": 191,
+   "verdict_runs": 185,
+   "unknown_entries": 0,
+   "missing_entries": 0,
+   "no_verdict_flag": false,
+   "pass_entries": 131,
+   "pass_runs": 126,
+   "share_pass_entries": 0.6859,
+   "share_pass_runs": 0.6811,
+   "share_pass_entries_bounds": [
+    0.6859,
+    0.6859
+   ],
+   "pass_tie_entries": 131,
+   "pass_tie_runs": 126,
+   "share_pass_tie_entries": 0.6859,
+   "share_pass_tie_runs": 0.6811,
+   "share_pass_tie_entries_bounds": [
+    0.6859,
+    0.6859
+   ],
+   "pass_twin_entries": 136,
+   "pass_twin_runs": 131,
+   "share_pass_twin_entries": 0.712,
+   "share_pass_twin_runs": 0.7081,
+   "share_pass_twin_entries_bounds": [
+    0.712,
+    0.712
+   ],
+   "share_fail_other_entries": 0.3141,
+   "share_fail_beyond_ties_entries": 0.3141
+  }
+ },
+ "kind1_estimate": {
+  "pass_tie_entries": {
+   "key": "pass_tie_entries",
+   "top_ratio": 0.6852,
+   "top_entries": 1762,
+   "random_ratio": 0.6706,
+   "random_ratio_ci95": [
+    0.4422,
+    0.8973
+   ],
+   "pool_entries": 1852,
+   "kind1_estimate": 0.6778,
+   "kind1_estimate_ci95": [
+    0.5607,
+    0.7939
+   ],
+   "invalid_left_out": [
+    [
+     "django__django-11276",
+     110
+    ],
+    [
+     "sympy__sympy-13877",
+     41
+    ]
+   ]
+  },
+  "pass_entries": {
+   "key": "pass_entries",
+   "top_ratio": 0.5333,
+   "top_entries": 1762,
+   "random_ratio": 0.5198,
+   "random_ratio_ci95": [
+    0.1701,
+    0.8284
+   ],
+   "pool_entries": 1852,
+   "kind1_estimate": 0.5264,
+   "kind1_estimate_ci95": [
+    0.3472,
+    0.6845
+   ],
+   "invalid_left_out": [
+    [
+     "django__django-11276",
+     110
+    ],
+    [
+     "sympy__sympy-13877",
+     41
+    ]
+   ]
+  },
+  "pass_twin_entries": {
+   "key": "pass_twin_entries",
+   "top_ratio": 0.7748,
+   "top_entries": 1762,
+   "random_ratio": 0.6905,
+   "random_ratio_ci95": [
+    0.4739,
+    0.9418
+   ],
+   "pool_entries": 1852,
+   "kind1_estimate": 0.7316,
+   "kind1_estimate_ci95": [
+    0.6206,
+    0.8604
+   ],
+   "invalid_left_out": [
+    [
+     "django__django-11276",
+     110
+    ],
+    [
+     "sympy__sympy-13877",
+     41
+    ]
+   ]
+  }
+ },
+ "other_tests_rerun": [
+  {
+   "instance_id": "django__django-11292",
+   "test": "test_unrecognized_skip_checks_for_command_without_checks",
+   "tie": true,
+   "twin": true,
+   "entries": 112
+  },
+  {
+   "instance_id": "django__django-15863",
+   "test": "test_decimal_string_input_precision",
+   "tie": false,
+   "twin": true,
+   "entries": 99
+  },
+  {
+   "instance_id": "django__django-13569",
+   "test": "test_random_annotation_selected_and_ordered_does_not_break_grouping",
+   "tie": true,
+   "twin": true,
+   "entries": 89
+  },
+  {
+   "instance_id": "django__django-13569",
+   "test": "test_random_annotation_alias_set_group_by_allows_aliases_not_in_group_by",
+   "tie": true,
+   "twin": true,
+   "entries": 89
+  },
+  {
+   "instance_id": "django__django-13569",
+   "test": "test_random_alias_order_by_does_not_break_group_by",
+   "tie": false,
+   "twin": true,
+   "entries": 87
+  },
+  {
+   "instance_id": "astropy__astropy-14096",
+   "test": "test_subclass_overridden_getattribute_respected_for_missing_attr",
+   "tie": true,
+   "twin": true,
+   "entries": 76
+  },
+  {
+   "instance_id": "django__django-13343",
+   "test": "test_imagefield_deconstruct_default_storage_callable_omits_storage_kwarg",
+   "tie": true,
+   "twin": true,
+   "entries": 76
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-25122",
+   "test": "test_magnitude_angle_phase_modes_with_negative_sum_window_and_twosided",
+   "tie": false,
+   "twin": false,
+   "entries": 74
+  },
+  {
+   "instance_id": "django__django-15863",
+   "test": "test_non_integer_arg_returns_input_val",
+   "tie": false,
+   "twin": false,
+   "entries": 68
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-9711",
+   "test": "test_needs_extensions_invalid_version_mixed_required_greater",
+   "tie": false,
+   "twin": false,
+   "entries": 63
+  },
+  {
+   "instance_id": "django__django-13401",
+   "test": "test_ordering_prefers_app_label_even_when_model_name_order_is_opposite",
+   "tie": false,
+   "twin": false,
+   "entries": 53
+  },
+  {
+   "instance_id": "django__django-13401",
+   "test": "test_same_class_name_across_different_apps_orders_by_app_label_and_hashes_differ",
+   "tie": false,
+   "twin": false,
+   "entries": 53
+  },
+  {
+   "instance_id": "pallets__flask-5014",
+   "test": "test_empty_name_and_falsey_values_not_allowed",
+   "tie": false,
+   "twin": false,
+   "entries": 49
+  },
+  {
+   "instance_id": "django__django-11555",
+   "test": "test_order_by_parent_ptr_desc_with_default_ordering_by_expression",
+   "tie": true,
+   "twin": true,
+   "entries": 36
+  },
+  {
+   "instance_id": "django__django-14311",
+   "test": "test_single_module_name_used_as_is",
+   "tie": false,
+   "twin": false,
+   "entries": 28
+  },
+  {
+   "instance_id": "sympy__sympy-13615",
+   "test": "test_nonreal_and_infinities",
+   "tie": false,
+   "twin": false,
+   "entries": 27
+  },
+  {
+   "instance_id": "sympy__sympy-13615",
+   "test": "test_interval_complement_sifts_definite_outside_to_finiteset",
+   "tie": false,
+   "twin": false,
+   "entries": 26
+  },
+  {
+   "instance_id": "django__django-11555",
+   "test": "test_parent_ptr_respects_nulls_last_in_expression",
+   "tie": false,
+   "twin": false,
+   "entries": 21
+  },
+  {
+   "instance_id": "django__django-13401",
+   "test": "test_unbound_fields_both_no_model_equal_counters",
+   "tie": false,
+   "twin": false,
+   "entries": 20
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-9320",
+   "test": "test_exits_on_whitespace_input_when_existing_confpy",
+   "tie": false,
+   "twin": false,
+   "entries": 20
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-9320",
+   "test": "test_exits_when_existing_confpy_monkeypatched",
+   "tie": false,
+   "twin": false,
+   "entries": 20
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-9320",
+   "test": "test_exits_when_existing_source_confpy_realfs",
+   "tie": false,
+   "twin": false,
+   "entries": 20
+  },
+  {
+   "instance_id": "sympy__sympy-13615",
+   "test": "test_mixed_in_out_unknown_closed_interval",
+   "tie": false,
+   "twin": true,
+   "entries": 20
+  },
+  {
+   "instance_id": "sympy__sympy-13615",
+   "test": "test_boundaries_open_interval",
+   "tie": false,
+   "twin": true,
+   "entries": 20
+  },
+  {
+   "instance_id": "django__django-14017",
+   "test": "test_q_combined_with_boolean_value_works",
+   "tie": false,
+   "twin": false,
+   "entries": 18
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-10844",
+   "test": "test_fowlkes_mallows_large_counts_no_overflow_and_correct",
+   "tie": true,
+   "twin": true,
+   "entries": 13
+  },
+  {
+   "instance_id": "astropy__astropy-14096",
+   "test": "test_inherited_property_exception_error",
+   "tie": false,
+   "twin": true,
+   "entries": 11
+  },
+  {
+   "instance_id": "django__django-11211",
+   "test": "test_prefetch_gfk_mixed_content_types",
+   "tie": false,
+   "twin": false,
+   "entries": 10
+  },
+  {
+   "instance_id": "sympy__sympy-24661",
+   "test": "test_issue_24288_unmapped_compare_ops_eval_false",
+   "tie": false,
+   "twin": false,
+   "entries": 7
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-9711",
+   "test": "test_needs_extensions_pep440_matrix_unfulfilled",
+   "tie": false,
+   "twin": false,
+   "entries": 7
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-9711",
+   "test": "test_needs_extensions_pep440_matrix_fulfilled",
+   "tie": false,
+   "twin": false,
+   "entries": 7
+  },
+  {
+   "instance_id": "sympy__sympy-11618",
+   "test": "test_equal_dims_with_list_input_2d",
+   "tie": false,
+   "twin": true,
+   "entries": 6
+  },
+  {
+   "instance_id": "sympy__sympy-11618",
+   "test": "test_equal_dims_with_list_input_4d",
+   "tie": false,
+   "twin": true,
+   "entries": 6
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-20488",
+   "test": "test_imshow_lognorm_huge_range_no_error",
+   "tie": false,
+   "twin": true,
+   "entries": 5
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-20488",
+   "test": "test_imshow_lognorm_with_zero_vmin_guard",
+   "tie": false,
+   "twin": true,
+   "entries": 5
+  },
+  {
+   "instance_id": "astropy__astropy-14096",
+   "test": "test_nested_missing_attr_on_frame",
+   "tie": false,
+   "twin": true,
+   "entries": 3
+  },
+  {
+   "instance_id": "astropy__astropy-7166",
+   "test": "test_inherit_docstrings_from_grandparent_property",
+   "tie": false,
+   "twin": true,
+   "entries": 2
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-9711",
+   "test": "test_needs_extensions_unknown_version",
+   "tie": false,
+   "twin": false,
+   "entries": 2
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-10844",
+   "test": "test_fowlkes_mallows_tk_zero_singletons",
+   "tie": false,
+   "twin": false,
+   "entries": 2
+  },
+  {
+   "instance_id": "django__django-13569",
+   "test": "test_random_ordering_uses_random_function_in_sql",
+   "tie": false,
+   "twin": true,
+   "entries": 1
+  },
+  {
+   "instance_id": "django__django-13569",
+   "test": "test_random_order_by_aggregation",
+   "tie": false,
+   "twin": true,
+   "entries": 1
+  },
+  {
+   "instance_id": "pydata__xarray-3095",
+   "test": "test_bytes_string_index_copy_preserves_S_dtype",
+   "tie": false,
+   "twin": true,
+   "entries": 1
+  },
+  {
+   "instance_id": "astropy__astropy-14096",
+   "test": "test_subclass_property_exception_error_getattr",
+   "tie": false,
+   "twin": true,
+   "entries": 1
+  },
+  {
+   "instance_id": "django__django-13343",
+   "test": "test_deconstruct_storage_non_callable_instance",
+   "tie": false,
+   "twin": true,
+   "entries": 1
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-9711",
+   "test": "test_needs_extensions_multiple_entries_and_missing_extension",
+   "tie": false,
+   "twin": true,
+   "entries": 1
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-9711",
+   "test": "test_needs_extensions_invalid_version_fallback_both_invalid",
+   "tie": false,
+   "twin": true,
+   "entries": 1
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-9711",
+   "test": "test_needs_extensions_invalid_version_fallback_required_newer",
+   "tie": false,
+   "twin": true,
+   "entries": 1
+  },
+  {
+   "instance_id": "django__django-14311",
+   "test": "test_single_dot_non_package_module_uses_full_name",
+   "tie": false,
+   "twin": true,
+   "entries": 1
+  },
+  {
+   "instance_id": "django__django-14311",
+   "test": "test_nested_package_main_uses_nested_parent",
+   "tie": false,
+   "twin": true,
+   "entries": 1
+  },
+  {
+   "instance_id": "django__django-14311",
+   "test": "test_non_package_dotted_module_uses_full_name",
+   "tie": false,
+   "twin": true,
+   "entries": 1
+  },
+  {
+   "instance_id": "django__django-14311",
+   "test": "test_package_main_module_uses_parent",
+   "tie": false,
+   "twin": true,
+   "entries": 1
+  }
+ ],
+ "secondary_regrade_all_eligible_kind1": {
+  "tasks": 98,
+  "valid_tasks": 97,
+  "invalid": [
+   [
+    "django__django-11276",
+    110,
+    [
+     "no-op passes"
+    ]
+   ]
+  ],
+  "entries_all": 3614,
+  "entries_valid": 3504,
+  "runs_valid": 3216,
+  "verdict_entries": 3504,
+  "verdict_runs": 3216,
+  "unknown_entries": 0,
+  "missing_entries": 0,
+  "no_verdict_flag": false,
+  "pass_entries": 2016,
+  "pass_runs": 1837,
+  "share_pass_entries": 0.5753,
+  "share_pass_runs": 0.5712,
+  "share_pass_entries_bounds": [
+   0.5753,
+   0.5753
+  ],
+  "pass_tie_entries": 2446,
+  "pass_tie_runs": 2223,
+  "share_pass_tie_entries": 0.6981,
+  "share_pass_tie_runs": 0.6912,
+  "share_pass_tie_entries_bounds": [
+   0.6981,
+   0.6981
+  ],
+  "pass_twin_entries": 2896,
+  "pass_twin_runs": 2657,
+  "share_pass_twin_entries": 0.8265,
+  "share_pass_twin_runs": 0.8262,
+  "share_pass_twin_entries_bounds": [
+   0.8265,
+   0.8265
+  ],
+  "share_fail_other_entries": 0.4247,
+  "share_fail_beyond_ties_entries": 0.3019
+ },
+ "secondary_regrade_planned_tasks": {
+  "tasks": 30,
+  "valid_tasks": 29,
+  "invalid": [
+   [
+    "django__django-11276",
+    110,
+    [
+     "no-op passes"
+    ]
+   ]
+  ],
+  "entries_all": 2055,
+  "entries_valid": 1945,
+  "runs_valid": 1714,
+  "verdict_entries": 1945,
+  "verdict_runs": 1714,
+  "unknown_entries": 0,
+  "missing_entries": 0,
+  "no_verdict_flag": false,
+  "pass_entries": 1053,
+  "pass_runs": 914,
+  "share_pass_entries": 0.5414,
+  "share_pass_runs": 0.5333,
+  "share_pass_entries_bounds": [
+   0.5414,
+   0.5414
+  ],
+  "pass_tie_entries": 1342,
+  "pass_tie_runs": 1166,
+  "share_pass_tie_entries": 0.69,
+  "share_pass_tie_runs": 0.6803,
+  "share_pass_tie_entries_bounds": [
+   0.69,
+   0.69
+  ],
+  "pass_twin_entries": 1495,
+  "pass_twin_runs": 1309,
+  "share_pass_twin_entries": 0.7686,
+  "share_pass_twin_runs": 0.7637,
+  "share_pass_twin_entries_bounds": [
+   0.7686,
+   0.7686
+  ],
+  "share_fail_other_entries": 0.4586,
+  "share_fail_beyond_ties_entries": 0.31
+ },
+ "agreement_rerun_vs_regrade": {
+  "runs_compared": 1676,
+  "agree": 1676,
+  "disagree": 0,
+  "disagreements": []
+ },
+ "per_task_rerun": [
+  {
+   "instance_id": "django__django-13741",
+   "names": [
+    "test_can_override_disabled_false"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 124,
+   "runs": 75,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 7,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 124,
+   "pass_runs": 75,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 124,
+   "pass_tie_runs": 75,
+   "pass_twin_entries": 124,
+   "pass_twin_runs": 75,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "sympy__sympy-11618",
+   "names": [
+    "test_symbolic_mixed_dims_forward_and_reverse"
+   ],
+   "ties": [],
+   "twins": [
+    "test_equal_dims_with_list_input_2d",
+    "test_equal_dims_with_list_input_4d"
+   ],
+   "entries": 120,
+   "runs": 118,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 10,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 114,
+   "pass_runs": 112,
+   "fail_entries": 6,
+   "fail_runs": 6,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 114,
+   "pass_tie_runs": 112,
+   "pass_twin_entries": 120,
+   "pass_twin_runs": 118,
+   "other_tests_by_entries": [
+    [
+     "test_equal_dims_with_list_input_2d",
+     6
+    ],
+    [
+     "test_equal_dims_with_list_input_4d",
+     6
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_equal_dims_with_list_input_2d",
+     6
+    ],
+    [
+     "test_equal_dims_with_list_input_4d",
+     6
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-11292",
+   "names": [
+    "test_help_excludes_skip_checks_for_commands_not_requiring_checks"
+   ],
+   "ties": [
+    "test_unrecognized_skip_checks_for_command_without_checks"
+   ],
+   "twins": [
+    "test_unrecognized_skip_checks_for_command_without_checks"
+   ],
+   "entries": 112,
+   "runs": 83,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 8,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 112,
+   "fail_runs": 83,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 112,
+   "pass_tie_runs": 83,
+   "pass_twin_entries": 112,
+   "pass_twin_runs": 83,
+   "other_tests_by_entries": [
+    [
+     "test_unrecognized_skip_checks_for_command_without_checks",
+     112
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_unrecognized_skip_checks_for_command_without_checks",
+     83
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-11276",
+   "names": [
+    "test_urlize_hex_entity_trailing_parenthesis_in_href_and_entity_in_text"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 110,
+   "runs": 95,
+   "gold_ok": true,
+   "noop_ok": false,
+   "gold_bad": [],
+   "noop_bad_n": 0,
+   "gold_count_ok": true,
+   "valid": false,
+   "invalid_why": [
+    "no-op passes"
+   ],
+   "pass_entries": 110,
+   "pass_runs": 95,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 110,
+   "pass_tie_runs": 95,
+   "pass_twin_entries": 110,
+   "pass_twin_runs": 95,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "astropy__astropy-7166",
+   "names": [
+    "test_inherit_docstrings_custom_data_descriptor_class_doc"
+   ],
+   "ties": [],
+   "twins": [
+    "test_inherit_docstrings_from_grandparent_property"
+   ],
+   "entries": 108,
+   "runs": 79,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 5,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 106,
+   "pass_runs": 78,
+   "fail_entries": 2,
+   "fail_runs": 1,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 106,
+   "pass_tie_runs": 78,
+   "pass_twin_entries": 108,
+   "pass_twin_runs": 79,
+   "other_tests_by_entries": [
+    [
+     "test_inherit_docstrings_from_grandparent_property",
+     2
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_inherit_docstrings_from_grandparent_property",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-15863",
+   "names": [
+    "test_object_with_str_decimal"
+   ],
+   "ties": [],
+   "twins": [
+    "test_decimal_string_input_precision"
+   ],
+   "entries": 105,
+   "runs": 88,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 8,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 105,
+   "fail_runs": 88,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 0,
+   "pass_tie_runs": 0,
+   "pass_twin_entries": 37,
+   "pass_twin_runs": 32,
+   "other_tests_by_entries": [
+    [
+     "test_decimal_string_input_precision",
+     99
+    ],
+    [
+     "test_non_integer_arg_returns_input_val",
+     68
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_decimal_string_input_precision",
+     82
+    ],
+    [
+     "test_non_integer_arg_returns_input_val",
+     56
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-13569",
+   "names": [
+    "test_random_annotation_with_alias_not_in_group_by"
+   ],
+   "ties": [
+    "test_random_annotation_alias_set_group_by_allows_aliases_not_in_group_by",
+    "test_random_annotation_selected_and_ordered_does_not_break_grouping"
+   ],
+   "twins": [
+    "test_random_alias_order_by_does_not_break_group_by",
+    "test_random_annotation_alias_set_group_by_allows_aliases_not_in_group_by",
+    "test_random_annotation_selected_and_ordered_does_not_break_grouping",
+    "test_random_order_by_aggregation",
+    "test_random_ordering_uses_random_function_in_sql"
+   ],
+   "entries": 89,
+   "runs": 85,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 12,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 89,
+   "fail_runs": 85,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 2,
+   "pass_tie_runs": 2,
+   "pass_twin_entries": 89,
+   "pass_twin_runs": 85,
+   "other_tests_by_entries": [
+    [
+     "test_random_annotation_selected_and_ordered_does_not_break_grouping",
+     89
+    ],
+    [
+     "test_random_annotation_alias_set_group_by_allows_aliases_not_in_group_by",
+     89
+    ],
+    [
+     "test_random_alias_order_by_does_not_break_group_by",
+     87
+    ],
+    [
+     "test_random_ordering_uses_random_function_in_sql",
+     1
+    ],
+    [
+     "test_random_order_by_aggregation",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_random_annotation_selected_and_ordered_does_not_break_grouping",
+     85
+    ],
+    [
+     "test_random_annotation_alias_set_group_by_allows_aliases_not_in_group_by",
+     85
+    ],
+    [
+     "test_random_alias_order_by_does_not_break_group_by",
+     83
+    ],
+    [
+     "test_random_ordering_uses_random_function_in_sql",
+     1
+    ],
+    [
+     "test_random_order_by_aggregation",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "pydata__xarray-3095",
+   "names": [
+    "test_pandas_index_adapter_copy_identity_and_dtype",
+    "test_pandas_index_adapter_getitem_and_array_dtype_and_transpose_and_repr"
+   ],
+   "ties": [],
+   "twins": [
+    "test_bytes_string_index_copy_preserves_S_dtype"
+   ],
+   "entries": 87,
+   "runs": 67,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 6,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 86,
+   "pass_runs": 66,
+   "fail_entries": 1,
+   "fail_runs": 1,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 86,
+   "pass_tie_runs": 66,
+   "pass_twin_entries": 87,
+   "pass_twin_runs": 67,
+   "other_tests_by_entries": [
+    [
+     "test_bytes_string_index_copy_preserves_S_dtype",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_bytes_string_index_copy_preserves_S_dtype",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-11211",
+   "names": [
+    "test_prefetch_gfk_uuid_does_not_call_to_python_directly_in_gfk_key"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 81,
+   "runs": 63,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 14,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 71,
+   "pass_runs": 53,
+   "fail_entries": 10,
+   "fail_runs": 10,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 71,
+   "pass_tie_runs": 53,
+   "pass_twin_entries": 71,
+   "pass_twin_runs": 53,
+   "other_tests_by_entries": [
+    [
+     "test_prefetch_gfk_mixed_content_types",
+     10
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_prefetch_gfk_mixed_content_types",
+     10
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-13401",
+   "names": [
+    "test_no_model_field_vs_model_field_with_equal_creation_counter"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 79,
+   "runs": 77,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 10,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 16,
+   "pass_runs": 16,
+   "fail_entries": 63,
+   "fail_runs": 61,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 16,
+   "pass_tie_runs": 16,
+   "pass_twin_entries": 16,
+   "pass_twin_runs": 16,
+   "other_tests_by_entries": [
+    [
+     "test_ordering_prefers_app_label_even_when_model_name_order_is_opposite",
+     53
+    ],
+    [
+     "test_same_class_name_across_different_apps_orders_by_app_label_and_hashes_differ",
+     53
+    ],
+    [
+     "test_unbound_fields_both_no_model_equal_counters",
+     20
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_ordering_prefers_app_label_even_when_model_name_order_is_opposite",
+     52
+    ],
+    [
+     "test_same_class_name_across_different_apps_orders_by_app_label_and_hashes_differ",
+     52
+    ],
+    [
+     "test_unbound_fields_both_no_model_equal_counters",
+     19
+    ]
+   ]
+  },
+  {
+   "instance_id": "sympy__sympy-24661",
+   "names": [
+    "test_issue_24288_chained_comparisons_evaluate_false"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 79,
+   "runs": 77,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 4,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 72,
+   "pass_runs": 71,
+   "fail_entries": 7,
+   "fail_runs": 6,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 72,
+   "pass_tie_runs": 71,
+   "pass_twin_entries": 72,
+   "pass_twin_runs": 71,
+   "other_tests_by_entries": [
+    [
+     "test_issue_24288_unmapped_compare_ops_eval_false",
+     7
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_issue_24288_unmapped_compare_ops_eval_false",
+     6
+    ]
+   ]
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-25122",
+   "names": [
+    "test_complex_spectrum_dc_with_negative_sum_window"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 77,
+   "runs": 57,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 3,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 3,
+   "pass_runs": 3,
+   "fail_entries": 74,
+   "fail_runs": 54,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 3,
+   "pass_tie_runs": 3,
+   "pass_twin_entries": 3,
+   "pass_twin_runs": 3,
+   "other_tests_by_entries": [
+    [
+     "test_magnitude_angle_phase_modes_with_negative_sum_window_and_twosided",
+     74
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_magnitude_angle_phase_modes_with_negative_sum_window_and_twosided",
+     54
+    ]
+   ]
+  },
+  {
+   "instance_id": "astropy__astropy-14096",
+   "names": [
+    "test_subclass_overridden_getattribute_respected_in_getattr"
+   ],
+   "ties": [
+    "test_subclass_overridden_getattribute_respected_for_missing_attr"
+   ],
+   "twins": [
+    "test_inherited_property_exception_error",
+    "test_nested_missing_attr_on_frame",
+    "test_subclass_overridden_getattribute_respected_for_missing_attr",
+    "test_subclass_property_exception_error_getattr"
+   ],
+   "entries": 76,
+   "runs": 75,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 7,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 76,
+   "fail_runs": 75,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 62,
+   "pass_tie_runs": 61,
+   "pass_twin_entries": 76,
+   "pass_twin_runs": 75,
+   "other_tests_by_entries": [
+    [
+     "test_subclass_overridden_getattribute_respected_for_missing_attr",
+     76
+    ],
+    [
+     "test_inherited_property_exception_error",
+     11
+    ],
+    [
+     "test_nested_missing_attr_on_frame",
+     3
+    ],
+    [
+     "test_subclass_property_exception_error_getattr",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_subclass_overridden_getattribute_respected_for_missing_attr",
+     75
+    ],
+    [
+     "test_inherited_property_exception_error",
+     11
+    ],
+    [
+     "test_nested_missing_attr_on_frame",
+     3
+    ],
+    [
+     "test_subclass_property_exception_error_getattr",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-13343",
+   "names": [
+    "test_deconstruct_with_default_storage_callable_omits_storage_kwarg"
+   ],
+   "ties": [
+    "test_imagefield_deconstruct_default_storage_callable_omits_storage_kwarg"
+   ],
+   "twins": [
+    "test_deconstruct_storage_non_callable_instance",
+    "test_imagefield_deconstruct_default_storage_callable_omits_storage_kwarg"
+   ],
+   "entries": 76,
+   "runs": 74,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 16,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 76,
+   "fail_runs": 74,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 75,
+   "pass_tie_runs": 73,
+   "pass_twin_entries": 76,
+   "pass_twin_runs": 74,
+   "other_tests_by_entries": [
+    [
+     "test_imagefield_deconstruct_default_storage_callable_omits_storage_kwarg",
+     76
+    ],
+    [
+     "test_deconstruct_storage_non_callable_instance",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_imagefield_deconstruct_default_storage_callable_omits_storage_kwarg",
+     74
+    ],
+    [
+     "test_deconstruct_storage_non_callable_instance",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-14017",
+   "names": [
+    "test_combination_with_non_true_conditional_attribute_is_rejected"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 76,
+   "runs": 75,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 10,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 58,
+   "pass_runs": 58,
+   "fail_entries": 18,
+   "fail_runs": 17,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 58,
+   "pass_tie_runs": 58,
+   "pass_twin_entries": 58,
+   "pass_twin_runs": 58,
+   "other_tests_by_entries": [
+    [
+     "test_q_combined_with_boolean_value_works",
+     18
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_q_combined_with_boolean_value_works",
+     17
+    ]
+   ]
+  },
+  {
+   "instance_id": "pallets__flask-5014",
+   "names": [
+    "test_whitespace_only_name_allowed_and_routes_work"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 76,
+   "runs": 70,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 7,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 27,
+   "pass_runs": 25,
+   "fail_entries": 49,
+   "fail_runs": 45,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 27,
+   "pass_tie_runs": 25,
+   "pass_twin_entries": 27,
+   "pass_twin_runs": 25,
+   "other_tests_by_entries": [
+    [
+     "test_empty_name_and_falsey_values_not_allowed",
+     49
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_empty_name_and_falsey_values_not_allowed",
+     45
+    ]
+   ]
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-9320",
+   "names": [
+    "test_is_path_or_empty_does_not_accept_whitespace_only"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 76,
+   "runs": 70,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 3,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 56,
+   "pass_runs": 52,
+   "fail_entries": 20,
+   "fail_runs": 18,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 56,
+   "pass_tie_runs": 52,
+   "pass_twin_entries": 56,
+   "pass_twin_runs": 52,
+   "other_tests_by_entries": [
+    [
+     "test_exits_on_whitespace_input_when_existing_confpy",
+     20
+    ],
+    [
+     "test_exits_when_existing_confpy_monkeypatched",
+     20
+    ],
+    [
+     "test_exits_when_existing_source_confpy_realfs",
+     20
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_exits_on_whitespace_input_when_existing_confpy",
+     18
+    ],
+    [
+     "test_exits_when_existing_confpy_monkeypatched",
+     18
+    ],
+    [
+     "test_exits_when_existing_source_confpy_realfs",
+     18
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-15103",
+   "names": [
+    "test_empty_string_id_omits",
+    "test_filter_empty_id_omits"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 73,
+   "runs": 66,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 12,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 73,
+   "pass_runs": 66,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 73,
+   "pass_tie_runs": 66,
+   "pass_twin_entries": 73,
+   "pass_twin_runs": 66,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-9711",
+   "names": [
+    "test_needs_extensions_invalid_version_mixed"
+   ],
+   "ties": [],
+   "twins": [
+    "test_needs_extensions_invalid_version_fallback_both_invalid",
+    "test_needs_extensions_invalid_version_fallback_required_newer",
+    "test_needs_extensions_multiple_entries_and_missing_extension"
+   ],
+   "entries": 70,
+   "runs": 68,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 9,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 7,
+   "pass_runs": 7,
+   "fail_entries": 63,
+   "fail_runs": 61,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 7,
+   "pass_tie_runs": 7,
+   "pass_twin_entries": 7,
+   "pass_twin_runs": 7,
+   "other_tests_by_entries": [
+    [
+     "test_needs_extensions_invalid_version_mixed_required_greater",
+     63
+    ],
+    [
+     "test_needs_extensions_pep440_matrix_unfulfilled",
+     7
+    ],
+    [
+     "test_needs_extensions_pep440_matrix_fulfilled",
+     7
+    ],
+    [
+     "test_needs_extensions_unknown_version",
+     2
+    ],
+    [
+     "test_needs_extensions_multiple_entries_and_missing_extension",
+     1
+    ],
+    [
+     "test_needs_extensions_invalid_version_fallback_both_invalid",
+     1
+    ],
+    [
+     "test_needs_extensions_invalid_version_fallback_required_newer",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_needs_extensions_invalid_version_mixed_required_greater",
+     61
+    ],
+    [
+     "test_needs_extensions_pep440_matrix_unfulfilled",
+     7
+    ],
+    [
+     "test_needs_extensions_pep440_matrix_fulfilled",
+     7
+    ],
+    [
+     "test_needs_extensions_unknown_version",
+     2
+    ],
+    [
+     "test_needs_extensions_multiple_entries_and_missing_extension",
+     1
+    ],
+    [
+     "test_needs_extensions_invalid_version_fallback_both_invalid",
+     1
+    ],
+    [
+     "test_needs_extensions_invalid_version_fallback_required_newer",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-14771",
+   "names": [
+    "test_non_cpython_ignores_xoptions"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 68,
+   "runs": 68,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 6,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 68,
+   "pass_runs": 68,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 68,
+   "pass_tie_runs": 68,
+   "pass_twin_entries": 68,
+   "pass_twin_runs": 68,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "sympy__sympy-13877",
+   "names": [
+    "test_random_complex_number_rational_tolerance_controls_nsimplify"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 41,
+   "runs": 38,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 4,
+   "gold_count_ok": false,
+   "valid": false,
+   "invalid_why": [
+    "gold test count is not census gold minus the removed test, or no census gold log"
+   ],
+   "pass_entries": 41,
+   "pass_runs": 38,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 41,
+   "pass_tie_runs": 38,
+   "pass_twin_entries": 41,
+   "pass_twin_runs": 38,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "sympy__sympy-13615",
+   "names": [
+    "test_symbol_assumptions_real_and_imaginary"
+   ],
+   "ties": [],
+   "twins": [
+    "test_boundaries_open_interval",
+    "test_mixed_in_out_unknown_closed_interval"
+   ],
+   "entries": 33,
+   "runs": 32,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 10,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 6,
+   "pass_runs": 6,
+   "fail_entries": 27,
+   "fail_runs": 26,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 6,
+   "pass_tie_runs": 6,
+   "pass_twin_entries": 6,
+   "pass_twin_runs": 6,
+   "other_tests_by_entries": [
+    [
+     "test_nonreal_and_infinities",
+     27
+    ],
+    [
+     "test_interval_complement_sifts_definite_outside_to_finiteset",
+     26
+    ],
+    [
+     "test_mixed_in_out_unknown_closed_interval",
+     20
+    ],
+    [
+     "test_boundaries_open_interval",
+     20
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_nonreal_and_infinities",
+     26
+    ],
+    [
+     "test_interval_complement_sifts_definite_outside_to_finiteset",
+     25
+    ],
+    [
+     "test_mixed_in_out_unknown_closed_interval",
+     20
+    ],
+    [
+     "test_boundaries_open_interval",
+     20
+    ]
+   ]
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-10449",
+   "names": [
+    "test_class_description_all_keeps_non_none_rtype_from_new"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 60,
+   "runs": 56,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 1,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 60,
+   "pass_runs": 56,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 60,
+   "pass_tie_runs": 56,
+   "pass_twin_entries": 60,
+   "pass_twin_runs": 56,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "django__django-11239",
+   "names": [
+    "test_ssl_empty_values_ignored"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 9,
+   "runs": 9,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 12,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 9,
+   "pass_runs": 9,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 9,
+   "pass_tie_runs": 9,
+   "pass_twin_entries": 9,
+   "pass_twin_runs": 9,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-26323",
+   "names": [
+    "test_remainder_set_output_propagates_default_mode"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 2,
+   "runs": 2,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 1,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 2,
+   "pass_runs": 2,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 2,
+   "pass_tie_runs": 2,
+   "pass_twin_entries": 2,
+   "pass_twin_runs": 2,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "django__django-11964",
+   "names": [
+    "test_str_various_base_types"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 14,
+   "runs": 14,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 2,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 14,
+   "pass_runs": 14,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 14,
+   "pass_tie_runs": 14,
+   "pass_twin_entries": 14,
+   "pass_twin_runs": 14,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "django__django-14311",
+   "names": [
+    "test_top_level_main_with_parent_uses_parent"
+   ],
+   "ties": [],
+   "twins": [
+    "test_nested_package_main_uses_nested_parent",
+    "test_non_package_dotted_module_uses_full_name",
+    "test_package_main_module_uses_parent",
+    "test_single_dot_non_package_module_uses_full_name"
+   ],
+   "entries": 67,
+   "runs": 66,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 6,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 39,
+   "pass_runs": 38,
+   "fail_entries": 28,
+   "fail_runs": 28,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 39,
+   "pass_tie_runs": 38,
+   "pass_twin_entries": 39,
+   "pass_twin_runs": 38,
+   "other_tests_by_entries": [
+    [
+     "test_single_module_name_used_as_is",
+     28
+    ],
+    [
+     "test_single_dot_non_package_module_uses_full_name",
+     1
+    ],
+    [
+     "test_nested_package_main_uses_nested_parent",
+     1
+    ],
+    [
+     "test_non_package_dotted_module_uses_full_name",
+     1
+    ],
+    [
+     "test_package_main_module_uses_parent",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_single_module_name_used_as_is",
+     28
+    ],
+    [
+     "test_single_dot_non_package_module_uses_full_name",
+     1
+    ],
+    [
+     "test_nested_package_main_uses_nested_parent",
+     1
+    ],
+    [
+     "test_non_package_dotted_module_uses_full_name",
+     1
+    ],
+    [
+     "test_package_main_module_uses_parent",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-10844",
+   "names": [
+    "test_fowlkes_mallows_perfect_match"
+   ],
+   "ties": [
+    "test_fowlkes_mallows_large_counts_no_overflow_and_correct"
+   ],
+   "twins": [
+    "test_fowlkes_mallows_large_counts_no_overflow_and_correct"
+   ],
+   "entries": 15,
+   "runs": 13,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 2,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 15,
+   "fail_runs": 13,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 13,
+   "pass_tie_runs": 11,
+   "pass_twin_entries": 13,
+   "pass_twin_runs": 11,
+   "other_tests_by_entries": [
+    [
+     "test_fowlkes_mallows_large_counts_no_overflow_and_correct",
+     13
+    ],
+    [
+     "test_fowlkes_mallows_tk_zero_singletons",
+     2
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_fowlkes_mallows_large_counts_no_overflow_and_correct",
+     11
+    ],
+    [
+     "test_fowlkes_mallows_tk_zero_singletons",
+     2
+    ]
+   ]
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-20488",
+   "names": [
+    "test_observed_vmin_eps_high_vmax_float32"
+   ],
+   "ties": [],
+   "twins": [
+    "test_imshow_lognorm_huge_range_no_error",
+    "test_imshow_lognorm_with_zero_vmin_guard"
+   ],
+   "entries": 6,
+   "runs": 6,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 17,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 1,
+   "pass_runs": 1,
+   "fail_entries": 5,
+   "fail_runs": 5,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 1,
+   "pass_tie_runs": 1,
+   "pass_twin_entries": 6,
+   "pass_twin_runs": 6,
+   "other_tests_by_entries": [
+    [
+     "test_imshow_lognorm_huge_range_no_error",
+     5
+    ],
+    [
+     "test_imshow_lognorm_with_zero_vmin_guard",
+     5
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_imshow_lognorm_huge_range_no_error",
+     5
+    ],
+    [
+     "test_imshow_lognorm_with_zero_vmin_guard",
+     5
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-11555",
+   "names": [
+    "test_order_by_deep_parent_ptr_desc_with_default_ordering_by_expression"
+   ],
+   "ties": [
+    "test_order_by_parent_ptr_desc_with_default_ordering_by_expression"
+   ],
+   "twins": [
+    "test_order_by_parent_ptr_desc_with_default_ordering_by_expression"
+   ],
+   "entries": 46,
+   "runs": 43,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 10,
+   "gold_count_ok": true,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 46,
+   "fail_runs": 43,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 25,
+   "pass_tie_runs": 22,
+   "pass_twin_entries": 25,
+   "pass_twin_runs": 22,
+   "other_tests_by_entries": [
+    [
+     "test_order_by_parent_ptr_desc_with_default_ordering_by_expression",
+     36
+    ],
+    [
+     "test_parent_ptr_respects_nulls_last_in_expression",
+     21
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_order_by_parent_ptr_desc_with_default_ordering_by_expression",
+     33
+    ],
+    [
+     "test_parent_ptr_respects_nulls_last_in_expression",
+     21
+    ]
+   ]
+  }
+ ],
+ "per_task_regrade": [
+  {
+   "instance_id": "astropy__astropy-14096",
+   "names": [
+    "test_subclass_overridden_getattribute_respected_in_getattr"
+   ],
+   "ties": [
+    "test_subclass_overridden_getattribute_respected_for_missing_attr"
+   ],
+   "twins": [
+    "test_inherited_property_exception_error",
+    "test_nested_missing_attr_on_frame",
+    "test_subclass_overridden_getattribute_respected_for_missing_attr",
+    "test_subclass_property_exception_error_getattr"
+   ],
+   "entries": 76,
+   "runs": 75,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 7,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 76,
+   "fail_runs": 75,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 62,
+   "pass_tie_runs": 61,
+   "pass_twin_entries": 76,
+   "pass_twin_runs": 75,
+   "other_tests_by_entries": [
+    [
+     "test_subclass_overridden_getattribute_respected_for_missing_attr",
+     76
+    ],
+    [
+     "test_inherited_property_exception_error",
+     11
+    ],
+    [
+     "test_nested_missing_attr_on_frame",
+     3
+    ],
+    [
+     "test_subclass_property_exception_error_getattr",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_subclass_overridden_getattribute_respected_for_missing_attr",
+     75
+    ],
+    [
+     "test_inherited_property_exception_error",
+     11
+    ],
+    [
+     "test_nested_missing_attr_on_frame",
+     3
+    ],
+    [
+     "test_subclass_property_exception_error_getattr",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "astropy__astropy-7166",
+   "names": [
+    "test_inherit_docstrings_custom_data_descriptor_class_doc"
+   ],
+   "ties": [],
+   "twins": [
+    "test_inherit_docstrings_from_grandparent_property"
+   ],
+   "entries": 108,
+   "runs": 79,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 5,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 106,
+   "pass_runs": 78,
+   "fail_entries": 2,
+   "fail_runs": 1,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 106,
+   "pass_tie_runs": 78,
+   "pass_twin_entries": 108,
+   "pass_twin_runs": 79,
+   "other_tests_by_entries": [
+    [
+     "test_inherit_docstrings_from_grandparent_property",
+     2
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_inherit_docstrings_from_grandparent_property",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "astropy__astropy-8707",
+   "names": [
+    "test_card_from_bytes_latin1_mojibake"
+   ],
+   "ties": [
+    "test_header_fromstring_bytes_invalid_utf8_preserved"
+   ],
+   "twins": [
+    "test_header_fromstring_bytes_invalid_utf8_preserved",
+    "test_header_fromstring_bytes_matches_getheader"
+   ],
+   "entries": 11,
+   "runs": 11,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 8,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 11,
+   "fail_runs": 11,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 6,
+   "pass_tie_runs": 6,
+   "pass_twin_entries": 11,
+   "pass_twin_runs": 11,
+   "other_tests_by_entries": [
+    [
+     "test_header_fromstring_bytes_invalid_utf8_preserved",
+     11
+    ],
+    [
+     "test_header_fromstring_bytes_matches_getheader",
+     5
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_header_fromstring_bytes_invalid_utf8_preserved",
+     11
+    ],
+    [
+     "test_header_fromstring_bytes_matches_getheader",
+     5
+    ]
+   ]
+  },
+  {
+   "instance_id": "astropy__astropy-8872",
+   "names": [
+    "test_bool_inputs_preserved_by_default_and_can_cast_with_dtype"
+   ],
+   "ties": [],
+   "twins": [
+    "test_scalar_float16_preserved_via_multiplication"
+   ],
+   "entries": 10,
+   "runs": 9,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 3,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 9,
+   "pass_runs": 8,
+   "fail_entries": 1,
+   "fail_runs": 1,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 9,
+   "pass_tie_runs": 8,
+   "pass_twin_entries": 10,
+   "pass_twin_runs": 9,
+   "other_tests_by_entries": [
+    [
+     "test_scalar_float16_preserved_via_multiplication",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_scalar_float16_preserved_via_multiplication",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-11138",
+   "names": [
+    "test_sqlite_datetime_trunc_all_branches",
+    "test_sqlite_ops_convert_tznames_to_sql_nulls_under_use_tz_false"
+   ],
+   "ties": [],
+   "twins": [
+    "test_cast_time_and_date_sqlite_functions",
+    "test_datetime_extract_and_trunc_respect_connection_tz",
+    "test_dt_date_converts_from_connection_tz",
+    "test_dt_date_no_conversion_when_equal",
+    "test_mysql_convert_field_to_tz_equal_and_different",
+    "test_sqlite_datetime_extract_various_lookups"
+   ],
+   "entries": 16,
+   "runs": 16,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 12,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 10,
+   "pass_runs": 10,
+   "fail_entries": 6,
+   "fail_runs": 6,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 10,
+   "pass_tie_runs": 10,
+   "pass_twin_entries": 16,
+   "pass_twin_runs": 16,
+   "other_tests_by_entries": [
+    [
+     "test_sqlite_datetime_extract_various_lookups",
+     4
+    ],
+    [
+     "test_cast_time_and_date_sqlite_functions",
+     2
+    ],
+    [
+     "test_datetime_extract_and_trunc_respect_connection_tz",
+     2
+    ],
+    [
+     "test_mysql_convert_field_to_tz_equal_and_different",
+     2
+    ],
+    [
+     "test_dt_date_no_conversion_when_equal",
+     1
+    ],
+    [
+     "test_dt_date_converts_from_connection_tz",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_sqlite_datetime_extract_various_lookups",
+     4
+    ],
+    [
+     "test_cast_time_and_date_sqlite_functions",
+     2
+    ],
+    [
+     "test_datetime_extract_and_trunc_respect_connection_tz",
+     2
+    ],
+    [
+     "test_mysql_convert_field_to_tz_equal_and_different",
+     2
+    ],
+    [
+     "test_dt_date_no_conversion_when_equal",
+     1
+    ],
+    [
+     "test_dt_date_converts_from_connection_tz",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-11206",
+   "names": [
+    "test_just_below_cutoff_zeroed"
+   ],
+   "ties": [],
+   "twins": [
+    "test_decimal_pos_zero_behavior",
+    "test_tiny_decimals_with_decimal_pos_zeroed"
+   ],
+   "entries": 49,
+   "runs": 48,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 3,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 1,
+   "pass_runs": 1,
+   "fail_entries": 48,
+   "fail_runs": 47,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 1,
+   "pass_tie_runs": 1,
+   "pass_twin_entries": 49,
+   "pass_twin_runs": 48,
+   "other_tests_by_entries": [
+    [
+     "test_decimal_pos_zero_behavior",
+     48
+    ],
+    [
+     "test_tiny_decimals_with_decimal_pos_zeroed",
+     33
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_decimal_pos_zero_behavior",
+     47
+    ],
+    [
+     "test_tiny_decimals_with_decimal_pos_zeroed",
+     32
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-11211",
+   "names": [
+    "test_prefetch_gfk_uuid_does_not_call_to_python_directly_in_gfk_key"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 81,
+   "runs": 63,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 14,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 71,
+   "pass_runs": 53,
+   "fail_entries": 10,
+   "fail_runs": 10,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 71,
+   "pass_tie_runs": 53,
+   "pass_twin_entries": 71,
+   "pass_twin_runs": 53,
+   "other_tests_by_entries": [
+    [
+     "test_prefetch_gfk_mixed_content_types",
+     10
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_prefetch_gfk_mixed_content_types",
+     10
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-11239",
+   "names": [
+    "test_ssl_empty_values_ignored"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 9,
+   "runs": 9,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 12,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 9,
+   "pass_runs": 9,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 9,
+   "pass_tie_runs": 9,
+   "pass_twin_entries": 9,
+   "pass_twin_runs": 9,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "django__django-11276",
+   "names": [
+    "test_urlize_hex_entity_trailing_parenthesis_in_href_and_entity_in_text"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 110,
+   "runs": 95,
+   "gold_ok": true,
+   "noop_ok": false,
+   "gold_bad": [],
+   "noop_bad_n": 0,
+   "gold_count_ok": null,
+   "valid": false,
+   "invalid_why": [
+    "no-op passes"
+   ],
+   "pass_entries": 110,
+   "pass_runs": 95,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 110,
+   "pass_tie_runs": 95,
+   "pass_twin_entries": 110,
+   "pass_twin_runs": 95,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "django__django-11292",
+   "names": [
+    "test_help_excludes_skip_checks_for_commands_not_requiring_checks"
+   ],
+   "ties": [
+    "test_unrecognized_skip_checks_for_command_without_checks"
+   ],
+   "twins": [
+    "test_unrecognized_skip_checks_for_command_without_checks"
+   ],
+   "entries": 112,
+   "runs": 83,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 8,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 112,
+   "fail_runs": 83,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 112,
+   "pass_tie_runs": 83,
+   "pass_twin_entries": 112,
+   "pass_twin_runs": 83,
+   "other_tests_by_entries": [
+    [
+     "test_unrecognized_skip_checks_for_command_without_checks",
+     112
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_unrecognized_skip_checks_for_command_without_checks",
+     83
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-11555",
+   "names": [
+    "test_order_by_deep_parent_ptr_desc_with_default_ordering_by_expression"
+   ],
+   "ties": [
+    "test_order_by_parent_ptr_desc_with_default_ordering_by_expression"
+   ],
+   "twins": [
+    "test_order_by_parent_ptr_desc_with_default_ordering_by_expression"
+   ],
+   "entries": 46,
+   "runs": 43,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 9,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 46,
+   "fail_runs": 43,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 25,
+   "pass_tie_runs": 22,
+   "pass_twin_entries": 25,
+   "pass_twin_runs": 22,
+   "other_tests_by_entries": [
+    [
+     "test_order_by_parent_ptr_desc_with_default_ordering_by_expression",
+     36
+    ],
+    [
+     "test_parent_ptr_respects_nulls_last_in_expression",
+     21
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_order_by_parent_ptr_desc_with_default_ordering_by_expression",
+     33
+    ],
+    [
+     "test_parent_ptr_respects_nulls_last_in_expression",
+     21
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-11749",
+   "names": [
+    "test_both_provided_conflict"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 44,
+   "runs": 43,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 16,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 27,
+   "pass_runs": 26,
+   "fail_entries": 17,
+   "fail_runs": 17,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 27,
+   "pass_tie_runs": 26,
+   "pass_twin_entries": 27,
+   "pass_twin_runs": 26,
+   "other_tests_by_entries": [
+    [
+     "test_optional_group_allows_multiple_kwargs_without_cli_parse",
+     13
+    ],
+    [
+     "test_invalid_int_value_none",
+     7
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_optional_group_allows_multiple_kwargs_without_cli_parse",
+     13
+    ],
+    [
+     "test_invalid_int_value_none",
+     7
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-11815",
+   "names": [
+    "test_serialize_combined_custom_intflag_member"
+   ],
+   "ties": [
+    "test_serialize_combined_intflag_member"
+   ],
+   "twins": [
+    "test_serialize_combined_intflag_member"
+   ],
+   "entries": 59,
+   "runs": 55,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 22,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 59,
+   "fail_runs": 55,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 59,
+   "pass_tie_runs": 55,
+   "pass_twin_entries": 59,
+   "pass_twin_runs": 55,
+   "other_tests_by_entries": [
+    [
+     "test_serialize_combined_intflag_member",
+     59
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_serialize_combined_intflag_member",
+     55
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-11848",
+   "names": [
+    "test_parsing_rfc850_century_wrap_cases"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 10,
+   "runs": 10,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 5,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 10,
+   "pass_runs": 10,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 10,
+   "pass_tie_runs": 10,
+   "pass_twin_entries": 10,
+   "pass_twin_runs": 10,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "django__django-11885",
+   "names": [
+    "test_nestedobjects_related_objects_selects_all_fields"
+   ],
+   "ties": [],
+   "twins": [
+    "test_fast_delete_combined_relationships_queryset_batched",
+    "test_fast_delete_combined_relationships_queryset_small"
+   ],
+   "entries": 12,
+   "runs": 12,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 7,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 4,
+   "pass_runs": 4,
+   "fail_entries": 8,
+   "fail_runs": 8,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 4,
+   "pass_tie_runs": 4,
+   "pass_twin_entries": 12,
+   "pass_twin_runs": 12,
+   "other_tests_by_entries": [
+    [
+     "test_fast_delete_combined_relationships_queryset_batched",
+     8
+    ],
+    [
+     "test_fast_delete_combined_relationships_queryset_small",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_fast_delete_combined_relationships_queryset_batched",
+     8
+    ],
+    [
+     "test_fast_delete_combined_relationships_queryset_small",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-11964",
+   "names": [
+    "test_str_various_base_types"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 14,
+   "runs": 14,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 2,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 14,
+   "pass_runs": 14,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 14,
+   "pass_tie_runs": 14,
+   "pass_twin_entries": 14,
+   "pass_twin_runs": 14,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "django__django-11999",
+   "names": [
+    "test_inherited_override_from_mixin_is_respected"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 13,
+   "runs": 9,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 8,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 13,
+   "pass_runs": 9,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 13,
+   "pass_tie_runs": 9,
+   "pass_twin_entries": 13,
+   "pass_twin_runs": 9,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "django__django-12273",
+   "names": [
+    "test_congressman_pk_set_non_none_keeps_politician_id_consistent"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 15,
+   "runs": 14,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 4,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 15,
+   "pass_runs": 14,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 15,
+   "pass_tie_runs": 14,
+   "pass_twin_entries": 15,
+   "pass_twin_runs": 14,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "django__django-12304",
+   "names": [
+    "test_subclass_override_is_enforced_by_metaclass"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 23,
+   "runs": 22,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 12,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 23,
+   "pass_runs": 22,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 23,
+   "pass_tie_runs": 22,
+   "pass_twin_entries": 23,
+   "pass_twin_runs": 22,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "django__django-12406",
+   "names": [
+    "test_modelform_fk_blank_false_required_false_still_no_empty_choice"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 1,
+   "runs": 1,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 18,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 1,
+   "pass_runs": 1,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 1,
+   "pass_tie_runs": 1,
+   "pass_twin_entries": 1,
+   "pass_twin_runs": 1,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "django__django-12754",
+   "names": [
+    "test_cross_app_add_model_with_multiple_fields_removed_from_base_model_dependencies"
+   ],
+   "ties": [],
+   "twins": [
+    "Test field being moved from a parent model to child model.",
+    "test_add_model_with_multiple_fields_removed_from_base_model",
+    "test_field_moved_to_subclass"
+   ],
+   "entries": 17,
+   "runs": 16,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 4,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 11,
+   "pass_runs": 10,
+   "fail_entries": 6,
+   "fail_runs": 6,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 11,
+   "pass_tie_runs": 10,
+   "pass_twin_entries": 13,
+   "pass_twin_runs": 12,
+   "other_tests_by_entries": [
+    [
+     "test_add_model_without_conflicting_field_keeps_default_order",
+     4
+    ],
+    [
+     "test_add_model_with_multiple_fields_removed_from_base_model",
+     1
+    ],
+    [
+     "test_field_moved_to_subclass",
+     1
+    ],
+    [
+     "Test field being moved from a parent model to child model.",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_add_model_without_conflicting_field_keeps_default_order",
+     4
+    ],
+    [
+     "test_add_model_with_multiple_fields_removed_from_base_model",
+     1
+    ],
+    [
+     "test_field_moved_to_subclass",
+     1
+    ],
+    [
+     "Test field being moved from a parent model to child model.",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-13112",
+   "names": [
+    "test_unbound_fk_multi_dotted_string_raises_value_error"
+   ],
+   "ties": [],
+   "twins": [
+    "test_deconstruct_dotted_string_preserves_app_label_and_lowers_model_fk_only",
+    "test_deconstruct_self_reference_resolves_to_full_label"
+   ],
+   "entries": 50,
+   "runs": 49,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 2,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 46,
+   "pass_runs": 45,
+   "fail_entries": 4,
+   "fail_runs": 4,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 46,
+   "pass_tie_runs": 45,
+   "pass_twin_entries": 50,
+   "pass_twin_runs": 49,
+   "other_tests_by_entries": [
+    [
+     "test_deconstruct_dotted_string_preserves_app_label_and_lowers_model_fk_only",
+     4
+    ],
+    [
+     "test_deconstruct_self_reference_resolves_to_full_label",
+     4
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_deconstruct_dotted_string_preserves_app_label_and_lowers_model_fk_only",
+     4
+    ],
+    [
+     "test_deconstruct_self_reference_resolves_to_full_label",
+     4
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-13158",
+   "names": [
+    "test_none_clone_preserves_tuple_type_for_combined_queries"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 54,
+   "runs": 52,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 17,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 53,
+   "pass_runs": 51,
+   "fail_entries": 1,
+   "fail_runs": 1,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 53,
+   "pass_tie_runs": 51,
+   "pass_twin_entries": 53,
+   "pass_twin_runs": 51,
+   "other_tests_by_entries": [
+    [
+     "test_modelform_union_queryset_empty_submission_assigns_no_m2m",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_modelform_union_queryset_empty_submission_assigns_no_m2m",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-13343",
+   "names": [
+    "test_deconstruct_with_default_storage_callable_omits_storage_kwarg"
+   ],
+   "ties": [
+    "test_imagefield_deconstruct_default_storage_callable_omits_storage_kwarg"
+   ],
+   "twins": [
+    "test_deconstruct_storage_non_callable_instance",
+    "test_imagefield_deconstruct_default_storage_callable_omits_storage_kwarg"
+   ],
+   "entries": 76,
+   "runs": 74,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 16,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 76,
+   "fail_runs": 74,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 75,
+   "pass_tie_runs": 73,
+   "pass_twin_entries": 76,
+   "pass_twin_runs": 74,
+   "other_tests_by_entries": [
+    [
+     "test_imagefield_deconstruct_default_storage_callable_omits_storage_kwarg",
+     76
+    ],
+    [
+     "test_deconstruct_storage_non_callable_instance",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_imagefield_deconstruct_default_storage_callable_omits_storage_kwarg",
+     74
+    ],
+    [
+     "test_deconstruct_storage_non_callable_instance",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-13346",
+   "names": [
+    "test_key_in_booleans_and_null"
+   ],
+   "ties": [],
+   "twins": [
+    "test_key_in_empty_rhs",
+    "test_key_in_missing_key"
+   ],
+   "entries": 7,
+   "runs": 7,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 10,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 3,
+   "pass_runs": 3,
+   "fail_entries": 4,
+   "fail_runs": 4,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 3,
+   "pass_tie_runs": 3,
+   "pass_twin_entries": 7,
+   "pass_twin_runs": 7,
+   "other_tests_by_entries": [
+    [
+     "test_key_in_empty_rhs",
+     3
+    ],
+    [
+     "test_key_in_missing_key",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_key_in_empty_rhs",
+     3
+    ],
+    [
+     "test_key_in_missing_key",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-13401",
+   "names": [
+    "test_no_model_field_vs_model_field_with_equal_creation_counter"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 79,
+   "runs": 77,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 10,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 16,
+   "pass_runs": 16,
+   "fail_entries": 63,
+   "fail_runs": 61,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 16,
+   "pass_tie_runs": 16,
+   "pass_twin_entries": 16,
+   "pass_twin_runs": 16,
+   "other_tests_by_entries": [
+    [
+     "test_ordering_prefers_app_label_even_when_model_name_order_is_opposite",
+     53
+    ],
+    [
+     "test_same_class_name_across_different_apps_orders_by_app_label_and_hashes_differ",
+     53
+    ],
+    [
+     "test_unbound_fields_both_no_model_equal_counters",
+     20
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_ordering_prefers_app_label_even_when_model_name_order_is_opposite",
+     52
+    ],
+    [
+     "test_same_class_name_across_different_apps_orders_by_app_label_and_hashes_differ",
+     52
+    ],
+    [
+     "test_unbound_fields_both_no_model_equal_counters",
+     19
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-13569",
+   "names": [
+    "test_random_annotation_with_alias_not_in_group_by"
+   ],
+   "ties": [
+    "test_random_annotation_alias_set_group_by_allows_aliases_not_in_group_by",
+    "test_random_annotation_selected_and_ordered_does_not_break_grouping"
+   ],
+   "twins": [
+    "test_random_alias_order_by_does_not_break_group_by",
+    "test_random_annotation_alias_set_group_by_allows_aliases_not_in_group_by",
+    "test_random_annotation_selected_and_ordered_does_not_break_grouping",
+    "test_random_order_by_aggregation",
+    "test_random_ordering_uses_random_function_in_sql"
+   ],
+   "entries": 89,
+   "runs": 85,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 12,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 89,
+   "fail_runs": 85,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 2,
+   "pass_tie_runs": 2,
+   "pass_twin_entries": 89,
+   "pass_twin_runs": 85,
+   "other_tests_by_entries": [
+    [
+     "test_random_annotation_selected_and_ordered_does_not_break_grouping",
+     89
+    ],
+    [
+     "test_random_annotation_alias_set_group_by_allows_aliases_not_in_group_by",
+     89
+    ],
+    [
+     "test_random_alias_order_by_does_not_break_group_by",
+     87
+    ],
+    [
+     "test_random_ordering_uses_random_function_in_sql",
+     1
+    ],
+    [
+     "test_random_order_by_aggregation",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_random_annotation_selected_and_ordered_does_not_break_grouping",
+     85
+    ],
+    [
+     "test_random_annotation_alias_set_group_by_allows_aliases_not_in_group_by",
+     85
+    ],
+    [
+     "test_random_alias_order_by_does_not_break_group_by",
+     83
+    ],
+    [
+     "test_random_ordering_uses_random_function_in_sql",
+     1
+    ],
+    [
+     "test_random_order_by_aggregation",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-13741",
+   "names": [
+    "test_can_override_disabled_false"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 124,
+   "runs": 75,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 8,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 124,
+   "pass_runs": 75,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 124,
+   "pass_tie_runs": 75,
+   "pass_twin_entries": 124,
+   "pass_twin_runs": 75,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "django__django-13964",
+   "names": [
+    "test_decimal_fk_zero_set_via_assignment_then_parent_pk_changes"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 41,
+   "runs": 38,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 6,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 30,
+   "pass_runs": 28,
+   "fail_entries": 11,
+   "fail_runs": 10,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 30,
+   "pass_tie_runs": 28,
+   "pass_twin_entries": 30,
+   "pass_twin_runs": 28,
+   "other_tests_by_entries": [
+    [
+     "test_decimal_fk_zero_is_not_treated_as_empty_on_save_after_assignment",
+     11
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_decimal_fk_zero_is_not_treated_as_empty_on_save_after_assignment",
+     10
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-14017",
+   "names": [
+    "test_combination_with_non_true_conditional_attribute_is_rejected"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 76,
+   "runs": 75,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 10,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 58,
+   "pass_runs": 58,
+   "fail_entries": 18,
+   "fail_runs": 17,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 58,
+   "pass_tie_runs": 58,
+   "pass_twin_entries": 58,
+   "pass_twin_runs": 58,
+   "other_tests_by_entries": [
+    [
+     "test_q_combined_with_boolean_value_works",
+     18
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_q_combined_with_boolean_value_works",
+     17
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-14089",
+   "names": [
+    "test_reversed_raises_on_size_change_during_iteration"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 33,
+   "runs": 27,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 15,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 33,
+   "pass_runs": 27,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 33,
+   "pass_tie_runs": 27,
+   "pass_twin_entries": 33,
+   "pass_twin_runs": 27,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "django__django-14140",
+   "names": [
+    "test_deconstruct_single_child_boolean_expr_with_explicit_or_connector"
+   ],
+   "ties": [
+    "test_deconstruct_single_child_lookup_with_explicit_or_connector"
+   ],
+   "twins": [
+    "test_deconstruct_single_child_lookup_with_explicit_or_connector"
+   ],
+   "entries": 1,
+   "runs": 1,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 12,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 1,
+   "fail_runs": 1,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 1,
+   "pass_tie_runs": 1,
+   "pass_twin_entries": 1,
+   "pass_twin_runs": 1,
+   "other_tests_by_entries": [
+    [
+     "test_deconstruct_single_child_lookup_with_explicit_or_connector",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_deconstruct_single_child_lookup_with_explicit_or_connector",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-14311",
+   "names": [
+    "test_top_level_main_with_parent_uses_parent"
+   ],
+   "ties": [],
+   "twins": [
+    "test_nested_package_main_uses_nested_parent",
+    "test_non_package_dotted_module_uses_full_name",
+    "test_package_main_module_uses_parent",
+    "test_single_dot_non_package_module_uses_full_name"
+   ],
+   "entries": 67,
+   "runs": 66,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 6,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 39,
+   "pass_runs": 38,
+   "fail_entries": 28,
+   "fail_runs": 28,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 39,
+   "pass_tie_runs": 38,
+   "pass_twin_entries": 39,
+   "pass_twin_runs": 38,
+   "other_tests_by_entries": [
+    [
+     "test_single_module_name_used_as_is",
+     28
+    ],
+    [
+     "test_single_dot_non_package_module_uses_full_name",
+     1
+    ],
+    [
+     "test_nested_package_main_uses_nested_parent",
+     1
+    ],
+    [
+     "test_non_package_dotted_module_uses_full_name",
+     1
+    ],
+    [
+     "test_package_main_module_uses_parent",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_single_module_name_used_as_is",
+     28
+    ],
+    [
+     "test_single_dot_non_package_module_uses_full_name",
+     1
+    ],
+    [
+     "test_nested_package_main_uses_nested_parent",
+     1
+    ],
+    [
+     "test_non_package_dotted_module_uses_full_name",
+     1
+    ],
+    [
+     "test_package_main_module_uses_parent",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-14351",
+   "names": [
+    "test_group_by_segment_contains_rhs_subquery"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 15,
+   "runs": 15,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 8,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 15,
+   "pass_runs": 15,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 15,
+   "pass_tie_runs": 15,
+   "pass_twin_entries": 15,
+   "pass_twin_runs": 15,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "django__django-14608",
+   "names": [
+    "test_non_form_errors_initialization_has_nonform_class_for_valid_formset"
+   ],
+   "ties": [],
+   "twins": [
+    "test_non_form_errors_with_custom_error_class_combines_with_nonform"
+   ],
+   "entries": 14,
+   "runs": 14,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 12,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 2,
+   "pass_runs": 2,
+   "fail_entries": 12,
+   "fail_runs": 12,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 2,
+   "pass_tie_runs": 2,
+   "pass_twin_entries": 2,
+   "pass_twin_runs": 2,
+   "other_tests_by_entries": [
+    [
+     "test_non_form_errors_uses_custom_errorlist_subclass_and_has_nonform_class",
+     9
+    ],
+    [
+     "test_non_form_errors_returns_same_instance_across_calls",
+     6
+    ],
+    [
+     "test_non_form_errors_with_custom_error_class_combines_with_nonform",
+     3
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_non_form_errors_uses_custom_errorlist_subclass_and_has_nonform_class",
+     9
+    ],
+    [
+     "test_non_form_errors_returns_same_instance_across_calls",
+     6
+    ],
+    [
+     "test_non_form_errors_with_custom_error_class_combines_with_nonform",
+     3
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-14771",
+   "names": [
+    "test_non_cpython_ignores_xoptions"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 68,
+   "runs": 68,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 6,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 68,
+   "pass_runs": 68,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 68,
+   "pass_tie_runs": 68,
+   "pass_twin_entries": 68,
+   "pass_twin_runs": 68,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "django__django-14787",
+   "names": [
+    "test_wrapped_attribute_points_to_original_method"
+   ],
+   "ties": [],
+   "twins": [
+    "test_preserves_basic_wrapper_assignments_single_decorator"
+   ],
+   "entries": 16,
+   "runs": 15,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 6,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 10,
+   "pass_runs": 9,
+   "fail_entries": 6,
+   "fail_runs": 6,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 10,
+   "pass_tie_runs": 9,
+   "pass_twin_entries": 16,
+   "pass_twin_runs": 15,
+   "other_tests_by_entries": [
+    [
+     "test_preserves_basic_wrapper_assignments_single_decorator",
+     6
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_preserves_basic_wrapper_assignments_single_decorator",
+     6
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-14999",
+   "names": [
+    "test_case_only_db_table_change_executes"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 20,
+   "runs": 20,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 4,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 20,
+   "pass_runs": 20,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 20,
+   "pass_tie_runs": 20,
+   "pass_twin_entries": 20,
+   "pass_twin_runs": 20,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "django__django-15103",
+   "names": [
+    "test_empty_string_id_omits",
+    "test_filter_empty_id_omits"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 73,
+   "runs": 66,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 12,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 73,
+   "pass_runs": 66,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 73,
+   "pass_tie_runs": 66,
+   "pass_twin_entries": 73,
+   "pass_twin_runs": 66,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "django__django-15252",
+   "names": [
+    "test_non_empty_plan_calls_ensure_schema"
+   ],
+   "ties": [
+    "test_plan_empty_has_table_false_early_return"
+   ],
+   "twins": [
+    "test_plan_empty_has_table_false_early_return"
+   ],
+   "entries": 1,
+   "runs": 1,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 2,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 1,
+   "fail_runs": 1,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 1,
+   "pass_tie_runs": 1,
+   "pass_twin_entries": 1,
+   "pass_twin_runs": 1,
+   "other_tests_by_entries": [
+    [
+     "test_plan_empty_has_table_false_early_return",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_plan_empty_has_table_false_early_return",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-15741",
+   "names": [
+    "test_cache_keys_are_strings_for_lazy_format_type"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 28,
+   "runs": 27,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 31,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 28,
+   "pass_runs": 27,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 28,
+   "pass_tie_runs": 27,
+   "pass_twin_entries": 28,
+   "pass_twin_runs": 27,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "django__django-15863",
+   "names": [
+    "test_object_with_str_decimal"
+   ],
+   "ties": [],
+   "twins": [
+    "test_decimal_string_input_precision"
+   ],
+   "entries": 105,
+   "runs": 88,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 8,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 105,
+   "fail_runs": 88,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 0,
+   "pass_tie_runs": 0,
+   "pass_twin_entries": 37,
+   "pass_twin_runs": 32,
+   "other_tests_by_entries": [
+    [
+     "test_decimal_string_input_precision",
+     99
+    ],
+    [
+     "test_non_integer_arg_returns_input_val",
+     68
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_decimal_string_input_precision",
+     82
+    ],
+    [
+     "test_non_integer_arg_returns_input_val",
+     56
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-16116",
+   "names": [
+    "test_check_with_update_pending_changes_no_write"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 21,
+   "runs": 20,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 4,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 21,
+   "pass_runs": 20,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 21,
+   "pass_tie_runs": 20,
+   "pass_twin_entries": 21,
+   "pass_twin_runs": 20,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "django__django-16877",
+   "names": [
+    "test_invalid_input_raises_type_error"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 4,
+   "runs": 4,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 32,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 3,
+   "pass_runs": 3,
+   "fail_entries": 1,
+   "fail_runs": 1,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 3,
+   "pass_tie_runs": 3,
+   "pass_twin_entries": 3,
+   "pass_twin_runs": 3,
+   "other_tests_by_entries": [
+    [
+     "test_return_type_is_list",
+     1
+    ],
+    [
+     "test_direct_render_sequence_autoescape_off",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_return_type_is_list",
+     1
+    ],
+    [
+     "test_direct_render_sequence_autoescape_off",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-16938",
+   "names": [
+    "test_serializer_m2m_queryset_select_related_arguments_preserved"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 13,
+   "runs": 12,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 7,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 13,
+   "pass_runs": 12,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 13,
+   "pass_tie_runs": 12,
+   "pass_twin_entries": 13,
+   "pass_twin_runs": 12,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "django__django-17084",
+   "names": [
+    "test_window_annotation_missing_contains_attr_still_requires_wrapping"
+   ],
+   "ties": [],
+   "twins": [
+    "test_aggregate_over_window_with_order_by_requires_wrapping",
+    "test_mixed_window_and_non_window_references_require_wrapping",
+    "test_multiple_window_annotations_referenced_require_wrapping"
+   ],
+   "entries": 54,
+   "runs": 52,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 8,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 53,
+   "pass_runs": 51,
+   "fail_entries": 1,
+   "fail_runs": 1,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 53,
+   "pass_tie_runs": 51,
+   "pass_twin_entries": 54,
+   "pass_twin_runs": 52,
+   "other_tests_by_entries": [
+    [
+     "test_aggregate_over_window_with_order_by_requires_wrapping",
+     1
+    ],
+    [
+     "test_mixed_window_and_non_window_references_require_wrapping",
+     1
+    ],
+    [
+     "test_multiple_window_annotations_referenced_require_wrapping",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_aggregate_over_window_with_order_by_requires_wrapping",
+     1
+    ],
+    [
+     "test_mixed_window_and_non_window_references_require_wrapping",
+     1
+    ],
+    [
+     "test_multiple_window_annotations_referenced_require_wrapping",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "django__django-17087",
+   "names": [
+    "test_serialize_local_nested_class_method_qualname"
+   ],
+   "ties": [],
+   "twins": [
+    "test_field_default_uses_nested_class_method",
+    "test_field_default_with_choices_from_nested_class",
+    "test_serialize_deeply_nested_methods",
+    "test_serialize_nested_class_method",
+    "test_serialize_nested_dunder_classmethod"
+   ],
+   "entries": 6,
+   "runs": 6,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 9,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 5,
+   "pass_runs": 5,
+   "fail_entries": 1,
+   "fail_runs": 1,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 5,
+   "pass_tie_runs": 5,
+   "pass_twin_entries": 6,
+   "pass_twin_runs": 6,
+   "other_tests_by_entries": [
+    [
+     "test_field_default_with_choices_from_nested_class",
+     1
+    ],
+    [
+     "test_serialize_deeply_nested_methods",
+     1
+    ],
+    [
+     "test_field_default_uses_nested_class_method",
+     1
+    ],
+    [
+     "test_serialize_nested_dunder_classmethod",
+     1
+    ],
+    [
+     "test_serialize_nested_class_method",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_field_default_with_choices_from_nested_class",
+     1
+    ],
+    [
+     "test_serialize_deeply_nested_methods",
+     1
+    ],
+    [
+     "test_field_default_uses_nested_class_method",
+     1
+    ],
+    [
+     "test_serialize_nested_dunder_classmethod",
+     1
+    ],
+    [
+     "test_serialize_nested_class_method",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-14623",
+   "names": [
+    "test_inverted_limits_logit_2d_x"
+   ],
+   "ties": [],
+   "twins": [
+    "test_invalid_nonpositive_ignored_on_log_2d_x_y",
+    "test_inverted_limits_log_2d_x",
+    "test_inverted_limits_log_2d_x_close_values",
+    "test_inverted_limits_log_2d_y_preserve_bottom_on_none",
+    "test_inverted_limits_log_2d_y_preserve_top_on_none",
+    "test_inverted_limits_logit_2d_y",
+    "test_kwargs_xmin_xmax_2d_log_and_conflicts",
+    "test_none_uses_old_limits_2d_log_x_y",
+    "test_set_xlim_tuple_and_none_branches_log_scale",
+    "test_set_xlim_xmin_xmax_keywords_and_conflicts_log_scale",
+    "test_tuple_limits_2d_log_x_y"
+   ],
+   "entries": 58,
+   "runs": 57,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 27,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 58,
+   "fail_runs": 57,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 0,
+   "pass_tie_runs": 0,
+   "pass_twin_entries": 33,
+   "pass_twin_runs": 33,
+   "other_tests_by_entries": [
+    [
+     "test_inverted_limits_logit_2d_y",
+     38
+    ],
+    [
+     "test_kwargs_xmin_xmax_3d_log_and_conflicts",
+     25
+    ],
+    [
+     "test_inverted_limits_log_3d_all_axes",
+     25
+    ],
+    [
+     "test_inverted_limits_log_3d_y_preserve_bottom_on_none",
+     25
+    ],
+    [
+     "test_inverted_limits_log_3d_y_tuple_input",
+     25
+    ],
+    [
+     "test_inverted_limits_log_3d_y_kwargs_yminmax",
+     25
+    ],
+    [
+     "test_none_uses_old_limits_3d_log_x",
+     25
+    ],
+    [
+     "test_set_zlim3d_tuple_and_none_branches_log_scale",
+     25
+    ],
+    [
+     "test_set_zlim3d_zmin_zmax_keywords_and_conflicts_log_scale",
+     25
+    ],
+    [
+     "test_inverted_limits_log_3d_y_preserve_top_on_none",
+     25
+    ],
+    [
+     "test_tuple_limits_3d_log_all_axes",
+     25
+    ],
+    [
+     "test_inverted_limits_log_3d_close_values",
+     25
+    ],
+    [
+     "test_log_xlim_invalid_nonpositive_restores_old_limits",
+     20
+    ],
+    [
+     "test_kwargs_xmin_xmax_2d_log_and_conflicts",
+     19
+    ],
+    [
+     "test_none_uses_old_limits_2d_log_x_y",
+     19
+    ],
+    [
+     "test_invalid_nonpositive_ignored_on_log_2d_x_y",
+     19
+    ],
+    [
+     "test_inverted_limits_log_2d_x",
+     19
+    ],
+    [
+     "test_set_xlim_tuple_and_none_branches_log_scale",
+     19
+    ],
+    [
+     "test_inverted_limits_log_2d_x_close_values",
+     19
+    ],
+    [
+     "test_set_xlim_xmin_xmax_keywords_and_conflicts_log_scale",
+     19
+    ],
+    [
+     "test_tuple_limits_2d_log_x_y",
+     19
+    ],
+    [
+     "test_inverted_limits_log_2d_y_preserve_bottom_on_none",
+     3
+    ],
+    [
+     "test_inverted_limits_log_2d_y_preserve_top_on_none",
+     3
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_inverted_limits_logit_2d_y",
+     38
+    ],
+    [
+     "test_kwargs_xmin_xmax_3d_log_and_conflicts",
+     24
+    ],
+    [
+     "test_inverted_limits_log_3d_all_axes",
+     24
+    ],
+    [
+     "test_inverted_limits_log_3d_y_preserve_bottom_on_none",
+     24
+    ],
+    [
+     "test_inverted_limits_log_3d_y_tuple_input",
+     24
+    ],
+    [
+     "test_inverted_limits_log_3d_y_kwargs_yminmax",
+     24
+    ],
+    [
+     "test_none_uses_old_limits_3d_log_x",
+     24
+    ],
+    [
+     "test_set_zlim3d_tuple_and_none_branches_log_scale",
+     24
+    ],
+    [
+     "test_set_zlim3d_zmin_zmax_keywords_and_conflicts_log_scale",
+     24
+    ],
+    [
+     "test_inverted_limits_log_3d_y_preserve_top_on_none",
+     24
+    ],
+    [
+     "test_tuple_limits_3d_log_all_axes",
+     24
+    ],
+    [
+     "test_inverted_limits_log_3d_close_values",
+     24
+    ],
+    [
+     "test_log_xlim_invalid_nonpositive_restores_old_limits",
+     19
+    ],
+    [
+     "test_kwargs_xmin_xmax_2d_log_and_conflicts",
+     18
+    ],
+    [
+     "test_none_uses_old_limits_2d_log_x_y",
+     18
+    ],
+    [
+     "test_invalid_nonpositive_ignored_on_log_2d_x_y",
+     18
+    ],
+    [
+     "test_inverted_limits_log_2d_x",
+     18
+    ],
+    [
+     "test_set_xlim_tuple_and_none_branches_log_scale",
+     18
+    ],
+    [
+     "test_inverted_limits_log_2d_x_close_values",
+     18
+    ],
+    [
+     "test_set_xlim_xmin_xmax_keywords_and_conflicts_log_scale",
+     18
+    ],
+    [
+     "test_tuple_limits_2d_log_x_y",
+     18
+    ],
+    [
+     "test_inverted_limits_log_2d_y_preserve_bottom_on_none",
+     2
+    ],
+    [
+     "test_inverted_limits_log_2d_y_preserve_top_on_none",
+     2
+    ]
+   ]
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-20488",
+   "names": [
+    "test_observed_vmin_eps_high_vmax_float32"
+   ],
+   "ties": [],
+   "twins": [
+    "test_imshow_lognorm_huge_range_no_error",
+    "test_imshow_lognorm_with_zero_vmin_guard"
+   ],
+   "entries": 6,
+   "runs": 6,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 17,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 1,
+   "pass_runs": 1,
+   "fail_entries": 5,
+   "fail_runs": 5,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 1,
+   "pass_tie_runs": 1,
+   "pass_twin_entries": 6,
+   "pass_twin_runs": 6,
+   "other_tests_by_entries": [
+    [
+     "test_imshow_lognorm_huge_range_no_error",
+     5
+    ],
+    [
+     "test_imshow_lognorm_with_zero_vmin_guard",
+     5
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_imshow_lognorm_huge_range_no_error",
+     5
+    ],
+    [
+     "test_imshow_lognorm_with_zero_vmin_guard",
+     5
+    ]
+   ]
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-23314",
+   "names": [
+    "test_invisible_3d_does_not_unstale_viewlim"
+   ],
+   "ties": [],
+   "twins": [
+    "test_3d_visibility_toggle_preserves_axis_state",
+    "test_3d_visibility_toggle_then_invisible",
+    "test_invisible_axes_3d_equals_empty",
+    "test_invisible_axes_events_3d",
+    "test_mixed_2d_visible_3d_invisible_equals_2d_visible_2d_invisible"
+   ],
+   "entries": 17,
+   "runs": 15,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 3,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 14,
+   "pass_runs": 12,
+   "fail_entries": 3,
+   "fail_runs": 3,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 14,
+   "pass_tie_runs": 12,
+   "pass_twin_entries": 17,
+   "pass_twin_runs": 15,
+   "other_tests_by_entries": [
+    [
+     "test_3d_visibility_toggle_preserves_axis_state",
+     2
+    ],
+    [
+     "test_3d_visibility_toggle_then_invisible",
+     1
+    ],
+    [
+     "test_invisible_axes_3d_equals_empty",
+     1
+    ],
+    [
+     "test_mixed_2d_visible_3d_invisible_equals_2d_visible_2d_invisible",
+     1
+    ],
+    [
+     "test_invisible_axes_events_3d",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_3d_visibility_toggle_preserves_axis_state",
+     2
+    ],
+    [
+     "test_3d_visibility_toggle_then_invisible",
+     1
+    ],
+    [
+     "test_invisible_axes_3d_equals_empty",
+     1
+    ],
+    [
+     "test_mixed_2d_visible_3d_invisible_equals_2d_visible_2d_invisible",
+     1
+    ],
+    [
+     "test_invisible_axes_events_3d",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-25122",
+   "names": [
+    "test_complex_spectrum_dc_with_negative_sum_window"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 77,
+   "runs": 57,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 3,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 3,
+   "pass_runs": 3,
+   "fail_entries": 74,
+   "fail_runs": 54,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 3,
+   "pass_tie_runs": 3,
+   "pass_twin_entries": 3,
+   "pass_twin_runs": 3,
+   "other_tests_by_entries": [
+    [
+     "test_magnitude_angle_phase_modes_with_negative_sum_window_and_twosided",
+     74
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_magnitude_angle_phase_modes_with_negative_sum_window_and_twosided",
+     54
+    ]
+   ]
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-25775",
+   "names": [
+    "test_cairo_backend_text_antialias_propagation_and_gc_getter",
+    "test_cairo_gc_get_antialias_semantics_without_renderer"
+   ],
+   "ties": [],
+   "twins": [
+    "test_fig_and_axes_text_antialiased_arg_and_default",
+    "test_mathtext_does_not_crash_with_antialiased_kw",
+    "test_text_default_antialiased_follows_rcparams_at_creation",
+    "test_update_from_copies_antialiased"
+   ],
+   "entries": 66,
+   "runs": 66,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 14,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 26,
+   "pass_runs": 26,
+   "fail_entries": 40,
+   "fail_runs": 40,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 26,
+   "pass_tie_runs": 26,
+   "pass_twin_entries": 66,
+   "pass_twin_runs": 66,
+   "other_tests_by_entries": [
+    [
+     "test_update_from_copies_antialiased",
+     40
+    ],
+    [
+     "test_fig_and_axes_text_antialiased_arg_and_default",
+     2
+    ],
+    [
+     "test_text_default_antialiased_follows_rcparams_at_creation",
+     2
+    ],
+    [
+     "test_mathtext_does_not_crash_with_antialiased_kw",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_update_from_copies_antialiased",
+     40
+    ],
+    [
+     "test_fig_and_axes_text_antialiased_arg_and_default",
+     2
+    ],
+    [
+     "test_text_default_antialiased_follows_rcparams_at_creation",
+     2
+    ],
+    [
+     "test_mathtext_does_not_crash_with_antialiased_kw",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "pallets__flask-5014",
+   "names": [
+    "test_whitespace_only_name_allowed_and_routes_work"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 76,
+   "runs": 70,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 7,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 27,
+   "pass_runs": 25,
+   "fail_entries": 49,
+   "fail_runs": 45,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 27,
+   "pass_tie_runs": 25,
+   "pass_twin_entries": 27,
+   "pass_twin_runs": 25,
+   "other_tests_by_entries": [
+    [
+     "test_empty_name_and_falsey_values_not_allowed",
+     49
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_empty_name_and_falsey_values_not_allowed",
+     45
+    ]
+   ]
+  },
+  {
+   "instance_id": "psf__requests-2317",
+   "names": [
+    "test_method_bytearray_ok"
+   ],
+   "ties": [],
+   "twins": [
+    "test_method_invalid_type_raises",
+    "test_method_memoryview_raises",
+    "test_method_non_ascii_bytes_raises"
+   ],
+   "entries": 50,
+   "runs": 48,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 7,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 2,
+   "pass_runs": 2,
+   "fail_entries": 48,
+   "fail_runs": 46,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 2,
+   "pass_tie_runs": 2,
+   "pass_twin_entries": 50,
+   "pass_twin_runs": 48,
+   "other_tests_by_entries": [
+    [
+     "test_method_invalid_type_raises",
+     48
+    ],
+    [
+     "test_method_memoryview_raises",
+     48
+    ],
+    [
+     "test_method_non_ascii_bytes_raises",
+     6
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_method_invalid_type_raises",
+     46
+    ],
+    [
+     "test_method_memoryview_raises",
+     46
+    ],
+    [
+     "test_method_non_ascii_bytes_raises",
+     6
+    ]
+   ]
+  },
+  {
+   "instance_id": "pydata__xarray-2905",
+   "names": [
+    "test_as_compatible_data_dataframe_subclass_prefers_values_over___array__"
+   ],
+   "ties": [],
+   "twins": [
+    "test_dataarray_loc_assignment_pandas_series_unwrapped_into_values",
+    "test_dataarray_slice_assignment_pandas_index_unwrapped"
+   ],
+   "entries": 10,
+   "runs": 10,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 7,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 9,
+   "pass_runs": 9,
+   "fail_entries": 1,
+   "fail_runs": 1,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 9,
+   "pass_tie_runs": 9,
+   "pass_twin_entries": 10,
+   "pass_twin_runs": 10,
+   "other_tests_by_entries": [
+    [
+     "test_dataarray_slice_assignment_pandas_index_unwrapped",
+     1
+    ],
+    [
+     "test_dataarray_loc_assignment_pandas_series_unwrapped_into_values",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_dataarray_slice_assignment_pandas_index_unwrapped",
+     1
+    ],
+    [
+     "test_dataarray_loc_assignment_pandas_series_unwrapped_into_values",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "pydata__xarray-3095",
+   "names": [
+    "test_pandas_index_adapter_copy_identity_and_dtype",
+    "test_pandas_index_adapter_getitem_and_array_dtype_and_transpose_and_repr"
+   ],
+   "ties": [],
+   "twins": [
+    "test_bytes_string_index_copy_preserves_S_dtype"
+   ],
+   "entries": 87,
+   "runs": 67,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 6,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 86,
+   "pass_runs": 66,
+   "fail_entries": 1,
+   "fail_runs": 1,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 86,
+   "pass_tie_runs": 66,
+   "pass_twin_entries": 87,
+   "pass_twin_runs": 67,
+   "other_tests_by_entries": [
+    [
+     "test_bytes_string_index_copy_preserves_S_dtype",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_bytes_string_index_copy_preserves_S_dtype",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "pydata__xarray-3993",
+   "names": [
+    "test_dataarray_integrate_both_dim_and_coord_raises"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 40,
+   "runs": 39,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 7,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 40,
+   "pass_runs": 39,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 40,
+   "pass_tie_runs": 39,
+   "pass_twin_entries": 40,
+   "pass_twin_runs": 39,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "pydata__xarray-6744",
+   "names": [
+    "test_iteration_preserves_window_metadata"
+   ],
+   "ties": [],
+   "twins": [
+    "test_manual_iteration_matches_rolling_mean"
+   ],
+   "entries": 12,
+   "runs": 12,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 8,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 8,
+   "pass_runs": 8,
+   "fail_entries": 4,
+   "fail_runs": 4,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 8,
+   "pass_tie_runs": 8,
+   "pass_twin_entries": 12,
+   "pass_twin_runs": 12,
+   "other_tests_by_entries": [
+    [
+     "test_manual_iteration_matches_rolling_mean",
+     4
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_manual_iteration_matches_rolling_mean",
+     4
+    ]
+   ]
+  },
+  {
+   "instance_id": "pylint-dev__pylint-6386",
+   "names": [
+    "test_help_no_metavar_for_verbose_and_enable_all_extensions"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 29,
+   "runs": 28,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 5,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 10,
+   "pass_runs": 10,
+   "fail_entries": 19,
+   "fail_runs": 18,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 10,
+   "pass_tie_runs": 10,
+   "pass_twin_entries": 10,
+   "pass_twin_runs": 10,
+   "other_tests_by_entries": [
+    [
+     "test_verbose_with_unexpected_value_errors",
+     19
+    ],
+    [
+     "test_enable_all_extensions_with_unexpected_value_errors",
+     2
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_verbose_with_unexpected_value_errors",
+     18
+    ],
+    [
+     "test_enable_all_extensions_with_unexpected_value_errors",
+     2
+    ]
+   ]
+  },
+  {
+   "instance_id": "pylint-dev__pylint-7277",
+   "names": [
+    "test_pythonpath_endswith_colon_custom_path_extra_removal"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 16,
+   "runs": 16,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 3,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 13,
+   "pass_runs": 13,
+   "fail_entries": 3,
+   "fail_runs": 3,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 13,
+   "pass_tie_runs": 13,
+   "pass_twin_entries": 13,
+   "pass_twin_runs": 13,
+   "other_tests_by_entries": [
+    [
+     "test_do_not_remove_arbitrary_first_item",
+     3
+    ],
+    [
+     "test_do_not_remove_realpath_of_mocked_cwd",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_do_not_remove_arbitrary_first_item",
+     3
+    ],
+    [
+     "test_do_not_remove_realpath_of_mocked_cwd",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "pylint-dev__pylint-8898",
+   "names": [
+    "test_csv_regex_escaped_braces_with_comma_single_entry"
+   ],
+   "ties": [
+    "test_csv_regex_escaped_braces_literal_with_additional_entry"
+   ],
+   "twins": [
+    "test_csv_regex_escaped_braces_literal_with_additional_entry"
+   ],
+   "entries": 4,
+   "runs": 4,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 11,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 4,
+   "fail_runs": 4,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 3,
+   "pass_tie_runs": 3,
+   "pass_twin_entries": 3,
+   "pass_twin_runs": 3,
+   "other_tests_by_entries": [
+    [
+     "test_csv_regex_escaped_braces_literal_with_additional_entry",
+     3
+    ],
+    [
+     "test_csv_regex_comma_in_quantifier_extended",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_csv_regex_escaped_braces_literal_with_additional_entry",
+     3
+    ],
+    [
+     "test_csv_regex_comma_in_quantifier_extended",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "pytest-dev__pytest-5262",
+   "names": [
+    "test_capfd_sys_stream_modes_do_not_include_b"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 6,
+   "runs": 6,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 1,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 6,
+   "pass_runs": 6,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 6,
+   "pass_tie_runs": 6,
+   "pass_twin_entries": 6,
+   "pass_twin_runs": 6,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "pytest-dev__pytest-5631",
+   "names": [
+    "test_combo_default_and_equals_default_only_counts_true_default"
+   ],
+   "ties": [],
+   "twins": [
+    "test_equals_default_not_misclassified_and_fixture_still_injected"
+   ],
+   "entries": 35,
+   "runs": 34,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 1,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 2,
+   "pass_runs": 2,
+   "fail_entries": 33,
+   "fail_runs": 32,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 2,
+   "pass_tie_runs": 2,
+   "pass_twin_entries": 35,
+   "pass_twin_runs": 34,
+   "other_tests_by_entries": [
+    [
+     "test_equals_default_not_misclassified_and_fixture_still_injected",
+     33
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_equals_default_not_misclassified_and_fixture_still_injected",
+     32
+    ]
+   ]
+  },
+  {
+   "instance_id": "pytest-dev__pytest-5809",
+   "names": [
+    "test_create_new_paste_bad_response"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 1,
+   "runs": 1,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 3,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 1,
+   "pass_runs": 1,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 1,
+   "pass_tie_runs": 1,
+   "pass_twin_entries": 1,
+   "pass_twin_runs": 1,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "pytest-dev__pytest-6197",
+   "names": [
+    "test_pkg_init_markers_apply_to_inner_tests_when_collected"
+   ],
+   "ties": [],
+   "twins": [
+    "test_dir_arg_without_tests_does_not_import_init"
+   ],
+   "entries": 24,
+   "runs": 23,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 5,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 7,
+   "pass_runs": 7,
+   "fail_entries": 17,
+   "fail_runs": 16,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 7,
+   "pass_tie_runs": 7,
+   "pass_twin_entries": 7,
+   "pass_twin_runs": 7,
+   "other_tests_by_entries": [
+    [
+     "test_explicit_init_file_is_not_imported",
+     14
+    ],
+    [
+     "test_pkg_init_markers_apply_in_init_when_collected_with_pattern",
+     8
+    ],
+    [
+     "test_dir_arg_without_tests_does_not_import_init",
+     3
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_explicit_init_file_is_not_imported",
+     13
+    ],
+    [
+     "test_pkg_init_markers_apply_in_init_when_collected_with_pattern",
+     7
+    ],
+    [
+     "test_dir_arg_without_tests_does_not_import_init",
+     3
+    ]
+   ]
+  },
+  {
+   "instance_id": "pytest-dev__pytest-7432",
+   "names": [
+    "test_skip_mark_location_rewrite_even_if_store_key_missing"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 5,
+   "runs": 5,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 6,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 4,
+   "pass_runs": 4,
+   "fail_entries": 1,
+   "fail_runs": 1,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 4,
+   "pass_tie_runs": 4,
+   "pass_twin_entries": 4,
+   "pass_twin_runs": 4,
+   "other_tests_by_entries": [
+    [
+     "test_runtime_skip_call_site_location_consistent",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_runtime_skip_call_site_location_consistent",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-10844",
+   "names": [
+    "test_fowlkes_mallows_perfect_match"
+   ],
+   "ties": [
+    "test_fowlkes_mallows_large_counts_no_overflow_and_correct"
+   ],
+   "twins": [
+    "test_fowlkes_mallows_large_counts_no_overflow_and_correct"
+   ],
+   "entries": 15,
+   "runs": 13,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 2,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 15,
+   "fail_runs": 13,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 13,
+   "pass_tie_runs": 11,
+   "pass_twin_entries": 13,
+   "pass_twin_runs": 11,
+   "other_tests_by_entries": [
+    [
+     "test_fowlkes_mallows_large_counts_no_overflow_and_correct",
+     13
+    ],
+    [
+     "test_fowlkes_mallows_tk_zero_singletons",
+     2
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_fowlkes_mallows_large_counts_no_overflow_and_correct",
+     11
+    ],
+    [
+     "test_fowlkes_mallows_tk_zero_singletons",
+     2
+    ]
+   ]
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-11310",
+   "names": [
+    "test_refit_time_absent_when_refit_false"
+   ],
+   "ties": [],
+   "twins": [
+    "test_refit_time_present_gridsearch_default"
+   ],
+   "entries": 28,
+   "runs": 28,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 6,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 19,
+   "pass_runs": 19,
+   "fail_entries": 9,
+   "fail_runs": 9,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 19,
+   "pass_tie_runs": 19,
+   "pass_twin_entries": 27,
+   "pass_twin_runs": 27,
+   "other_tests_by_entries": [
+    [
+     "test_refit_time_present_gridsearch_default",
+     8
+    ],
+    [
+     "test_refit_time_present_unsupervised_estimator_y_none",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_refit_time_present_gridsearch_default",
+     8
+    ],
+    [
+     "test_refit_time_present_unsupervised_estimator_y_none",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-13328",
+   "names": [
+    "test_huber_integer_dense_equivalence"
+   ],
+   "ties": [],
+   "twins": [
+    "test_huber_bool_sparse_equivalence",
+    "test_huber_bool_sparse_with_sample_weight"
+   ],
+   "entries": 46,
+   "runs": 44,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 6,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 38,
+   "pass_runs": 37,
+   "fail_entries": 8,
+   "fail_runs": 7,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 38,
+   "pass_tie_runs": 37,
+   "pass_twin_entries": 46,
+   "pass_twin_runs": 44,
+   "other_tests_by_entries": [
+    [
+     "test_huber_bool_sparse_with_sample_weight",
+     8
+    ],
+    [
+     "test_huber_bool_sparse_equivalence",
+     8
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_huber_bool_sparse_with_sample_weight",
+     7
+    ],
+    [
+     "test_huber_bool_sparse_equivalence",
+     7
+    ]
+   ]
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-14141",
+   "names": [
+    "test_get_deps_info_joblib_missing_sets_none"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 1,
+   "runs": 1,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 3,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 1,
+   "pass_runs": 1,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 1,
+   "pass_tie_runs": 1,
+   "pass_twin_entries": 1,
+   "pass_twin_runs": 1,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-25747",
+   "names": [
+    "test__wrap_in_pandas_container_dataframe_mismatched_index_is_preserved"
+   ],
+   "ties": [
+    "test__wrap_in_pandas_container_dataframe_updates_columns_preserves_index"
+   ],
+   "twins": [
+    "test__wrap_in_pandas_container_dataframe_updates_columns_preserves_index",
+    "test_feature_union_with_pandas_transform_output_aggregating_transformer_keeps_index",
+    "test_feature_union_with_two_aggregating_transformers_keeps_index_and_shape"
+   ],
+   "entries": 8,
+   "runs": 7,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 3,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 8,
+   "fail_runs": 7,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 6,
+   "pass_tie_runs": 5,
+   "pass_twin_entries": 8,
+   "pass_twin_runs": 7,
+   "other_tests_by_entries": [
+    [
+     "test__wrap_in_pandas_container_dataframe_updates_columns_preserves_index",
+     8
+    ],
+    [
+     "test_feature_union_with_two_aggregating_transformers_keeps_index_and_shape",
+     2
+    ],
+    [
+     "test_feature_union_with_pandas_transform_output_aggregating_transformer_keeps_index",
+     2
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test__wrap_in_pandas_container_dataframe_updates_columns_preserves_index",
+     7
+    ],
+    [
+     "test_feature_union_with_two_aggregating_transformers_keeps_index_and_shape",
+     2
+    ],
+    [
+     "test_feature_union_with_pandas_transform_output_aggregating_transformer_keeps_index",
+     2
+    ]
+   ]
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-25973",
+   "names": [
+    "test_integer_cv_classifier_calls_check_cv_with_classifier_true"
+   ],
+   "ties": [],
+   "twins": [
+    "test_cv_generator_support_classifier_logo",
+    "test_cv_generator_support_classifier_pipeline",
+    "test_cv_generator_support_regression_kfold"
+   ],
+   "entries": 61,
+   "runs": 61,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 6,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 59,
+   "pass_runs": 59,
+   "fail_entries": 2,
+   "fail_runs": 2,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 59,
+   "pass_tie_runs": 59,
+   "pass_twin_entries": 61,
+   "pass_twin_runs": 61,
+   "other_tests_by_entries": [
+    [
+     "test_cv_generator_support_regression_kfold",
+     2
+    ],
+    [
+     "test_cv_generator_support_classifier_logo",
+     1
+    ],
+    [
+     "test_cv_generator_support_classifier_pipeline",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_cv_generator_support_regression_kfold",
+     2
+    ],
+    [
+     "test_cv_generator_support_classifier_logo",
+     1
+    ],
+    [
+     "test_cv_generator_support_classifier_pipeline",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-26323",
+   "names": [
+    "test_remainder_set_output_propagates_default_mode"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 2,
+   "runs": 2,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 1,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 2,
+   "pass_runs": 2,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 2,
+   "pass_tie_runs": 2,
+   "pass_twin_entries": 2,
+   "pass_twin_runs": 2,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-10449",
+   "names": [
+    "test_class_description_all_keeps_non_none_rtype_from_new"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 60,
+   "runs": 56,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 1,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 60,
+   "pass_runs": 56,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 60,
+   "pass_tie_runs": 56,
+   "pass_twin_entries": 60,
+   "pass_twin_runs": 56,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-7910",
+   "names": [
+    "test_decorated_init_no_wraps_not_included"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 3,
+   "runs": 3,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 3,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 2,
+   "pass_runs": 2,
+   "fail_entries": 1,
+   "fail_runs": 1,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 2,
+   "pass_tie_runs": 2,
+   "pass_twin_entries": 2,
+   "pass_twin_runs": 2,
+   "other_tests_by_entries": [
+    [
+     "test_decorated_init_multi_wraps_included",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_decorated_init_multi_wraps_included",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-8035",
+   "names": [
+    "test_private_members_with_explicit_members_conflict_resolution"
+   ],
+   "ties": [
+    "test_merge_members_case_sensitive_dedup",
+    "test_private_members_merged_when_members_empty_list"
+   ],
+   "twins": [
+    "test_merge_members_case_sensitive_dedup",
+    "test_private_members_merged_when_members_empty_list"
+   ],
+   "entries": 62,
+   "runs": 60,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 4,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 62,
+   "fail_runs": 60,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 62,
+   "pass_tie_runs": 60,
+   "pass_twin_entries": 62,
+   "pass_twin_runs": 60,
+   "other_tests_by_entries": [
+    [
+     "test_merge_members_case_sensitive_dedup",
+     62
+    ],
+    [
+     "test_private_members_merged_when_members_empty_list",
+     62
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_merge_members_case_sensitive_dedup",
+     60
+    ],
+    [
+     "test_private_members_merged_when_members_empty_list",
+     60
+    ]
+   ]
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-8459",
+   "names": [
+    "test_autodoc_typehints_description_and_type_aliases_ext_dotted_value"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 5,
+   "runs": 5,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 1,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 4,
+   "pass_runs": 4,
+   "fail_entries": 1,
+   "fail_runs": 1,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 4,
+   "pass_tie_runs": 4,
+   "pass_twin_entries": 4,
+   "pass_twin_runs": 4,
+   "other_tests_by_entries": [
+    [
+     "test_autodoc_typehints_description_and_type_aliases_return_class",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_autodoc_typehints_description_and_type_aliases_return_class",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-8548",
+   "names": [
+    "test_nested_class_instance_attribute_collected"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 10,
+   "runs": 10,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 3,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 10,
+   "pass_runs": 10,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 10,
+   "pass_tie_runs": 10,
+   "pass_twin_entries": 10,
+   "pass_twin_runs": 10,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-8551",
+   "names": [
+    "test_misused_type_field_links_content_with_context_and_rewrites_paragraph"
+   ],
+   "ties": [],
+   "twins": [
+    "test_rtype_none_uses_obj_and_has_context",
+    "test_unqualified_types_follow_currentmodule_and_no_ambiguity"
+   ],
+   "entries": 43,
+   "runs": 39,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 3,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 41,
+   "pass_runs": 37,
+   "fail_entries": 2,
+   "fail_runs": 2,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 41,
+   "pass_tie_runs": 37,
+   "pass_twin_entries": 43,
+   "pass_twin_runs": 39,
+   "other_tests_by_entries": [
+    [
+     "test_rtype_none_uses_obj_and_has_context",
+     2
+    ],
+    [
+     "test_unqualified_types_follow_currentmodule_and_no_ambiguity",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_rtype_none_uses_obj_and_has_context",
+     2
+    ],
+    [
+     "test_unqualified_types_follow_currentmodule_and_no_ambiguity",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-8593",
+   "names": [
+    "test_importer_get_module_members_emits_deprecation_warning"
+   ],
+   "ties": [],
+   "twins": [
+    "test_module_members_respect_meta_public_for_variables"
+   ],
+   "entries": 54,
+   "runs": 53,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 2,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 51,
+   "pass_runs": 50,
+   "fail_entries": 3,
+   "fail_runs": 3,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 51,
+   "pass_tie_runs": 50,
+   "pass_twin_entries": 54,
+   "pass_twin_runs": 53,
+   "other_tests_by_entries": [
+    [
+     "test_module_members_respect_meta_public_for_variables",
+     3
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_module_members_respect_meta_public_for_variables",
+     3
+    ]
+   ]
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-8621",
+   "names": [
+    "test_kbd_role_separator_with_spaces_around"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 45,
+   "runs": 43,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 6,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 45,
+   "pass_runs": 43,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 45,
+   "pass_tie_runs": 43,
+   "pass_twin_entries": 45,
+   "pass_twin_runs": 43,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-9320",
+   "names": [
+    "test_is_path_or_empty_does_not_accept_whitespace_only"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 76,
+   "runs": 70,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 3,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 56,
+   "pass_runs": 52,
+   "fail_entries": 20,
+   "fail_runs": 18,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 56,
+   "pass_tie_runs": 52,
+   "pass_twin_entries": 56,
+   "pass_twin_runs": 52,
+   "other_tests_by_entries": [
+    [
+     "test_exits_on_whitespace_input_when_existing_confpy",
+     20
+    ],
+    [
+     "test_exits_when_existing_confpy_monkeypatched",
+     20
+    ],
+    [
+     "test_exits_when_existing_source_confpy_realfs",
+     20
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_exits_on_whitespace_input_when_existing_confpy",
+     18
+    ],
+    [
+     "test_exits_when_existing_confpy_monkeypatched",
+     18
+    ],
+    [
+     "test_exits_when_existing_source_confpy_realfs",
+     18
+    ]
+   ]
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-9461",
+   "names": [
+    "test_pyproperty_classmethod_prefix"
+   ],
+   "ties": [
+    "test_autoproperty_subclass_inherits_doc_and_classmethod",
+    "test_inherited_classmethod_property",
+    "test_property_documenter_rejects_non_property_member"
+   ],
+   "twins": [
+    "test_autoproperty_subclass_inherits_doc_and_classmethod",
+    "test_inherited_classmethod_property",
+    "test_property_documenter_rejects_non_property_member"
+   ],
+   "entries": 2,
+   "runs": 2,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 5,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 2,
+   "fail_runs": 2,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 2,
+   "pass_tie_runs": 2,
+   "pass_twin_entries": 2,
+   "pass_twin_runs": 2,
+   "other_tests_by_entries": [
+    [
+     "test_autoproperty_subclass_inherits_doc_and_classmethod",
+     2
+    ],
+    [
+     "test_inherited_classmethod_property",
+     2
+    ],
+    [
+     "test_property_documenter_rejects_non_property_member",
+     2
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_autoproperty_subclass_inherits_doc_and_classmethod",
+     2
+    ],
+    [
+     "test_inherited_classmethod_property",
+     2
+    ],
+    [
+     "test_property_documenter_rejects_non_property_member",
+     2
+    ]
+   ]
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-9602",
+   "names": [
+    "test_parse_annotation_Literal_with_ellipsis"
+   ],
+   "ties": [
+    "test_parse_annotation_Literal_with_bitwise_or_binop"
+   ],
+   "twins": [
+    "test_parse_annotation_Literal_with_bitwise_or_binop"
+   ],
+   "entries": 2,
+   "runs": 2,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 5,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 0,
+   "pass_runs": 0,
+   "fail_entries": 2,
+   "fail_runs": 2,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 1,
+   "pass_tie_runs": 1,
+   "pass_twin_entries": 1,
+   "pass_twin_runs": 1,
+   "other_tests_by_entries": [
+    [
+     "test_parse_annotation_Literal_with_bitwise_or_binop",
+     1
+    ],
+    [
+     "test_parse_annotation_List_with_bool_constant_outside_Literal",
+     1
+    ],
+    [
+     "test_parse_annotation_typing_Literal_mixed",
+     1
+    ],
+    [
+     "test_parse_annotation_Literal_with_None_and_bool",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_parse_annotation_Literal_with_bitwise_or_binop",
+     1
+    ],
+    [
+     "test_parse_annotation_List_with_bool_constant_outside_Literal",
+     1
+    ],
+    [
+     "test_parse_annotation_typing_Literal_mixed",
+     1
+    ],
+    [
+     "test_parse_annotation_Literal_with_None_and_bool",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-9711",
+   "names": [
+    "test_needs_extensions_invalid_version_mixed"
+   ],
+   "ties": [],
+   "twins": [
+    "test_needs_extensions_invalid_version_fallback_both_invalid",
+    "test_needs_extensions_invalid_version_fallback_required_newer",
+    "test_needs_extensions_multiple_entries_and_missing_extension"
+   ],
+   "entries": 70,
+   "runs": 68,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 9,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 7,
+   "pass_runs": 7,
+   "fail_entries": 63,
+   "fail_runs": 61,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 7,
+   "pass_tie_runs": 7,
+   "pass_twin_entries": 7,
+   "pass_twin_runs": 7,
+   "other_tests_by_entries": [
+    [
+     "test_needs_extensions_invalid_version_mixed_required_greater",
+     63
+    ],
+    [
+     "test_needs_extensions_pep440_matrix_unfulfilled",
+     7
+    ],
+    [
+     "test_needs_extensions_pep440_matrix_fulfilled",
+     7
+    ],
+    [
+     "test_needs_extensions_unknown_version",
+     2
+    ],
+    [
+     "test_needs_extensions_multiple_entries_and_missing_extension",
+     1
+    ],
+    [
+     "test_needs_extensions_invalid_version_fallback_both_invalid",
+     1
+    ],
+    [
+     "test_needs_extensions_invalid_version_fallback_required_newer",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_needs_extensions_invalid_version_mixed_required_greater",
+     61
+    ],
+    [
+     "test_needs_extensions_pep440_matrix_unfulfilled",
+     7
+    ],
+    [
+     "test_needs_extensions_pep440_matrix_fulfilled",
+     7
+    ],
+    [
+     "test_needs_extensions_unknown_version",
+     2
+    ],
+    [
+     "test_needs_extensions_multiple_entries_and_missing_extension",
+     1
+    ],
+    [
+     "test_needs_extensions_invalid_version_fallback_both_invalid",
+     1
+    ],
+    [
+     "test_needs_extensions_invalid_version_fallback_required_newer",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "sympy__sympy-11618",
+   "names": [
+    "test_symbolic_mixed_dims_forward_and_reverse"
+   ],
+   "ties": [],
+   "twins": [
+    "test_equal_dims_with_list_input_2d",
+    "test_equal_dims_with_list_input_4d"
+   ],
+   "entries": 120,
+   "runs": 118,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 10,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 114,
+   "pass_runs": 112,
+   "fail_entries": 6,
+   "fail_runs": 6,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 114,
+   "pass_tie_runs": 112,
+   "pass_twin_entries": 120,
+   "pass_twin_runs": 118,
+   "other_tests_by_entries": [
+    [
+     "test_equal_dims_with_list_input_2d",
+     6
+    ],
+    [
+     "test_equal_dims_with_list_input_4d",
+     6
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_equal_dims_with_list_input_2d",
+     6
+    ],
+    [
+     "test_equal_dims_with_list_input_4d",
+     6
+    ]
+   ]
+  },
+  {
+   "instance_id": "sympy__sympy-13615",
+   "names": [
+    "test_symbol_assumptions_real_and_imaginary"
+   ],
+   "ties": [],
+   "twins": [
+    "test_boundaries_open_interval",
+    "test_mixed_in_out_unknown_closed_interval"
+   ],
+   "entries": 33,
+   "runs": 32,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 10,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 6,
+   "pass_runs": 6,
+   "fail_entries": 27,
+   "fail_runs": 26,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 6,
+   "pass_tie_runs": 6,
+   "pass_twin_entries": 6,
+   "pass_twin_runs": 6,
+   "other_tests_by_entries": [
+    [
+     "test_nonreal_and_infinities",
+     27
+    ],
+    [
+     "test_interval_complement_sifts_definite_outside_to_finiteset",
+     26
+    ],
+    [
+     "test_mixed_in_out_unknown_closed_interval",
+     20
+    ],
+    [
+     "test_boundaries_open_interval",
+     20
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_nonreal_and_infinities",
+     26
+    ],
+    [
+     "test_interval_complement_sifts_definite_outside_to_finiteset",
+     25
+    ],
+    [
+     "test_mixed_in_out_unknown_closed_interval",
+     20
+    ],
+    [
+     "test_boundaries_open_interval",
+     20
+    ]
+   ]
+  },
+  {
+   "instance_id": "sympy__sympy-13757",
+   "names": [
+    "test_poly_op_priority_value"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 14,
+   "runs": 14,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 8,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 10,
+   "pass_runs": 10,
+   "fail_entries": 4,
+   "fail_runs": 4,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 10,
+   "pass_tie_runs": 10,
+   "pass_twin_entries": 10,
+   "pass_twin_runs": 10,
+   "other_tests_by_entries": [
+    [
+     "test_poly_mul_with_rational_and_I",
+     4
+    ],
+    [
+     "test_poly_mul_with_non_poly_expr",
+     3
+    ],
+    [
+     "test_poly_mul_with_other_symbols_and_multivariate",
+     2
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_poly_mul_with_rational_and_I",
+     4
+    ],
+    [
+     "test_poly_mul_with_non_poly_expr",
+     3
+    ],
+    [
+     "test_poly_mul_with_other_symbols_and_multivariate",
+     2
+    ]
+   ]
+  },
+  {
+   "instance_id": "sympy__sympy-13798",
+   "names": [
+    "test_latex_mul_symbol_arbitrary_nonspace_applies_to_numbers_and_symbols"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 7,
+   "runs": 7,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 9,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 7,
+   "pass_runs": 7,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 7,
+   "pass_tie_runs": 7,
+   "pass_twin_entries": 7,
+   "pass_twin_runs": 7,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "sympy__sympy-13877",
+   "names": [
+    "test_random_complex_number_rational_tolerance_controls_nsimplify"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 41,
+   "runs": 38,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 4,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 41,
+   "pass_runs": 38,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 41,
+   "pass_tie_runs": 38,
+   "pass_twin_entries": 41,
+   "pass_twin_runs": 38,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "sympy__sympy-13974",
+   "names": [
+    "test_tensor_product_simp_error_next_not_pow_nor_tensorproduct"
+   ],
+   "ties": [],
+   "twins": [
+    "test_tensor_product_simp_error_next_pow_not_tensorproduct"
+   ],
+   "entries": 23,
+   "runs": 22,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 22,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 1,
+   "pass_runs": 1,
+   "fail_entries": 22,
+   "fail_runs": 21,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 1,
+   "pass_tie_runs": 1,
+   "pass_twin_entries": 23,
+   "pass_twin_runs": 22,
+   "other_tests_by_entries": [
+    [
+     "test_tensor_product_simp_error_next_pow_not_tensorproduct",
+     22
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_tensor_product_simp_error_next_pow_not_tensorproduct",
+     21
+    ]
+   ]
+  },
+  {
+   "instance_id": "sympy__sympy-18763",
+   "names": [
+    "test_latex_subs_atomic_expr"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 21,
+   "runs": 19,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 9,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 21,
+   "pass_runs": 19,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 21,
+   "pass_tie_runs": 19,
+   "pass_twin_entries": 21,
+   "pass_twin_runs": 19,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "sympy__sympy-20801",
+   "names": [
+    "test_float_vs_booleans_inequality"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 20,
+   "runs": 20,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 2,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 9,
+   "pass_runs": 9,
+   "fail_entries": 11,
+   "fail_runs": 11,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 9,
+   "pass_tie_runs": 9,
+   "pass_twin_entries": 9,
+   "pass_twin_runs": 9,
+   "other_tests_by_entries": [
+    [
+     "test_float_zero_eq_non_number_truthiness_branch",
+     11
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_float_zero_eq_non_number_truthiness_branch",
+     11
+    ]
+   ]
+  },
+  {
+   "instance_id": "sympy__sympy-21379",
+   "names": [
+    "test_mod_gcd_nonpolynomialerror_propagates_with_piecewise"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 2,
+   "runs": 2,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 14,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 2,
+   "pass_runs": 2,
+   "fail_entries": 0,
+   "fail_runs": 0,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 2,
+   "pass_tie_runs": 2,
+   "pass_twin_entries": 2,
+   "pass_twin_runs": 2,
+   "other_tests_by_entries": [],
+   "other_tests_by_runs": []
+  },
+  {
+   "instance_id": "sympy__sympy-21612",
+   "names": [
+    "test_nested_pow_square_of_reciprocal_parentheses"
+   ],
+   "ties": [],
+   "twins": [
+    "test_pow_base_is_pow_of_pow_denominator_parentheses"
+   ],
+   "entries": 8,
+   "runs": 8,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 15,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 3,
+   "pass_runs": 3,
+   "fail_entries": 5,
+   "fail_runs": 5,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 3,
+   "pass_tie_runs": 3,
+   "pass_twin_entries": 4,
+   "pass_twin_runs": 4,
+   "other_tests_by_entries": [
+    [
+     "test_multiple_denominator_factors_with_pow_base",
+     4
+    ],
+    [
+     "test_rational_and_pow_combination_in_denominator",
+     4
+    ],
+    [
+     "test_duplicate_denominator_pow_base_parenthesize_first_exact",
+     4
+    ],
+    [
+     "test_pow_base_is_pow_of_pow_denominator_parentheses",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_multiple_denominator_factors_with_pow_base",
+     4
+    ],
+    [
+     "test_rational_and_pow_combination_in_denominator",
+     4
+    ],
+    [
+     "test_duplicate_denominator_pow_base_parenthesize_first_exact",
+     4
+    ],
+    [
+     "test_pow_base_is_pow_of_pow_denominator_parentheses",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "sympy__sympy-23950",
+   "names": [
+    "test_as_set_identity_preserved_for_interval_and_finiteset"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 6,
+   "runs": 6,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 10,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 3,
+   "pass_runs": 3,
+   "fail_entries": 3,
+   "fail_runs": 3,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 3,
+   "pass_tie_runs": 3,
+   "pass_twin_entries": 3,
+   "pass_twin_runs": 3,
+   "other_tests_by_entries": [
+    [
+     "test_piecewise_with_contains_constructs_and_evaluates_reals",
+     3
+    ],
+    [
+     "test_piecewise_with_contains_constructs_and_evaluates_integers",
+     1
+    ],
+    [
+     "test_piecewise_with_contains_naturals_and_naturals0",
+     1
+    ],
+    [
+     "test_piecewise_with_contains_constructs_and_evaluates_interval",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_piecewise_with_contains_constructs_and_evaluates_reals",
+     3
+    ],
+    [
+     "test_piecewise_with_contains_constructs_and_evaluates_integers",
+     1
+    ],
+    [
+     "test_piecewise_with_contains_naturals_and_naturals0",
+     1
+    ],
+    [
+     "test_piecewise_with_contains_constructs_and_evaluates_interval",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "sympy__sympy-24066",
+   "names": [
+    "test_symbolic_function_with_dimensionless_and_dimensional_arguments"
+   ],
+   "ties": [],
+   "twins": [
+    "test_dimensionless_args_for_various_unary_functions"
+   ],
+   "entries": 57,
+   "runs": 56,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 5,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 36,
+   "pass_runs": 35,
+   "fail_entries": 21,
+   "fail_runs": 21,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 36,
+   "pass_tie_runs": 35,
+   "pass_twin_entries": 37,
+   "pass_twin_runs": 36,
+   "other_tests_by_entries": [
+    [
+     "test_sin_with_direct_units_RC_time_constant_dimensionless_result",
+     20
+    ],
+    [
+     "test_dimensionless_args_for_various_unary_functions",
+     1
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_sin_with_direct_units_RC_time_constant_dimensionless_result",
+     20
+    ],
+    [
+     "test_dimensionless_args_for_various_unary_functions",
+     1
+    ]
+   ]
+  },
+  {
+   "instance_id": "sympy__sympy-24661",
+   "names": [
+    "test_issue_24288_chained_comparisons_evaluate_false"
+   ],
+   "ties": [],
+   "twins": [],
+   "entries": 79,
+   "runs": 77,
+   "gold_ok": true,
+   "noop_ok": true,
+   "gold_bad": [],
+   "noop_bad_n": 4,
+   "gold_count_ok": null,
+   "valid": true,
+   "invalid_why": [],
+   "pass_entries": 72,
+   "pass_runs": 71,
+   "fail_entries": 7,
+   "fail_runs": 6,
+   "unknown_entries": 0,
+   "unknown_runs": 0,
+   "missing_entries": 0,
+   "missing_runs": 0,
+   "pass_tie_entries": 72,
+   "pass_tie_runs": 71,
+   "pass_twin_entries": 72,
+   "pass_twin_runs": 71,
+   "other_tests_by_entries": [
+    [
+     "test_issue_24288_unmapped_compare_ops_eval_false",
+     7
+    ]
+   ],
+   "other_tests_by_runs": [
+    [
+     "test_issue_24288_unmapped_compare_ops_eval_false",
+     6
+    ]
+   ]
+  }
+ ]
+}

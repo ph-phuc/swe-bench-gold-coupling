@@ -1,7 +1,7 @@
 {
   "title": "SWE-bench gold-coupling census",
   "subtitle": "Issue-grounded verdicts on every SWE-ABS rejection on SWE-bench Verified",
-  "description": "Labels for 39,133 resolved SWE-bench Verified leaderboard entries (151 systems) on the original tests, SWE-ABS and UTBoost, and an issue-grounded verdict on each of the 305 tasks where SWE-ABS rejects an entry that passes the original tests. SWE-ABS rejects 19.5% of judged entries; 108 tasks, holding 57.6% of the rejected entries, have a most-failed hardened test that both a model reader and a model refuter call coupled to the gold patch. Setting them aside lowers the pooled rejection rate to 8.7-10.8% (a per-task range). Includes corrected per-system rates with bootstrap intervals, a blind five-annotator spot check, a small test-auditor benchmark with Gemma 4 outputs, the reader prompts, and reproduce.py, which recomputes 150 numbers of the writeup on a CPU in seconds.\n\nStart with README.md (quickstart, glossary, number-by-number provenance) and DATASHEET.md (method, uses, limits). The verdicts are model judgements per task; read the limits before reuse.\n\nLicences: data CC BY 4.0, code MIT (LICENSE), third-party excerpts under their own terms (NOTICE). No patch, issue or test text is redistributed beyond short quotes.",
+  "description": "Labels for 39,133 resolved SWE-bench Verified leaderboard entries (151 systems) on the original tests, SWE-ABS and UTBoost, and an issue-grounded verdict on each of the 305 tasks where SWE-ABS rejects an entry that passes the original tests. SWE-ABS rejects 19.5% of judged entries; 108 tasks, holding 57.6% of the rejected entries, have a most-failed hardened test that both a model reader and a model refuter call coupled to the gold patch. Setting them aside lowers the pooled rejection rate to 8.7-10.8% (a per-task range). Includes corrected per-system rates with bootstrap intervals, a blind five-annotator spot check, a small test-auditor benchmark with Gemma 4 outputs, the reader prompts, and reproduce.py, which recomputes 156 numbers of the writeup on a CPU in seconds.\n\nStart with README.md (quickstart, glossary, number-by-number provenance) and DATASHEET.md (method, uses, limits). The verdicts are model judgements per task; read the limits before reuse.\n\nLicences: data CC BY 4.0, code MIT (LICENSE), third-party excerpts under their own terms (NOTICE). No patch, issue or test text is redistributed beyond short quotes.",
   "id": "phucphan1406/swe-bench-gold-coupling-census",
   "licenses": [
     {
@@ -328,7 +328,7 @@
     },
     {
       "path": "reproduce.py",
-      "description": "Recomputes 150 numbers of the writeup and checks each; ends with ALL 150 CHECKS PASS."
+      "description": "Recomputes 156 numbers of the writeup and checks each; ends with ALL 156 CHECKS PASS."
     }
   ],
   "keywords": [

@@ -1,0 +1,729 @@
+{
+ "exec_records_ignored": [],
+ "decided_heldout": 205,
+ "covered": 68,
+ "coverage": 0.3317,
+ "not_covered_by_cause": {
+  "gold_does_not_pass": 112,
+  "noop_passes": 14,
+  "no_code": 9,
+  "no_packet_or_row": 1,
+  "no_test_names": 1
+ },
+ "covered_by_repo": {
+  "astropy": 6,
+  "django": 20,
+  "matplotlib": 2,
+  "pallets": 1,
+  "pydata": 5,
+  "pytest-dev": 2,
+  "scikit-learn": 8,
+  "sympy": 24
+ },
+ "base_rate_covered": 0.3235,
+ "kappa": 0.0432,
+ "kappa_ci95": [
+  0.0,
+  0.1053
+ ],
+ "kappa_share_of_model_human": 0.0982,
+ "a2_kappa_same_tasks": 0.1573,
+ "a4_minus_a2": -0.1141,
+ "a4_minus_a2_ci95": [
+  -0.3474,
+  0.1302
+ ],
+ "precision_coupled": 0.3385,
+ "recall_coupled": 1.0,
+ "f1_coupled": 0.5057,
+ "precision_genuine": 1.0,
+ "recall_genuine": 0.0652,
+ "calls_coupled_share": 0.9559,
+ "instrument_ok": 0,
+ "useful_go": 0,
+ "contradiction": 0,
+ "inconclusive": 0,
+ "dev_smoke": {},
+ "per_task": {
+  "astropy__astropy-14309": {
+   "instance_id": "astropy__astropy-14309",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "astropy__astropy-14508": {
+   "instance_id": "astropy__astropy-14508",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "astropy__astropy-14539": {
+   "instance_id": "astropy__astropy-14539",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "astropy__astropy-14598": {
+   "instance_id": "astropy__astropy-14598",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 2,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "astropy__astropy-14995": {
+   "instance_id": "astropy__astropy-14995",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 0,
+   "wbp_fail": 1,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 0
+  },
+  "astropy__astropy-7336": {
+   "instance_id": "astropy__astropy-7336",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "django__django-11133": {
+   "instance_id": "django__django-11133",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "django__django-11999": {
+   "instance_id": "django__django-11999",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "django__django-12276": {
+   "instance_id": "django__django-12276",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 1,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "django__django-12406": {
+   "instance_id": "django__django-12406",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 1,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "django__django-12663": {
+   "instance_id": "django__django-12663",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 4,
+   "wbp_fail": 1,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "django__django-13401": {
+   "instance_id": "django__django-13401",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "django__django-13406": {
+   "instance_id": "django__django-13406",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "django__django-13417": {
+   "instance_id": "django__django-13417",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "django__django-13569": {
+   "instance_id": "django__django-13569",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "django__django-14017": {
+   "instance_id": "django__django-14017",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "django__django-14089": {
+   "instance_id": "django__django-14089",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "django__django-14140": {
+   "instance_id": "django__django-14140",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 1,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "django__django-14787": {
+   "instance_id": "django__django-14787",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "django__django-15103": {
+   "instance_id": "django__django-15103",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "django__django-15315": {
+   "instance_id": "django__django-15315",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "django__django-15741": {
+   "instance_id": "django__django-15741",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "django__django-15814": {
+   "instance_id": "django__django-15814",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "django__django-15863": {
+   "instance_id": "django__django-15863",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "django__django-16485": {
+   "instance_id": "django__django-16485",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 4,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "django__django-16877": {
+   "instance_id": "django__django-16877",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 4,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "matplotlib__matplotlib-13989": {
+   "instance_id": "matplotlib__matplotlib-13989",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 2,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "matplotlib__matplotlib-24149": {
+   "instance_id": "matplotlib__matplotlib-24149",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 1,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "pallets__flask-5014": {
+   "instance_id": "pallets__flask-5014",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "pydata__xarray-3677": {
+   "instance_id": "pydata__xarray-3677",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "pydata__xarray-6461": {
+   "instance_id": "pydata__xarray-6461",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "pydata__xarray-6744": {
+   "instance_id": "pydata__xarray-6744",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "pydata__xarray-7233": {
+   "instance_id": "pydata__xarray-7233",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "pydata__xarray-7393": {
+   "instance_id": "pydata__xarray-7393",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 1,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "pytest-dev__pytest-6197": {
+   "instance_id": "pytest-dev__pytest-6197",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "pytest-dev__pytest-7324": {
+   "instance_id": "pytest-dev__pytest-7324",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "scikit-learn__scikit-learn-10908": {
+   "instance_id": "scikit-learn__scikit-learn-10908",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 1,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "scikit-learn__scikit-learn-11310": {
+   "instance_id": "scikit-learn__scikit-learn-11310",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "scikit-learn__scikit-learn-13328": {
+   "instance_id": "scikit-learn__scikit-learn-13328",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "scikit-learn__scikit-learn-13439": {
+   "instance_id": "scikit-learn__scikit-learn-13439",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 1,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "scikit-learn__scikit-learn-14053": {
+   "instance_id": "scikit-learn__scikit-learn-14053",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 1,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "scikit-learn__scikit-learn-14087": {
+   "instance_id": "scikit-learn__scikit-learn-14087",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 4,
+   "wbp_fail": 1,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "scikit-learn__scikit-learn-14894": {
+   "instance_id": "scikit-learn__scikit-learn-14894",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "scikit-learn__scikit-learn-25232": {
+   "instance_id": "scikit-learn__scikit-learn-25232",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 1,
+   "wbp_fail": 4,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 0
+  },
+  "sympy__sympy-12096": {
+   "instance_id": "sympy__sympy-12096",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "sympy__sympy-12481": {
+   "instance_id": "sympy__sympy-12481",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "sympy__sympy-13031": {
+   "instance_id": "sympy__sympy-13031",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "sympy__sympy-13372": {
+   "instance_id": "sympy__sympy-13372",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "sympy__sympy-13615": {
+   "instance_id": "sympy__sympy-13615",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "sympy__sympy-13757": {
+   "instance_id": "sympy__sympy-13757",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "sympy__sympy-14531": {
+   "instance_id": "sympy__sympy-14531",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 2,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "sympy__sympy-14711": {
+   "instance_id": "sympy__sympy-14711",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 4,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "sympy__sympy-14976": {
+   "instance_id": "sympy__sympy-14976",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 1,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "sympy__sympy-16450": {
+   "instance_id": "sympy__sympy-16450",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "sympy__sympy-16597": {
+   "instance_id": "sympy__sympy-16597",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 1,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "sympy__sympy-18189": {
+   "instance_id": "sympy__sympy-18189",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "sympy__sympy-18211": {
+   "instance_id": "sympy__sympy-18211",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "sympy__sympy-19040": {
+   "instance_id": "sympy__sympy-19040",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 1,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "sympy__sympy-19346": {
+   "instance_id": "sympy__sympy-19346",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "sympy__sympy-19637": {
+   "instance_id": "sympy__sympy-19637",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "sympy__sympy-20154": {
+   "instance_id": "sympy__sympy-20154",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 3,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "sympy__sympy-20590": {
+   "instance_id": "sympy__sympy-20590",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 1,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "sympy__sympy-21379": {
+   "instance_id": "sympy__sympy-21379",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 2,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "sympy__sympy-23262": {
+   "instance_id": "sympy__sympy-23262",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 2,
+   "wbp_fail": 3,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 0
+  },
+  "sympy__sympy-23824": {
+   "instance_id": "sympy__sympy-23824",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 1,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "sympy__sympy-23950": {
+   "instance_id": "sympy__sympy-23950",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 4,
+   "wbp_fail": 1,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "sympy__sympy-24539": {
+   "instance_id": "sympy__sympy-24539",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 1,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  },
+  "sympy__sympy-24562": {
+   "instance_id": "sympy__sympy-24562",
+   "gold": "pass",
+   "noop": "fail",
+   "wbp_pass": 5,
+   "wbp_fail": 0,
+   "wbp_missing": 0,
+   "invalid_why": null,
+   "call": 1
+  }
+ }
+}

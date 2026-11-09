@@ -7,7 +7,7 @@ Repository: https://github.com/ph-phuc/swe-bench-gold-coupling · Kaggle dataset
 [![Kaggle: Gemma 4 Developer Agent Paper Track](https://img.shields.io/badge/Kaggle-Gemma%204%20Developer%20Agent%20Paper%20Track-20BEFF)](https://www.kaggle.com/competitions/gemma-4-developer-agent-paper)
 [![Kaggle dataset](https://img.shields.io/badge/Kaggle-dataset-20BEFF)](https://www.kaggle.com/datasets/phucphan1406/swe-bench-gold-coupling-census)
 [![Kaggle notebook: reproduce](https://img.shields.io/badge/Kaggle-notebook%3A%20reproduce-20BEFF)](https://www.kaggle.com/code/phucphan1406/swe-bench-gold-coupling-reproduce)
-![version 1.0.0](https://img.shields.io/badge/version-1.0.0-lightgrey)
+![version 1.1.0](https://img.shields.io/badge/version-1.1.0-lightgrey)
 
 Data, code and prompts behind the writeup *"Gold-Coupled Tests: Auditing Reference Overfitting in SWE-bench Hardening"* (an issue-grounded census of SWE-ABS rejections on SWE-bench Verified, with Gemma 4 auditor baselines). Every headline number of the writeup is recomputed
 from the files here, on a CPU, in seconds; a few secondary numbers are not, and are [listed below](#not-reproduced).
@@ -47,7 +47,7 @@ when a second, adversarial reader (the refuter, same model) agrees.
 | E4B (fp16) | 0.127 [-0.090, 0.327] | 42% of tasks | 0.66 | 0.48 |
 | 12B (fp16) | 0.242 [0.043, 0.446] | 28 (37%) | 0.75 (21/28) | 0.48 |
 | 31B (nf4, exploratory) | 0.117 [0.039, 0.226] | 6 (8%) | 1.00 (6/6; Wilson 0.61-1.00) | 0.14 |
-- **Checkable:** `reproduce.py` recomputes 150 numbers of the writeup and asserts each one; the table
+- **Checkable:** `reproduce.py` recomputes 156 numbers of the writeup and asserts each one; the table
   [below](#where-each-headline-number-comes-from) maps every number to its script and file.
 
 ![Figure 1: per-system SWE-ABS rejection rate, raw and with coupled and contested tasks set aside](figures/fig1_rates.png)
@@ -104,11 +104,11 @@ Corrected per-system rates with 95% intervals are in `data/system_rates/per_syst
 
 ```
 pip install -r requirements.txt      # numpy, pytest (matplotlib only to redraw Figure 1; pandas only for the quickstart)
-python reproduce.py                  # recomputes 150 numbers and asserts each against draft_numbers.json
+python reproduce.py                  # recomputes 156 numbers and asserts each against draft_numbers.json
 python -m pytest -q code             # 24 tests of the tally, rate, evaluator and helper code
 ```
 
-`reproduce.py` ends with `ALL 150 CHECKS PASS`. It runs in about 5 seconds on a laptop CPU. One line per number
+`reproduce.py` ends with `ALL 156 CHECKS PASS`. It runs in about 5 seconds on a laptop CPU. One line per number
 names the writeup section it comes from. If a check fails, the script exits 1. Bootstrap intervals are byte-equal with
 numpy 2.5.2 (`default_rng(0)`); another numpy version may move an interval bound in the last digit, and `reproduce.py`
 then reports the difference.
