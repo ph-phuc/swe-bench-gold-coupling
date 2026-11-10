@@ -15,6 +15,7 @@ Closes the reproduction gap for the numbers the writeup added after 04/11. No la
 - `reproduce.py` reads nested keys and an optional `scale`, so carried numbers can be quoted as percentages;
   **156 checks**, all passing.
 - `README.md`, `DATASHEET.md`: version 1.1.0 and the new check count.
+- `notebooks/reproduce_and_audit.ipynb` (10/11): its pass check and text said 150; now 156. `CITATION.cff`: 1.1.0.
 
 ## 1.0.0 (2026-11-04)
 

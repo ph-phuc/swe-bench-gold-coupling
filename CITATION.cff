@@ -4,8 +4,8 @@ title: "Gold-Coupled Tests: Auditing Reference Overfitting in SWE-bench Hardenin
 authors:
   - family-names: "Phan"
     given-names: "Phuc"
-version: "1.0.0"
-date-released: "2026-11-04"
+version: "1.1.0"
+date-released: "2026-11-09"
 url: "https://github.com/ph-phuc/swe-bench-gold-coupling"   # also at the top of README.md and in DATASHEET.md section 6
 license:
   - MIT
