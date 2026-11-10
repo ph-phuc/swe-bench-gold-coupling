@@ -174,5 +174,32 @@
   "a4_covered_tasks": {"draft": 68, "where": "7: valid on 68 of 205 tasks", "file": "data/carried/a4_eval.json", "key": "covered"},
   "a4_heldout_tasks": {"draft": 205, "where": "7: 68 of 205 tasks", "file": "data/carried/a4_eval.json", "key": "decided_heldout"},
   "a4_kappa": {"draft": 0.04, "dec": 2, "where": "7: kappa 0.04", "file": "data/carried/a4_eval.json", "key": "kappa"}
+ },
+ "heldout_auditor": {
+  "_about": "Table 4 rows 1-3 and random, and the Section 7 A2 and ranking numbers, recomputed by code/score_heldout.py on data/auditor_benchmark/heldout/. Two upper bounds were printed as a second rounding and corrected in the body on 10/11, then checked: A2's kappa upper bound (printed 0.330; computed 0.32947, 0.329 at three decimals) and the paired AUROC difference's upper bound (draft -0.03; computed -0.02497, which is -0.02 at two decimals): both print a second rounding of a four-decimal value.",
+  "n_decided": {"draft": 205, "where": "7: on the 205 held-out tasks"},
+  "n_coupled": {"draft": 64, "where": "7: (64 coupled)"},
+  "rule_flagged": {"draft": 41, "where": "Table 4 row 1: flagged 41"},
+  "rule_hits": {"draft": 29, "where": "Table 4 row 1: 29 coupled"},
+  "rule_precision": {"draft": 0.71, "dec": 2, "where": "Table 4 row 1: precision 0.71"},
+  "rule_auroc": {"draft": 0.775, "dec": 3, "where": "Table 4 row 1: AUROC 0.775"},
+  "a2_flagged": {"draft": 46, "where": "Table 4 row 2: flagged 46"},
+  "a2_hits": {"draft": 22, "where": "Table 4 row 2: 22 coupled"},
+  "a2_precision": {"draft": 0.48, "dec": 2, "where": "Table 4 row 2: precision 0.48"},
+  "a2_auroc": {"draft": 0.654, "dec": 3, "where": "Table 4 row 2: AUROC 0.654"},
+  "second_read_flagged": {"draft": 12, "where": "Table 4 row 3; 7: Gemma keeps 12 of the rule's 41 tasks"},
+  "second_read_hits": {"draft": 10, "where": "Table 4 row 3; 7: 10 coupled"},
+  "second_read_precision": {"draft": 0.83, "dec": 2, "where": "Table 4 row 3: precision 0.83"},
+  "second_read_wilson_lo": {"draft": 0.55, "dec": 2, "where": "Table 4 row 3: [0.55, 0.95]"},
+  "second_read_wilson_hi": {"draft": 0.95, "dec": 2, "where": "Table 4 row 3: [0.55, 0.95]"},
+  "random_precision": {"draft": 0.31, "dec": 2, "where": "Table 4 random: 0.31"},
+  "random_auroc": {"draft": 0.5, "dec": 1, "where": "Table 4 random: AUROC 0.5"},
+  "a2_kappa": {"draft": 0.188, "dec": 3, "where": "7: A2, held-out: kappa 0.188"},
+  "a2_kappa_lo": {"draft": 0.047, "dec": 3, "where": "7: kappa 0.188 [0.047, ...]"},
+  "a2_kappa_hi": {"draft": 0.329, "dec": 3, "where": "7: kappa 0.188 [..., 0.329] (body corrected from 0.330 on 10/11)"},
+  "a2_recall": {"draft": 0.344, "dec": 3, "where": "7: recall 0.344"},
+  "paired_auroc_diff": {"draft": -0.12, "dec": 2, "where": "7: paired AUROC difference -0.12"},
+  "paired_auroc_diff_lo": {"draft": -0.22, "dec": 2, "where": "7: -0.12 [-0.22, ...]"},
+  "paired_auroc_diff_hi": {"draft": -0.02, "dec": 2, "where": "7: -0.12 [..., -0.02] (body corrected from -0.03 on 10/11)"}
  }
 }

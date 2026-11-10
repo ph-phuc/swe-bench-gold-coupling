@@ -281,6 +281,67 @@ def test_spotcheck_kappas_on_known_tables():
     assert abs(SA.cohen(list("CCGG"), list("CGCG"), ["C", "G", "U"])) < 1e-12
 
 
+# --- held-out board (score_heldout.py) --------------------------------------------------------------------------
+
+def test_heldout_board_matches_the_original_analysis():
+    """Values of the original run's outputs (eval_a2 log, gemma_ranker.json, auditor_workflow.json), to 4 decimals."""
+    import score_heldout as SH
+    b = SH.board()
+    r4 = lambda x: round(x, 4)  # noqa: E731
+    assert (b["n_decided"], b["n_coupled"], b["top_k"]) == (205, 64, 41)
+    assert b["top_k_boundary"][0] > b["top_k_boundary"][1]          # no tie at the top-20% cut
+    assert (b["rule"]["flagged"], b["rule"]["hits"], r4(b["rule"]["auroc"])) == (41, 29, 0.7753)
+    assert (b["model"]["flagged"], b["model"]["hits"], r4(b["model"]["auroc"])) == (46, 22, 0.6539)
+    assert (b["rule_then_model"]["flagged"], b["rule_then_model"]["hits"]) == (12, 10)
+    assert [round(x, 3) for x in b["rule_then_model"]["precision_wilson"]] == [0.552, 0.953]
+    a = b["model_agreement"]
+    assert (r4(a["kappa"]), r4(a["kappa_lo"]), r4(a["kappa_hi"]), r4(b["model"]["recall"])) == \
+        (0.188, 0.0473, 0.3295, 0.3438)
+    d = b["paired_auroc_model_minus_rule"]
+    assert (r4(d["diff"]), r4(d["lo"]), r4(d["hi"]), d["draws_used"]) == (-0.1228, -0.2174, -0.025, 2000)
+    assert (r4(b["random"]["precision"]), b["random"]["auroc"]) == (0.3122, 0.5)
+
+
+def test_heldout_user_predictions_drop_in(tmp_path):
+    """A user file: `coupled` flags, `score` ranks; null, false and missing rows are not flagged."""
+    import score_heldout as SH
+    gold, share = SH.load_board()
+    ids = sorted(gold)
+    rows = [{"instance_id": i, "coupled": bool(gold[i]), "score": float(gold[i])} for i in ids]
+    rows[0]["coupled"] = None
+    write_jsonl(tmp_path / "mine.jsonl", rows[:-1])                 # last task missing
+    b = SH.board(preds=tmp_path / "mine.jsonl")
+    n_pos = sum(gold.values())
+    lost = gold[ids[0]] + gold[ids[-1]]
+    assert b["model"]["flagged"] == b["model"]["hits"] == n_pos - lost
+    assert b["model_scored"] == len(ids) - 1
+    assert b["rule_then_model"]["flagged"] == sum(gold[i] for i in SH.rule_top(gold, share) if i not in (ids[0], ids[-1]))
+    no_score = [{"instance_id": i, "coupled": True} for i in ids]
+    write_jsonl(tmp_path / "flags.jsonl", no_score)
+    b2 = SH.board(preds=tmp_path / "flags.jsonl")
+    assert b2["model"]["auroc"] is None and b2["paired_auroc_model_minus_rule"] is None
+    assert b2["model_agreement"]["kappa"] == 0.0 and b2["model"]["flagged"] == len(ids)
+    write_jsonl(tmp_path / "pc.jsonl", [{"instance_id": i, "coupled": False, "score": None, "p_coupled": 0.5}
+                                        for i in ids] + [{"instance_id": "not__a-task", "coupled": True, "score": 1.0}])
+    b3 = SH.board(preds=tmp_path / "pc.jsonl")                       # null score falls back to p_coupled
+    assert b3["model_scored"] == len(ids) and b3["model"]["flagged"] == 0 and b3["model"]["auroc"] == 0.5
+    write_jsonl(tmp_path / "wrong.jsonl", [{"instance_id": i.upper(), "coupled": True, "score": 1.0} for i in ids])
+    with pytest.raises(SystemExit, match="no row names a decided board task"):
+        SH.board(preds=tmp_path / "wrong.jsonl")
+    out = subprocess.run([sys.executable, str(HERE / "score_heldout.py"), "--preds", str(tmp_path / "mine.jsonl"),
+                          "--name", "mine"], capture_output=True, text=True, cwd=ROOT)
+    assert out.returncode == 0 and "| mine |" in out.stdout, out.stderr
+
+
+def test_heldout_auroc_and_rule_ties():
+    import score_heldout as SH
+    gold = {"a": 1, "b": 0, "c": 1, "d": 0}
+    assert SH.auroc(sorted(gold), {"a": 0.9, "b": 0.1, "c": 0.8, "d": 0.2}, gold) == 1.0
+    assert SH.auroc(sorted(gold), {i: 0.0 for i in gold}, gold) == 0.5
+    share = {"a": 0.5, "b": 0.5, "c": 0.1, "d": 0.9}
+    assert SH.rule_top(gold, share, top=0.5) == ["d", "a"]           # ties broken by instance_id
+
+
 def test_reproduce_passes():
     out = subprocess.run([sys.executable, str(ROOT / "reproduce.py")], capture_output=True, text=True, cwd=ROOT)
     assert out.returncode == 0, out.stdout[-2000:] + out.stderr[-2000:]

@@ -3,6 +3,24 @@
 All changes to the data, code and numbers of this release. A corrected label or a recomputed number gets a new minor
 version; a change of schema gets a new major version. Each version is a git tag.
 
+## 1.2.0 (2026-11-10)
+
+Ships the held-out board of the writeup's Table 4 ("the board to beat"), so its rows can be reproduced and beaten. No
+label, verdict or schema changes to existing files.
+
+- `data/auditor_benchmark/heldout/labels.jsonl`: the 220 held-out census tasks (205 decided, 64 coupled) with the
+  reference label, kind, first and refuter verdicts, and `abs_wbp` / `abs_judged` (the no-model score). Equal task by
+  task to `data/task_verdicts.csv`; `reproduce.py` checks it. No mismatch was found.
+- `data/auditor_benchmark/heldout/predictions/a2-g12b.jsonl`: Gemma 4 12B (fp16) A2 outputs on those 220 tasks.
+- `code/score_heldout.py`: prints Table 4 rows 1-3 and random, A2's kappa with its bootstrap interval and recall, and
+  the paired AUROC difference, with the original analysis's bootstrap code and seed; `--preds` scores your auditor.
+- `reproduce.py` step 7 and 24 entries in `draft_numbers.json` (`heldout_auditor`): **180 checks**, all passing; the
+  156 earlier check lines print unchanged.
+- `code/test_release.py`: 27 tests (3 new). `README.md` (board quickstart, files, provenance), `DATASHEET.md`,
+  `NOTICE`, `dataset-metadata.json`, `CITATION.cff` (1.2.0) and the notebook's pass check and text (180).
+- Section 7 of the writeup corrected to the computed bounds (A2 kappa [0.047, 0.329], paired AUROC difference
+  [-0.22, -0.02]); both now checked.
+
 ## 1.1.0 (2026-11-10)
 
 Closes the reproduction gap for the numbers the writeup added after 04/11. No label, verdict or schema changes.

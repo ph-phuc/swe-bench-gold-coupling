@@ -7,7 +7,7 @@ Repository: https://github.com/ph-phuc/swe-bench-gold-coupling · Kaggle dataset
 [![Kaggle: Gemma 4 Developer Agent Paper Track](https://img.shields.io/badge/Kaggle-Gemma%204%20Developer%20Agent%20Paper%20Track-20BEFF)](https://www.kaggle.com/competitions/gemma-4-developer-agent-paper)
 [![Kaggle dataset](https://img.shields.io/badge/Kaggle-dataset-20BEFF)](https://www.kaggle.com/datasets/phucphan1406/swe-bench-gold-coupling-census)
 [![Kaggle notebook: reproduce](https://img.shields.io/badge/Kaggle-notebook%3A%20reproduce-20BEFF)](https://www.kaggle.com/code/phucphan1406/swe-bench-gold-coupling-reproduce)
-![version 1.1.0](https://img.shields.io/badge/version-1.1.0-lightgrey)
+![version 1.2.0](https://img.shields.io/badge/version-1.2.0-lightgrey)
 
 Data, code and prompts behind the writeup *"Gold-Coupled Tests: Auditing Reference Overfitting in SWE-bench Hardening"* (an issue-grounded census of SWE-ABS rejections on SWE-bench Verified, with Gemma 4 auditor baselines). Every headline number of the writeup is recomputed
 from the files here, on a CPU, in seconds; a few secondary numbers are not, and are [listed below](#not-reproduced).
@@ -47,7 +47,10 @@ when a second, adversarial reader (the refuter, same model) agrees.
 | E4B (fp16) | 0.127 [-0.090, 0.327] | 42% of tasks | 0.66 | 0.48 |
 | 12B (fp16) | 0.242 [0.043, 0.446] | 28 (37%) | 0.75 (21/28) | 0.48 |
 | 31B (nf4, exploratory) | 0.117 [0.039, 0.226] | 6 (8%) | 1.00 (6/6; Wilson 0.61-1.00) | 0.14 |
-- **Checkable:** `reproduce.py` recomputes 156 numbers of the writeup and asserts each one; the table
+- **A board to beat:** on 205 held-out decided tasks (64 coupled), ranking tasks by their SWE-ABS rejection share
+  and flagging the top 20% (no model) reaches precision 0.71 (AUROC 0.775); Gemma 4 12B prompted reaches 0.48 (AUROC
+  0.654). `code/score_heldout.py` scores any auditor's predictions on that board ([quickstart](#quickstart-the-board-to-beat)).
+- **Checkable:** `reproduce.py` recomputes 180 numbers of the writeup and asserts each one; the table
   [below](#where-each-headline-number-comes-from) maps every number to its script and file.
 
 ![Figure 1: per-system SWE-ABS rejection rate, raw and with coupled and contested tasks set aside](figures/fig1_rates.png)
@@ -77,6 +80,37 @@ print(wbp.merge(t, on="instance_id")["class"].value_counts(normalize=True).round
 the test requires (`test_requires`), what agents did (`agents_do`), and both readers' reasons (`why`, `refuter_reason`).
 Corrected per-system rates with 95% intervals are in `data/system_rates/per_system_corrected.csv`.
 
+## Quickstart: the board to beat
+
+The writeup's Table 4 scores offline test auditors on the 205 decided held-out tasks of
+`data/auditor_benchmark/heldout/` (64 coupled; the 85 first-round tasks of the dev benchmark are not among them). Each task's most-failed
+SWE-ABS test, the one an auditor judges, is the `top_test` column of `data/task_verdicts.csv`:
+
+```
+python code/score_heldout.py                                       # prints Table 4 rows 1-3, random, A2's kappa
+python code/score_heldout.py --preds my_auditor.jsonl --name mine  # adds your auditor's row
+```
+
+```
+| auditor | flagged | of them coupled | precision [Wilson 95%] | recall | AUROC |
+| no model: top 20% by SWE-ABS rejection share | 41 | 29 | 0.71 [0.56, 0.82] | 0.453 | 0.775 |
+| Gemma 4 12B, prompted (A2) | 46 | 22 | 0.48 [0.34, 0.62] | 0.344 | 0.654 |
+| top 20%, then Gemma 4 12B, prompted (A2) as second read | 12 | 10 | 0.83 [0.55, 0.95] | 0.156 |  |
+| random | | | 0.31 | | 0.5 |
+```
+
+Your predictions file is JSONL, one row per held-out task: `{"instance_id": "...", "coupled": true, "score": 0.83}`.
+Only `"coupled": true` flags a task; `false`, `null` or a missing row is not flagged (and counts as not coupled in
+kappa). `score` (or `p_coupled`) is optional: higher means more likely coupled, it gives your AUROC and the paired
+AUROC difference against the no-model rule, and a missing score ranks last. Your row is also combined with the rule
+("top 20%, then yours"). Kappa intervals use `eval_a2.py`'s task bootstrap and AUROC differences use the triage
+ranker's, both 2,000 draws with seed 0, copied unchanged so the writeup's intervals come out exactly. The no-model
+score is `abs_wbp / abs_judged`, in `labels.jsonl`; there is no tie at the top-20% cut (0.5111 against 0.5038), so
+row 1 does not depend on tie-breaking. The readers saw how many patches failed, so the no-model rule and the
+reference labels are not independent; an auditor that beats it on this board has still to show it on tasks where the
+labels were made without that count. Rows 1 and 3 are exploratory (fixed after A2's held-out run); A2 was
+pre-registered.
+
 ## Glossary
 
 | Term | Meaning |
@@ -104,11 +138,11 @@ Corrected per-system rates with 95% intervals are in `data/system_rates/per_syst
 
 ```
 pip install -r requirements.txt      # numpy, pytest (matplotlib only to redraw Figure 1; pandas only for the quickstart)
-python reproduce.py                  # recomputes 156 numbers and asserts each against draft_numbers.json
-python -m pytest -q code             # 24 tests of the tally, rate, evaluator and helper code
+python reproduce.py                  # recomputes 180 numbers and asserts each against draft_numbers.json
+python -m pytest -q code             # 27 tests of the tally, rate, evaluator, board and helper code
 ```
 
-`reproduce.py` ends with `ALL 156 CHECKS PASS`. It runs in about 5 seconds on a laptop CPU. One line per number
+`reproduce.py` ends with `ALL 180 CHECKS PASS`. It runs in about 10 seconds on a laptop CPU. One line per number
 names the writeup section it comes from. If a check fails, the script exits 1. Bootstrap intervals are byte-equal with
 numpy 2.5.2 (`default_rng(0)`); another numpy version may move an interval bound in the last digit, and `reproduce.py`
 then reports the difference.
@@ -116,7 +150,8 @@ then reports the difference.
 `draft_numbers.json` holds each number as the writeup prints it. Integers must match exactly; decimals must match to
 the printed precision. An entry may carry a `correct` field when the writeup prints a number wrongly: the check then
 uses the value from the data and lists the entry as `DRAFT-FIX` until the writeup is corrected. No entry carries one
-at present.
+at present. Two upper bounds of Section 7 were printed as a second rounding (0.330 and -0.03); the writeup was
+corrected on 10/11 to 0.329 and -0.02, and both are checked.
 
 ## Where each headline number comes from
 
@@ -128,6 +163,7 @@ at present.
 | Abstract, 5, Table 3 | pooled 19.5% / 8.7% / 10.8%; tasks 470 / 338 / 362; judged 25,831 / 28,176; wbp 2,253 / 3,036; 139 ranked systems; median 20.1% to 9.1%, IQRs; ratio 0.17-1.05 (IQR 0.35-0.52); median coupled share 57.1%; Spearman 0.92; median rank-interval width 64; 165 tasks without wbp; 2,000 draws; with the 3 kind-2 tasks counted as genuine: 9.9-11.8%, median system 10.3%; Figure 1: 139 systems, medians 20.1% and 9.1% | `python code/system_rates.py --out out/rates` and `... --kind2-genuine` (step 3; both equal byte for byte to `data/system_rates/`); `python figures/fig1_rates.py` redraws the figure | `data/census/`, `data/labels/entries.csv` |
 | Abstract, 6 | five blind annotators: model vs each annotator mean Cohen 0.44, Fleiss 0.36 among the humans (mean pairwise Cohen 0.386); majority of five agrees with the model on 7 of 10; majority G on both kind-2 tasks (13410 4-1, 16527 3-2) and C on 5 of 6 kind-1 tasks (11292 3-2 for G); both controls G for all five; the strictest annotator says G on 8 of 10 | `python code/spotcheck_agreement.py` (step 4; equal to `data/spotcheck/spotcheck_agreement.json`) | `data/spotcheck/spotcheck_letters.json`, `data/census/split_tally.json` |
 | Abstract, 7, Table 4 | 85 tasks, 76 decided, 58% coupled; kappa, CI, share called coupled, precision, recall for E4B, 12B and 31B-nf4; 21 of 28 12B flags right; 31B 6 flags, all right | `python code/eval_audit.py data/auditor_benchmark/predictions/a1-r1-e4b-12b.jsonl data/auditor_benchmark/labels.jsonl --config data/auditor_benchmark/configs/audit.json` (and `a1-31b-nf4.jsonl` with `audit31.json`); step 5 | `data/auditor_benchmark/` |
+| 7, Table 4 (held-out board) | 205 decided held-out tasks, 64 coupled; no-model top 20%: 41 flagged, 29 coupled, precision 0.71, AUROC 0.775; Gemma 4 12B (A2): 46 flagged, 22 coupled, precision 0.48, AUROC 0.654; top 20% then Gemma: 12 flagged, 10 coupled, precision 0.83 [0.55, 0.95]; random 0.31 / 0.5; A2 kappa 0.188 [0.047, 0.329], recall 0.344; paired AUROC difference -0.12 [-0.22, -0.02] | `python code/score_heldout.py` (step 7; first checks the labels and counts against `data/task_verdicts.csv`) | `data/auditor_benchmark/heldout/` |
 | 3, 9 (carried) | rule AUROC 0.54 on 76 tasks; parser misses: 15 runs in 2 tasks | read, **not recomputed** (step 6) | `data/carried/` |
 
 ### Not reproduced from this release
@@ -157,10 +193,13 @@ at present.
 | `data/auditor_benchmark/packet_index.jsonl` | For each benchmark task: the failing SWE-ABS tests with run counts, and the agent patches shown to the model (sha256 and the systems that submitted them), and `text_sha256`: the sha256 of the issue, hints, gold patch and SWE-ABS test patch (first 6,000 characters) as the prompt used them. Texts are not included; see Licence. |
 | `data/auditor_benchmark/predictions/` | Gemma 4's saved outputs (raw text, parsed verdict, token counts) for E4B and 12B (fp16) and for 31B (nf4, exploratory). One seed, greedy decoding. |
 | `data/auditor_benchmark/configs/` | Model IDs and Hugging Face revisions of the Gemma runs. |
+| `data/auditor_benchmark/heldout/labels.jsonl` | The held-out board (Table 4): the other 220 census tasks, with the same reference (`gold`: 64 `coupled`, 141 `genuine`, 14 `contested`, 1 `other`; 205 decided), `kind` (1 or 2 on coupled tasks), the first reader's `first` category, the refuter's verdict, `set`, and the no-model score's counts `abs_wbp` and `abs_judged` (equal to `data/task_verdicts.csv`, checked by `reproduce.py`). |
+| `data/auditor_benchmark/heldout/predictions/a2-g12b.jsonl` | Gemma 4 12B's (fp16) A2 outputs on the 220 held-out tasks, one greedy run: `coupled` (the verdict), `p_coupled` (its score), the parsed answer `fields` (one-sentence answers and a short issue quote), `raw` text, parse and score sources, tokens, seconds and peak GiB. The A2 prompt (test source, no gold patch, the question asked in parts) is not part of this release. |
 | `data/carried/` | Two result files whose numbers are read, not recomputed (see above). |
 | `code/audit_tally.py` | Combines the first-reader and refuter verdicts into task classes and counts. With `--require-census`, it exits 1 unless every task with wbp is read and every coupled first verdict is refuted. |
 | `code/system_rates.py` | Corrected per-system rates and the task bootstrap. It exits 1 unless its counts reconcile with `per_task.csv`, `per_system.csv` and the census. |
 | `code/eval_audit.py`, `code/audit_prompt.py` | The frozen evaluator of the Gemma auditor (kappa, bootstrap CI, precision and recall), and the exact prompt and verdict parser. |
+| `code/score_heldout.py` | Scores auditors on the held-out board: Table 4 rows 1-3 and random, kappa with its bootstrap interval, the paired AUROC difference; `--preds` adds your auditor's row. |
 | `code/split_tally.py` | Tally of the kind split; checks that every kind-2 call and the seeded 20% kind-1 sample have a refuter row. |
 | `code/spotcheck_agreement.py` | Spot-check agreement (per annotator, Fleiss, pairwise Cohen, majority). |
 | `code/wilson.py`, `code/task_verdicts.py` | Wilson interval; the verdict view. |
@@ -199,7 +238,8 @@ Questions and corrections go to the repository's issue tracker (see above).
 - **Our code** (`code/`, `reproduce.py`): MIT, see `LICENSE`.
 - **Our annotations and derived data** (`data/`, `briefs/`, `draft_numbers.json`): CC BY 4.0, see `LICENSE-DATA`.
 - **Third-party material** is quoted only in short excerpts, under its own terms; see `NOTICE`. That covers issue
-  quotes, test names and short test descriptions in the verdict records, and Gemma output text that quotes tests.
+  quotes, test names and short test descriptions in the verdict records, and Gemma output text that quotes tests or
+  issues.
 - Agent patches, full issue texts, gold patches and SWE-ABS test files are **not** redistributed. Fetch them from
   SWE-bench Verified, SWE-ABS and SWE-bench/experiments (`code/fetch_patches.py`).
 

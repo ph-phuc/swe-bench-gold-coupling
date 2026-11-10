@@ -17,5 +17,6 @@ quoted for analysis, each under its own terms:
 - Upstream projects whose tests and code the excerpts name: django, astropy, scikit-learn, flask, seaborn
   (BSD-3-Clause), sympy (BSD), sphinx (BSD-2-Clause), matplotlib (matplotlib licence), pytest (MIT), xarray and
   requests (Apache-2.0), pylint (GPL-2.0).
-- Gemma 4 model outputs in data/auditor_benchmark/predictions/ were generated with google/gemma-4-* under the Gemma
+- Gemma 4 model outputs in data/auditor_benchmark/predictions/ and data/auditor_benchmark/heldout/predictions/ (whose
+  `issue_quote` answer field quotes a sentence or two of the GitHub issue) were generated with google/gemma-4-* under the Gemma
   terms of use.

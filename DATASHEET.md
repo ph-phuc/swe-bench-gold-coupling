@@ -1,4 +1,4 @@
-# Datasheet: SWE-bench gold-coupling census (v1.1.0)
+# Datasheet: SWE-bench gold-coupling census (v1.2.0)
 
 Answers to the questions of *Datasheets for Datasets* (Gebru et al., arXiv:1803.09010), with the extra headings of
 the Hugging Face dataset card template. Terms such as *judged*, *wbp* and *coupled* are defined in the
@@ -27,6 +27,8 @@ instances before publishing; this census applies one written standard to every r
 | Blind human spot check (letters only) | 10 tasks x 5 annotators | `data/spotcheck/` |
 | Test-auditor benchmark (two-reader reference labels) | 85 tasks, 76 decided | `data/auditor_benchmark/` |
 | Gemma 4 auditor outputs | E4B and 12B (fp16), 31B (nf4, exploratory); one greedy run each | `data/auditor_benchmark/predictions/` |
+| Held-out auditor board (same reference labels, plus the no-model score's counts) | 220 tasks, 205 decided (64 coupled) | `data/auditor_benchmark/heldout/labels.jsonl` |
+| Gemma 4 12B A2 outputs on the held-out board | 220 tasks, fp16, one greedy run | `data/auditor_benchmark/heldout/predictions/` |
 
 - **Is it a sample?** No for the census: all 305 tasks with a SWE-ABS rejection were read. The entries are every
   prediction the SWE-bench Verified leaderboard marks resolved, as published in SWE-bench/experiments when collected.
@@ -68,6 +70,12 @@ instances before publishing; this census applies one written standard to every r
 - **Gemma 4 auditor.** `google/gemma-4-E4B-it`, `google/gemma-4-12B-it` and `google/gemma-4-31B-it` (nf4), at the
   Hugging Face revisions in `data/auditor_benchmark/configs/`. Greedy decoding, at most 600 new tokens, on Kaggle T4
   GPUs. The prompt and verdict parser are `code/audit_prompt.py`.
+- **Held-out board.** The 220 census tasks outside the 85 first-round tasks, with the same two-reader reference
+  (`coupled` / `genuine` / `contested` / `other`, equal task by task to `data/task_verdicts.csv`). Gemma 4 12B (fp16)
+  ran once on them with a second prompt, A2 (test source, no gold patch, the question asked in parts), designed on the
+  dev tasks and pre-registered before the held-out run; the A2 prompt itself is not in this release. Its outputs keep
+  the parsed answer fields (one-sentence answers and a short issue quote) and the raw text. The no-model rule (top 20%
+  by SWE-ABS rejection share) and the second-read combination were fixed after that run, so they are exploratory.
 
 ## 4. Preprocessing, cleaning, labelling
 
@@ -82,7 +90,10 @@ instances before publishing; this census applies one written standard to every r
 **Intended uses.**
 - Re-scoring SWE-bench Verified systems under SWE-ABS with coupled tasks set aside, as a sensitivity range.
 - Studying which hardened tests pin gold-specific behaviour, with the issue quote and test name as evidence.
-- Benchmarking a test-auditor model on the 76 decided tasks of `data/auditor_benchmark/`.
+- Benchmarking a test-auditor model on the 76 decided tasks of `data/auditor_benchmark/` (dev), and on the 205
+  decided held-out tasks of `data/auditor_benchmark/heldout/` with `code/score_heldout.py` (Table 4, the board to
+  beat). The census readers saw how many patches failed, so the no-model row and the reference labels are not
+  independent.
 
 **Out-of-scope uses.**
 - Reading a `coupled` task as "every rejection on this task is a correct patch". The verdict is per task; many

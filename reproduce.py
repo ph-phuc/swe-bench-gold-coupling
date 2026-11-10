@@ -11,6 +11,8 @@ Steps, each from the shipped files only:
   4. spot check    data/spotcheck/spotcheck_letters.json with code/spotcheck_agreement.py
   5. Gemma auditor code/eval_audit.py on data/auditor_benchmark/ (labels + the models' saved predictions)
   6. carried       two numbers read from shipped result files, not recomputed (see draft_numbers.json "carried")
+  7. held-out board code/score_heldout.py on data/auditor_benchmark/heldout/ (Table 4 rows 1-3 and random; A2's kappa
+                  and recall; the paired AUROC difference), after checking its labels against task_verdicts.csv
 Prints one line per check and exits 1 if any check fails. An entry with "correct" in draft_numbers.json is a number the
 current draft prints wrongly: it is checked against the data and listed as DRAFT-FIX until the draft is fixed.
 """
@@ -33,6 +35,7 @@ sys.path.insert(0, str(ROOT / "code"))
 import audit_tally  # noqa: E402
 import audit_prompt  # noqa: E402
 import eval_audit  # noqa: E402
+import score_heldout  # noqa: E402
 import split_tally  # noqa: E402
 import system_rates  # noqa: E402
 import task_verdicts  # noqa: E402
@@ -291,6 +294,42 @@ def carried(spec: dict) -> dict:
 
 
 # ---------------------------------------------------------------------------------------------------------------
+def heldout_auditor() -> dict:
+    """Table 4 rows 1-3 and random, and Section 7's A2 and ranking numbers, on the held-out board."""
+    b = DATA / "auditor_benchmark" / "heldout"
+    labels = read_jsonl(b / "labels.jsonl")
+    # The reference labels and the no-model score must be the census verdicts and counts, task by task.
+    tv = {r["instance_id"]: r for r in read_csv(DATA / "task_verdicts.csv")}
+    dev = {x["instance_id"] for x in read_jsonl(DATA / "auditor_benchmark/labels.jsonl")}
+    gold_of = {"coupled": "coupled", "in_scope": "genuine", "contested": "contested", "env": "other"}
+    for x in labels:
+        t = tv.get(x["instance_id"])
+        if t is None or x["instance_id"] in dev:
+            raise SystemExit(f"held-out task {x['instance_id']} is not in task_verdicts.csv or is a dev task")
+        want = (gold_of[t["class"]], int(t["kind"]) if t["kind"] else None, t["first_category"],
+                t["refuter_verdict"] or None, int(t["abs_wbp"]), int(t["abs_judged"]))
+        if (x["gold"], x["kind"], x["first"], x["refuter"], x["abs_wbp"], x["abs_judged"]) != want:
+            raise SystemExit(f"heldout/labels.jsonl disagrees with task_verdicts.csv on {x['instance_id']}")
+    preds = read_jsonl(b / "predictions/a2-g12b.jsonl")
+    if {r["instance_id"] for r in preds} != {x["instance_id"] for x in labels} or \
+            {(r["model"], r["split"]) for r in preds} != {("g12b", "heldout")}:
+        raise SystemExit("heldout/predictions/a2-g12b.jsonl does not hold exactly the held-out tasks of g12b")
+    s = score_heldout.board(b)
+    r, m, rm, a, d = s["rule"], s["model"], s["rule_then_model"], s["model_agreement"], \
+        s["paired_auroc_model_minus_rule"]
+    return {"n_decided": s["n_decided"], "n_coupled": s["n_coupled"],
+            "rule_flagged": r["flagged"], "rule_hits": r["hits"], "rule_precision": r["precision"],
+            "rule_auroc": r["auroc"],
+            "a2_flagged": m["flagged"], "a2_hits": m["hits"], "a2_precision": m["precision"], "a2_auroc": m["auroc"],
+            "second_read_flagged": rm["flagged"], "second_read_hits": rm["hits"],
+            "second_read_precision": rm["precision"], "second_read_wilson_lo": rm["precision_wilson"][0],
+            "second_read_wilson_hi": rm["precision_wilson"][1],
+            "random_precision": s["random"]["precision"], "random_auroc": s["random"]["auroc"],
+            "a2_kappa": a["kappa"], "a2_kappa_lo": a["kappa_lo"], "a2_kappa_hi": a["kappa_hi"], "a2_recall": m["recall"],
+            "paired_auroc_diff": d["diff"], "paired_auroc_diff_lo": d["lo"], "paired_auroc_diff_hi": d["hi"]}
+
+
+# ---------------------------------------------------------------------------------------------------------------
 def check(section: str, got: dict, spec: dict) -> list[str]:
     fails = []
     for k, v in spec.items():
@@ -319,7 +358,7 @@ def main() -> int:
     sr, k2, fig = rates()
     results = {"label_table": label_table(), "census": census(), "split": split(), "system_rates": sr,
                "kind2_genuine": k2, "figure1": fig, "spot_check": spot(), "auditor": auditor(),
-               "carried": carried(spec["carried"])}
+               "carried": carried(spec["carried"]), "heldout_auditor": heldout_auditor()}
     fails, n = [], 0
     for section, got in results.items():
         n += sum(1 for k in spec[section] if not k.startswith("_"))
